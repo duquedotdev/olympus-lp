@@ -1,0 +1,141 @@
+:root {
+  --bg: #07070b;
+  --bg-elev: #0d0d14;
+  --bg-card: #11111a;
+  --bg-card-2: #16161f;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #f6f6f8;
+  --text-muted: #a6a6b3;
+  --text-dim: #6a6a78;
+  --accent: #0a7d45;
+  --accent-2: #14a85a;
+  --accent-3: #006039;
+  --accent-soft: rgba(20, 168, 90, 0.14);
+  --gold: #c9a227;
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 26px;
+  --radius-xl: 42px;
+  --maxw: 1180px;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Consolas, monospace;
+
+  font: 16px/1.6 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv11", "ss01";
+  font-variation-settings: "opsz" 32;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100svh;
+  overflow-x: hidden;
+  font-family: var(--sans);
+}
+input, select, textarea, button { font-family: var(--sans); }
+a { color: inherit; text-decoration: none; }
+button {
+  font: inherit; cursor: pointer; border: none; background: none; color: inherit;
+}
+h1, h2, h3, h4 {
+  margin: 0; font-weight: 600; letter-spacing: -0.02em; color: var(--text);
+}
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+#root { min-height: 100svh; display: flex; flex-direction: column; }
+
+.container {
+  width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px;
+}
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent-2);
+}
+.eyebrow::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 12px var(--accent);
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 20px; border-radius: var(--radius-sm);
+  font-size: 14px; font-weight: 600;
+  transition: transform 0.15s, opacity 0.2s, background 0.2s, border-color 0.2s;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); color: #fff; border-radius: var(--radius-sm); }
+.btn-primary:hover { background: var(--accent-2); }
+.btn-accent { background: var(--accent-2); color: #fff; }
+.btn-accent:hover { background: var(--accent); }
+.btn-light { background: var(--text); color: #000; }
+.btn-light:hover { opacity: 0.88; }
+.btn-ghost { border: 1px solid var(--border-strong); color: var(--text); }
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.06); }
+.btn-lg { padding: 14px 26px; font-size: 15px; border-radius: var(--radius); }
+
+.section { padding: 96px 0; border-top: 1px solid var(--border); }
+.section-title {
+  font-size: clamp(26px, 3.4vw, 40px); line-height: 1.12;
+  letter-spacing: -0.03em; max-width: 22ch; margin-bottom: 16px;
+}
+.section-lead {
+  font-size: 17px; color: var(--text-muted); max-width: 60ch; line-height: 1.6;
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, var(--accent-2), var(--gold));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: var(--radius-xs);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.02em;
+  background: var(--accent-soft); color: var(--accent-2);
+  border: 1px solid rgba(20, 168, 90, 0.3);
+}
+
+.page-hero { padding: 120px 0 72px; }
+.page-hero-inner { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+.page-hero h1 {
+  font-size: clamp(36px, 5vw, 60px); line-height: 1.05; letter-spacing: -0.035em;
+  max-width: 18ch;
+}
+
+@media (max-width: 768px) {
+  :root { font-size: 15px; }
+  .container { padding: 0 16px; }
+  .section { padding: 64px 0; }
+  .page-hero { padding: 88px 0 48px; }
+}
+
+/* Apple HIG — consistent corner radii via --radius-* tokens */
+.card,
+.product-card,
+.cta-band,
+.nav-dropdown-menu,
+.tech-ecosystem-item,
+.tech-platform {
+  border-radius: var(--radius-lg);
+}
