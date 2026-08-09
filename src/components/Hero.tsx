@@ -28,7 +28,8 @@ export function Hero() {
           <dl className="hero__stats">
             <div><dt>03</dt><dd>agentes</dd></div>
             <div><dt>05</dt><dd>plataformas</dd></div>
-            <div><dt>2027</dt><dd>primeiro lançamento</dd></div>
+            <div><dt>85</dt><dd>países</dd></div>
+            <div><dt>05</dt><dd>idiomas</dd></div>
           </dl>
         </div>
 

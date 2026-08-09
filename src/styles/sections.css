@@ -68,7 +68,8 @@ main { position: relative; z-index: 2; }
 }
 .hero__stats {
   display: flex;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  flex-wrap: wrap;
+  gap: clamp(1.2rem, 3vw, 2.4rem);
   margin-top: 3rem;
   padding-top: 1.8rem;
   border-top: 1px solid var(--line);
