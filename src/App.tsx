@@ -10,6 +10,8 @@ import { Footer } from "./components/Footer.tsx";
 import { Privacy } from "./components/Privacy.tsx";
 import { BlogList } from "./components/BlogList.tsx";
 import { BlogPost } from "./components/BlogPost.tsx";
+import { PressList } from "./components/PressList.tsx";
+import { PressRelease } from "./components/PressRelease.tsx";
 import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal.ts";
 import { useHashRoute } from "./hooks/useHashRoute.ts";
@@ -51,6 +53,35 @@ export default function App() {
         <Header />
         <main>
           <BlogPost slug={slug} />
+        </main>
+        <Footer />
+        <Analytics />
+      </>
+    );
+  }
+
+  if (route === "imprensa") {
+    return (
+      <>
+        <div className="grain" aria-hidden="true" />
+        <Header />
+        <main>
+          <PressList />
+        </main>
+        <Footer />
+        <Analytics />
+      </>
+    );
+  }
+
+  if (route.startsWith("imprensa/")) {
+    const slug = route.slice("imprensa/".length);
+    return (
+      <>
+        <div className="grain" aria-hidden="true" />
+        <Header />
+        <main>
+          <PressRelease slug={slug} />
         </main>
         <Footer />
         <Analytics />

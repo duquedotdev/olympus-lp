@@ -18,6 +18,7 @@ export const nav = [
   { label: "Manifesto", href: "#manifesto" },
   { label: "Método", href: "#method" },
   { label: "Blog", href: "#blog" },
+  { label: "Imprensa", href: "#imprensa" },
   { label: "Perguntas", href: "#faq" },
 ];
 
