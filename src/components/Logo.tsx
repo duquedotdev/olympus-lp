@@ -1,11 +1,8 @@
-export function Logo({ size = 28 }: { size?: number }) {
+export function Logo({ className }: { className?: string }) {
   return (
-    <img
-      src="/logo.svg"
-      width={size}
-      height={size}
-      alt="Olympkus AI"
-      style={{ display: "block", borderRadius: 4 }}
-    />
+    <a href="#top" className={`logo ${className ?? ""}`} aria-label="Olympkus AI — início">
+      <img src="/logo.svg" alt="" className="logo__mark" aria-hidden="true" />
+      <span className="logo__word">Olympkus<span className="logo__ai"> AI</span></span>
+    </a>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "olympkus-ai-lp",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,11 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "hls.js": "^1.6.16",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-helmet-async": "^3.0.0",
-    "react-router-dom": "^7.18.2"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",

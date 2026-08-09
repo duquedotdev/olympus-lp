@@ -1,0 +1,30 @@
+:root {
+  /* Obsidian Gallery palette */
+  --onyx: #0b0b0d;
+  --onyx-2: #0f0f12;
+  --raised: #141417;
+  --raised-2: #191a1e;
+  --marble: #f4f2ed;
+  --marble-dim: #d9d6cf;
+  --stone: #9a968e;
+  --stone-dim: #6b6862;
+  --bronze: #c6a15b;
+  --bronze-soft: #d9bd85;
+
+  --line: rgba(244, 242, 237, 0.10);
+  --line-strong: rgba(244, 242, 237, 0.18);
+  --bronze-line: rgba(198, 161, 91, 0.42);
+
+  /* Type */
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  --mono: "Space Mono", ui-monospace, monospace;
+
+  /* Rhythm */
+  --shell: 1240px;
+  --gutter: clamp(20px, 5vw, 64px);
+  --section-y: clamp(88px, 12vw, 168px);
+
+  --radius: 14px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

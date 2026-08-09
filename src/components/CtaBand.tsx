@@ -1,32 +1,43 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export function CtaBand({
-  title = "Sua vida financeira começa a ficar leve hoje",
-  desc = "Grátis pra começar. Sem cartão de crédito, sem fidelidade.",
-  primary = { label: "Começar grátis", to: "/pluto" },
-  secondary = { label: "Falar com a gente", to: "/contato" },
-}: {
-  title?: string;
-  desc?: string;
-  primary?: { label: string; to: string };
-  secondary?: { label: string; to: string };
-}) {
+export function CtaBand() {
+  const [email, setEmail] = useState("");
+  const [done, setDone] = useState(false);
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.includes("@")) return;
+    setDone(true);
+  };
+
   return (
-    <section className="section cta-band-section">
-      <div className="container">
-        <div className="cta-band">
-          <div className="cta-band-glow" aria-hidden="true" />
-          <h2>{title}</h2>
-          <p>{desc}</p>
-          <div className="cta-band-actions">
-            <Link to={primary.to} className="btn btn-primary btn-lg">
-              {primary.label}
-            </Link>
-            <Link to={secondary.to} className="btn btn-ghost btn-lg">
-              {secondary.label}
-            </Link>
-          </div>
-        </div>
+    <section className="access" id="access">
+      <div className="access__inner" data-reveal>
+        <p className="eyebrow eyebrow--center">Acesso antecipado</p>
+        <h2 className="access__title">Entre para o Olimpo.</h2>
+        <p className="access__sub">
+          Vagas limitadas para o lançamento do Pluto em janeiro de 2027.
+          Sem spam — apenas o convite.
+        </p>
+
+        {done ? (
+          <p className="access__done mono">
+            ✳ CONVITE RESERVADO — VOCÊ ESTÁ NA LISTA.
+          </p>
+        ) : (
+          <form className="access__form" onSubmit={submit}>
+            <input
+              type="email"
+              className="access__input"
+              placeholder="seu@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              aria-label="Seu email"
+              required
+            />
+            <button type="submit" className="btn btn--solid">Solicitar convite</button>
+          </form>
+        )}
       </div>
     </section>
   );

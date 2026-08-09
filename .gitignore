@@ -8,3 +8,9 @@ dist-ssr
 .DS_Store
 *.log
 .vite
+
+# local source assets (duplicated into public/) and working docs
+/Crie_um_vídeo_desse_busco_em.mp4
+/Gemini_Generated_Image_ryjpd4ryjpd4ryjp.png
+/LogoOlympkus.svg
+/olympkus-campanha-lista-de-espera.md
