@@ -10,8 +10,8 @@ export function Pantheon() {
           Três domínios. Três agentes. Um só comando.
         </h2>
         <p className="section-lede" data-reveal>
-          Cada aplicativo governa uma parte da sua vida. Juntos, formam a suíte —
-          e Zeus os rege.
+          Autonomia isolada virou commodity. A diferença é ter um agente
+          especializado por domínio — e Zeus para reger todos eles.
         </p>
       </div>
 

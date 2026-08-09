@@ -87,6 +87,11 @@ export function Privacy() {
             quando você retorna. Você pode limpá-los apagando os dados do site no
             navegador.
           </p>
+          <p>
+            Usamos ainda uma ferramenta de <strong>analytics de audiência sem
+            cookies</strong>, que mede o alcance das páginas de forma agregada e
+            anônima, sem criar perfis individuais.
+          </p>
         </section>
 
         <section className="legal__section">

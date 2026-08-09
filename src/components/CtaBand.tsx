@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { joinWaitlist, getStanding, shareUrl, type Standing } from "../lib/api.ts";
+import { joinWaitlist, getStanding, getCount, shareUrl, type Standing } from "../lib/api.ts";
 import { useReferral } from "../hooks/useReferral.ts";
+import { events } from "../lib/analytics.ts";
 
 export function CtaBand() {
   const { savedCode, rememberCode, getRef } = useReferral();
@@ -9,20 +10,38 @@ export function CtaBand() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
+  const [total, setTotal] = useState<number | null>(null);
 
   useEffect(() => {
     if (!savedCode) return;
-    getStanding(savedCode).then(setStanding).catch(() => {});
+    getStanding(savedCode)
+      .then((s) => {
+        if (s) {
+          setStanding(s);
+          events.waitlistView();
+        }
+      })
+      .catch(() => {});
   }, [savedCode]);
+
+  // Public counter — proof of momentum before the user signs up.
+  useEffect(() => {
+    getCount().then((n) => {
+      if (n > 0) setTotal(n);
+    });
+  }, []);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setBusy(true);
     try {
-      const result = await joinWaitlist(email, getRef());
+      const ref = getRef();
+      const result = await joinWaitlist(email, ref);
       rememberCode(result.code);
       setStanding(result);
+      setTotal(result.total);
+      events.waitlistJoin(!!ref);
     } catch {
       setError("Não foi possível concluir agora. Tente novamente.");
     } finally {
@@ -35,6 +54,7 @@ export function CtaBand() {
     try {
       await navigator.clipboard.writeText(shareUrl(standing.code));
       setCopied(true);
+      events.referralCopy();
       setTimeout(() => setCopied(false), 2000);
     } catch {
       setError("Copie o link manualmente.");
@@ -70,14 +90,30 @@ export function CtaBand() {
           </>
         ) : (
           <>
-            <p className="eyebrow eyebrow--center">Acesso antecipado</p>
+            <p className="eyebrow eyebrow--center">Membros fundadores</p>
             <h2 className="access__title">Entre para o Olimpo.</h2>
             <p className="access__sub">
-              Vagas limitadas para o lançamento do Pluto, previsto para janeiro de 2027.
-              Sem spam — apenas o convite.
+              Os primeiros da lista entram como fundadores, com condições especiais
+              no lançamento do Pluto, previsto para janeiro de 2027. Sem spam —
+              apenas o convite.
             </p>
 
+            {total !== null && (
+              <p className="access__counter mono">
+                {total.toLocaleString("pt-BR")} JÁ ESTÃO NA FILA
+              </p>
+            )}
+
             <form className="access__form" onSubmit={submit}>
+              {/* Honeypot — hidden from users, catches bots. */}
+              <input
+                type="text"
+                name="company_website"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+              />
               <input
                 type="email"
                 className="access__input"

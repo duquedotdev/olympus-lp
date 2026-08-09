@@ -15,8 +15,9 @@ export function Hero() {
           </h1>
 
           <p className="hero__sub">
-            Um panteão de agentes para a vida pessoal. Eles cuidam do dinheiro,
-            do tempo e da execução — para que você cuide do que só você pode.
+            Um agente especializado para cada domínio da vida — dinheiro, tempo
+            e vontade — sob um só comando. Você aprova a intenção; eles cuidam
+            da execução.
           </p>
 
           <div className="hero__actions">

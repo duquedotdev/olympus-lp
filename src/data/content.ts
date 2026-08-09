@@ -25,9 +25,9 @@ export const deities: Deity[] = [
     name: "Pluto",
     domain: "Riqueza",
     glyph: "I",
-    tagline: "Finanças pessoais agênticas.",
+    tagline: "Finanças agênticas — com você no comando.",
     description:
-      "Pluto lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação — sempre dentro dos limites que você define. Você aprova a intenção; ele cuida do resto.",
+      "Pluto lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação — sempre dentro dos limites que você define. Não é piloto automático: você aprova a intenção, ele cuida do resto.",
     platforms: "iOS · Android · macOS · Windows · Linux",
     status: "shipping",
     statusLabel: "PREVISTO",
@@ -40,7 +40,7 @@ export const deities: Deity[] = [
     glyph: "II",
     tagline: "Gestão de tempo agêntica.",
     description:
-      "Calendário, tarefas e projetos num só agente. Cronos negocia horários, reorganiza a semana e protege o que importa. O fim do trabalho de organizar o trabalho.",
+      "Substitui a pilha de apps que você usa para se organizar: calendário, tarefas e projetos num só agente. Cronos negocia horários, reorganiza a semana e protege o seu foco. O fim do trabalho de organizar o trabalho.",
     platforms: "iOS · Android · macOS · Windows · Linux",
     status: "arriving",
     statusLabel: "PREVISTO",

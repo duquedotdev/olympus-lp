@@ -6,6 +6,7 @@ import { Method } from "./components/Method.tsx";
 import { CtaBand } from "./components/CtaBand.tsx";
 import { Footer } from "./components/Footer.tsx";
 import { Privacy } from "./components/Privacy.tsx";
+import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal.ts";
 import { useHashRoute } from "./hooks/useHashRoute.ts";
 
@@ -19,6 +20,7 @@ export default function App() {
         <div className="grain" aria-hidden="true" />
         <Privacy />
         <Footer />
+        <Analytics />
       </>
     );
   }
@@ -35,6 +37,7 @@ export default function App() {
         <CtaBand />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }
