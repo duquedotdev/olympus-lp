@@ -103,11 +103,23 @@ export const faqs: FaqItem[] = [
     a: "O lançamento do Pluto está previsto para janeiro de 2027. A lista de espera está aberta — os primeiros da fila entram como membros fundadores, com condições especiais no lançamento.",
   },
   {
-    q: "Qual a diferença entre Olympkus e outros apps de finanças com IA?",
-    a: "A diferença central é a arquitetura: a Olympkus tem um agente especializado por domínio (dinheiro, tempo, vontade), orquestrados por um agente central (Zeus). Apps como Aizen ou Cleo fazem autonomia em um único domínio; a Olympkus propõe autonomia coordenada em toda a vida pessoal. Além disso, o modelo da Olympkus é 'você aprova, o agente executa' — controle, não apenas automação cega.",
+    q: "Qual a diferença entre Olympkus e assistentes de IA como ChatGPT?",
+    a: "O ChatGPT e outros assistentes genéricos respondem perguntas sobre qualquer assunto, mas não conhecem profundamente suas contas, seu calendário ou suas prioridades — você precisa explicar tudo, toda vez. A Olympkus tem um agente especializado por domínio: Pluto conhece suas finanças em profundidade, Cronos conhece seu tempo. Cada agente é excelente no que faz, e Zeus orquestra tudo sob um só comando.",
+  },
+  {
+    q: "Qual a diferença entre Olympkus e apps de finanças com IA?",
+    a: "Apps como Aizen e Cleo fazem autonomia em um único domínio (dinheiro). A Olympkus propõe autonomia coordenada em toda a vida pessoal — finanças, tempo e orquestração — com um agente especializado por domínio. Além disso, o modelo da Olympkus é 'você aprova, o agente executa': controle, não apenas automação cega. É o oposto explícito de produtos que executam sem sua permissão.",
+  },
+  {
+    q: "O que significa 'você aprova, o agente executa'?",
+    a: "Significa que nenhum agente da Olympkus executa uma ação significativa sem a sua aprovação. Você define os limites — quais categorias de ação o agente pode fazer sozinho, quais precisam de permissão — e o agente age dentro desses limites. Não é piloto automático: é delegação com controle. Você pode ver e revogar qualquer permissão a qualquer momento.",
   },
   {
     q: "A Olympkus AI é brasileira?",
     a: "Sim. A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para o mercado brasileiro, com suporte a português e foco no ecossistema financeiro nacional.",
+  },
+  {
+    q: "Meus dados estão seguros com a Olympkus?",
+    a: "Seus dados vivem sob seu controle, com criptografia forte e transparência sobre cada ação tomada. Você vê o que o agente fez e pode revogar permissões quando quiser. A Olympkus não vende seus dados — a receita vem da assinatura, não da sua informação.",
   },
 ];

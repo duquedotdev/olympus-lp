@@ -90,8 +90,8 @@ export function CtaBand() {
           </>
         ) : (
           <>
-            <p className="eyebrow eyebrow--center">Membros fundadores</p>
-            <h2 className="access__title">Entre para o Olimpo.</h2>
+            <p className="eyebrow eyebrow--center">Convite ao Olimpo</p>
+            <h2 className="access__title">Entre para a lista.</h2>
             <p className="access__sub">
               Os primeiros da lista entram como fundadores, com condições especiais
               no lançamento do Pluto, previsto para janeiro de 2027. Sem spam —

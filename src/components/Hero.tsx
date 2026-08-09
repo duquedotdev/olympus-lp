@@ -9,15 +9,15 @@ export function Hero() {
           </p>
 
           <h1 className="hero__title">
-            <span className="reveal-line"><span>Devolvemos o seu</span></span>
-            <span className="reveal-line"><span>recurso mais escasso:</span></span>
-            <span className="reveal-line"><em>atenção.</em></span>
+            <span className="reveal-line"><span>Um panteão de agentes</span></span>
+            <span className="reveal-line"><span>de IA — um por domínio,</span></span>
+            <span className="reveal-line"><em>sob um só comando.</em></span>
           </h1>
 
           <p className="hero__sub">
-            Um agente especializado para cada domínio da vida — dinheiro, tempo
-            e vontade — sob um só comando. Você aprova a intenção; eles cuidam
-            da execução.
+            Pluto cuida do seu dinheiro. Cronos do seu tempo. Zeus orquestra
+            tudo. Você aprova a intenção; eles cuidam da execução. Devolvemos
+            o seu recurso mais escasso — atenção.
           </p>
 
           <div className="hero__actions">

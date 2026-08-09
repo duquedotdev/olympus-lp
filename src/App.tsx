@@ -1,6 +1,7 @@
 import { Header } from "./components/Header.tsx";
 import { Hero } from "./components/Hero.tsx";
 import { Manifesto } from "./components/Manifesto.tsx";
+import { WhyPantheon } from "./components/WhyPantheon.tsx";
 import { Pantheon } from "./components/Pantheon.tsx";
 import { Method } from "./components/Method.tsx";
 import { Faq } from "./components/Faq.tsx";
@@ -33,6 +34,7 @@ export default function App() {
       <main>
         <Hero />
         <Manifesto />
+        <WhyPantheon />
         <Pantheon />
         <Method />
         <Faq />
