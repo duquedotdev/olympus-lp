@@ -27,10 +27,10 @@ export const deities: Deity[] = [
     glyph: "I",
     tagline: "Finanças pessoais agênticas.",
     description:
-      "Pluto lê suas contas, antecipa faturas e move seu dinheiro sozinho — dentro dos limites que você define. Você aprova a intenção; ele cuida da execução.",
+      "Pluto lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação — sempre dentro dos limites que você define. Você aprova a intenção; ele cuida do resto.",
     platforms: "iOS · Android · macOS · Windows · Linux",
     status: "shipping",
-    statusLabel: "SHIPPING",
+    statusLabel: "PREVISTO",
     eta: "JAN 2027",
   },
   {
@@ -43,7 +43,7 @@ export const deities: Deity[] = [
       "Calendário, tarefas e projetos num só agente. Cronos negocia horários, reorganiza a semana e protege o que importa. O fim do trabalho de organizar o trabalho.",
     platforms: "iOS · Android · macOS · Windows · Linux",
     status: "arriving",
-    statusLabel: "ARRIVING",
+    statusLabel: "PREVISTO",
     eta: "JUL 2027",
   },
   {
@@ -56,7 +56,7 @@ export const deities: Deity[] = [
       "Zeus orquestra a sua vida inteira: delega ao Pluto, ao Cronos e ao mundo lá fora. Um único comando, executado através de tudo. Recém-anunciado.",
     platforms: "A definir",
     status: "announced",
-    statusLabel: "ANNOUNCED",
+    statusLabel: "ANUNCIADO",
     eta: "EM BREVE",
   },
 ];
@@ -75,6 +75,6 @@ export const principles = [
   {
     k: "03",
     title: "Tudo permanece seu",
-    body: "Seus dados vivem sob seu controle. Criptografia de ponta a ponta e transparência total sobre cada ação tomada.",
+    body: "Seus dados vivem sob seu controle, com criptografia forte e transparência sobre cada ação tomada. Você vê — e revoga — o que quiser, quando quiser.",
   },
 ];

@@ -20,6 +20,10 @@ export function Pantheon() {
           <Exhibit key={d.id} deity={d} index={i} />
         ))}
       </div>
+
+      <p className="pantheon__note mono" data-reveal>
+        Datas previstas e sujeitas a alteração.
+      </p>
     </section>
   );
 }

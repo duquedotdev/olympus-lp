@@ -240,9 +240,18 @@ main { position: relative; z-index: 2; }
 .exhibit__foot { margin-top: auto; padding-top: 1.8rem; }
 .exhibit__platforms { font-size: 0.66rem; letter-spacing: 0.08em; color: var(--stone-dim); }
 
+.pantheon__note {
+  margin-top: 1.4rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--stone-dim);
+  text-align: right;
+}
+
 @media (max-width: 860px) {
   .pantheon__grid { grid-template-columns: 1fr; }
   .exhibit { min-height: 0; }
+  .pantheon__note { text-align: left; }
 }
 
 /* ============ METHOD ============ */
@@ -320,6 +329,15 @@ main { position: relative; z-index: 2; }
 .access__input::placeholder { color: var(--stone-dim); }
 .access__input:focus { outline: none; border-color: var(--bronze); }
 .access__done { margin-top: 2.4rem; color: var(--bronze-soft); font-size: 0.85rem; letter-spacing: 0.14em; }
+.access__consent {
+  margin: 1.1rem auto 0;
+  max-width: 46ch;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--stone-dim);
+}
+.access__consent a { color: var(--stone); text-decoration: underline; text-underline-offset: 2px; transition: color 0.3s; }
+.access__consent a:hover { color: var(--bronze-soft); }
 
 @media (max-width: 520px) {
   .access__form { flex-direction: column; }

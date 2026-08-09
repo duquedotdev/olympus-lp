@@ -16,7 +16,7 @@ export function CtaBand() {
         <p className="eyebrow eyebrow--center">Acesso antecipado</p>
         <h2 className="access__title">Entre para o Olimpo.</h2>
         <p className="access__sub">
-          Vagas limitadas para o lançamento do Pluto em janeiro de 2027.
+          Vagas limitadas para o lançamento do Pluto, previsto para janeiro de 2027.
           Sem spam — apenas o convite.
         </p>
 
@@ -37,6 +37,14 @@ export function CtaBand() {
             />
             <button type="submit" className="btn btn--solid">Solicitar convite</button>
           </form>
+        )}
+
+        {!done && (
+          <p className="access__consent">
+            Ao entrar na lista, você concorda em receber e-mails da Olympkus AI sobre
+            o lançamento e pode cancelar quando quiser. Tratamos seus dados conforme a
+            LGPD — veja a <a href="#privacidade">Política de Privacidade</a>.
+          </p>
         )}
       </div>
     </section>
