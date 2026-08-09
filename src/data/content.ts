@@ -17,6 +17,7 @@ export const nav = [
   { label: "Panteão", href: "#pantheon" },
   { label: "Manifesto", href: "#manifesto" },
   { label: "Método", href: "#method" },
+  { label: "Blog", href: "#blog" },
   { label: "Perguntas", href: "#faq" },
 ];
 

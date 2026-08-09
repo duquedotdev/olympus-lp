@@ -8,6 +8,8 @@ import { Faq } from "./components/Faq.tsx";
 import { CtaBand } from "./components/CtaBand.tsx";
 import { Footer } from "./components/Footer.tsx";
 import { Privacy } from "./components/Privacy.tsx";
+import { BlogList } from "./components/BlogList.tsx";
+import { BlogPost } from "./components/BlogPost.tsx";
 import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal.ts";
 import { useHashRoute } from "./hooks/useHashRoute.ts";
@@ -21,6 +23,35 @@ export default function App() {
       <>
         <div className="grain" aria-hidden="true" />
         <Privacy />
+        <Footer />
+        <Analytics />
+      </>
+    );
+  }
+
+  if (route === "blog") {
+    return (
+      <>
+        <div className="grain" aria-hidden="true" />
+        <Header />
+        <main>
+          <BlogList />
+        </main>
+        <Footer />
+        <Analytics />
+      </>
+    );
+  }
+
+  if (route.startsWith("blog/")) {
+    const slug = route.slice("blog/".length);
+    return (
+      <>
+        <div className="grain" aria-hidden="true" />
+        <Header />
+        <main>
+          <BlogPost slug={slug} />
+        </main>
         <Footer />
         <Analytics />
       </>
