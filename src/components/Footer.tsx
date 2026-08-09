@@ -22,6 +22,7 @@ export function Footer() {
           <a href="#manifesto">Manifesto</a>
           <a href="#method">Método</a>
           <a href="#access">Acesso antecipado</a>
+          <a href="#privacidade">Privacidade</a>
         </nav>
       </div>
 

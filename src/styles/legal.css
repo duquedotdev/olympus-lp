@@ -1,0 +1,85 @@
+.legal {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.legal__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+.legal__back {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--stone);
+  transition: color 0.3s;
+}
+.legal__back:hover { color: var(--bronze-soft); }
+
+.legal__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin-top: 0.9rem;
+}
+.legal__meta { font-size: 0.68rem; letter-spacing: 0.18em; color: var(--stone-dim); margin-top: 1rem; }
+.legal__lead {
+  margin-top: 2rem;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--marble-dim);
+}
+
+.legal__section { margin-top: 2.6rem; }
+.legal__section h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+  color: var(--marble);
+  margin-bottom: 0.9rem;
+}
+.legal__section p { color: var(--stone); line-height: 1.75; margin-bottom: 0.9rem; }
+.legal__section ul {
+  color: var(--stone);
+  line-height: 1.7;
+  padding-left: 1.1rem;
+  margin-bottom: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.legal__section li { padding-left: 0.3rem; }
+.legal__section li::marker { color: var(--bronze); }
+.legal__section strong { color: var(--marble-dim); font-weight: 600; }
+.legal__section a {
+  color: var(--bronze-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal__section a:hover { color: var(--marble); }
+
+.legal .fill {
+  color: var(--stone-dim);
+  font-style: italic;
+  background: var(--raised);
+  padding: 0 0.35em;
+  border-radius: 4px;
+}
+
+.legal__foot {
+  margin-top: 3.5rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--stone-dim);
+}
