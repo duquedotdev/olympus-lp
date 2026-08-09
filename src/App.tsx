@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero.tsx";
 import { Manifesto } from "./components/Manifesto.tsx";
 import { Pantheon } from "./components/Pantheon.tsx";
 import { Method } from "./components/Method.tsx";
+import { Faq } from "./components/Faq.tsx";
 import { CtaBand } from "./components/CtaBand.tsx";
 import { Footer } from "./components/Footer.tsx";
 import { Privacy } from "./components/Privacy.tsx";
@@ -34,6 +35,7 @@ export default function App() {
         <Manifesto />
         <Pantheon />
         <Method />
+        <Faq />
         <CtaBand />
       </main>
       <Footer />

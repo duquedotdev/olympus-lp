@@ -1,0 +1,53 @@
+# Olympkus AI
+
+> Suíte brasileira de agentes de IA (inteligência artificial agêntica) para a vida pessoal. Um agente especializado por domínio — finanças, tempo e orquestração — sob um só comando.
+
+## O que é
+
+A Olympkus AI constrói uma suíte de agentes de IA chamada Panteão. Cada agente é especializado em um domínio da vida pessoal e opera com a aprovação do usuário — não é automação cega, é delegação com controle. A empresa é brasileira, com lançamento previsto para janeiro de 2027.
+
+## Produtos
+
+### Pluto — Agente de finanças pessoais com IA
+- Lê contas, antecipa faturas e prepara pagamentos e transferências para aprovação do usuário
+- O usuário define os limites e aprova cada intenção — o agente executa
+- Plataformas: iOS, Android, macOS, Windows, Linux
+- Status: lista de espera aberta, lançamento previsto para janeiro de 2027
+- Categoria: IA agêntica para finanças pessoais, automação financeira, fintech com IA
+
+### Cronos — Agente de gestão de tempo e tarefas com IA
+- Substitui calendário, tarefas e projetos num só agente
+- Negocia horários, reorganiza a semana e protege o foco
+- Plataformas: iOS, Android, macOS, Windows, Linux
+- Status: lançamento previsto para julho de 2027
+- Categoria: IA agêntica para produtividade, gestão de tempo com IA, agente de produtividade
+
+### Zeus — Agente orquestrador de IA
+- Delega ao Pluto e ao Cronos e executa comandos através de múltiplos serviços
+- Um único comando, executado através de tudo
+- Status: anunciado, em desenvolvimento
+- Categoria: orquestração de agentes de IA, agente pessoal generalista
+
+## Diferencial competitivo
+
+A diferença central da Olympkus não é "agente que move seu dinheiro" — isso concorrentes como Aizen e Cleo já fazem. É "um agente por domínio, sob um só comando". A autonomia isolada está sendo comoditizada; a orquestração de agentes especializados é o que nenhum concorrente oferece.
+
+O modelo da Olympkus é "você aprova, o agente executa" — controle, não apenas automação. Isso é o oposto explícito de produtos como Cleo Autopilot, para o usuário que quer delegar sem perder o controle.
+
+## Modelo de negócio
+
+- Pluto: camada gratuita (somente leitura / visão de gastos) + camada paga (execução autônoma)
+- Cronos: camada gratuita limitada + camada paga com agendamento autônomo completo
+- Zeus: incluído como benefício de retenção para assinantes do bundle
+- Bundle Panteão: desconto para quem assina 2+ produtos
+
+## Lista de espera
+
+A lista de espera está aberta em https://olympkusai.com. Os primeiros da fila entram como membros fundadores, com condições especiais no lançamento. Cada indicação sobe a posição na fila.
+
+## Links
+
+- Site: https://olympkusai.com
+- API: https://api.olympkusai.com
+- Política de privacidade: https://olympkusai.com/#privacidade
+- Sitemap: https://olympkusai.com/sitemap.xml

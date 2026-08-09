@@ -17,6 +17,7 @@ export const nav = [
   { label: "Panteão", href: "#pantheon" },
   { label: "Manifesto", href: "#manifesto" },
   { label: "Método", href: "#method" },
+  { label: "Perguntas", href: "#faq" },
 ];
 
 export const deities: Deity[] = [
@@ -76,5 +77,37 @@ export const principles = [
     k: "03",
     title: "Tudo permanece seu",
     body: "Seus dados vivem sob seu controle, com criptografia forte e transparência sobre cada ação tomada. Você vê — e revoga — o que quiser, quando quiser.",
+  },
+];
+
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
+export const faqs: FaqItem[] = [
+  {
+    q: "O que é a Olympkus AI?",
+    a: "A Olympkus AI é uma empresa brasileira que constrói uma suíte de agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Cronos (tempo e tarefas) e Zeus (orquestração). O diferencial é ter um agente por domínio, orquestrados por um comando único — em vez de um assistente genérico.",
+  },
+  {
+    q: "O que é IA agêntica?",
+    a: "IA agêntica é inteligência artificial que age por você, não apenas responde perguntas. Em vez de um chatbot que você precisa operar, um agente executa tarefas dentro de limites que você define: você aprova a intenção, o agente cuida da execução. A Olympkus aplica esse conceito a finanças pessoais, gestão de tempo e orquestração da vida pessoal.",
+  },
+  {
+    q: "O que é o Pluto da Olympkus?",
+    a: "Pluto é o agente de finanças pessoais da Olympkus AI. Ele lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação. Você define os limites e aprova cada intenção — não é piloto automático, é delegação com controle. Lançamento previsto para janeiro de 2027.",
+  },
+  {
+    q: "Quando o Pluto vai lançar?",
+    a: "O lançamento do Pluto está previsto para janeiro de 2027. A lista de espera está aberta — os primeiros da fila entram como membros fundadores, com condições especiais no lançamento.",
+  },
+  {
+    q: "Qual a diferença entre Olympkus e outros apps de finanças com IA?",
+    a: "A diferença central é a arquitetura: a Olympkus tem um agente especializado por domínio (dinheiro, tempo, vontade), orquestrados por um agente central (Zeus). Apps como Aizen ou Cleo fazem autonomia em um único domínio; a Olympkus propõe autonomia coordenada em toda a vida pessoal. Além disso, o modelo da Olympkus é 'você aprova, o agente executa' — controle, não apenas automação cega.",
+  },
+  {
+    q: "A Olympkus AI é brasileira?",
+    a: "Sim. A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para o mercado brasileiro, com suporte a português e foco no ecossistema financeiro nacional.",
   },
 ];
