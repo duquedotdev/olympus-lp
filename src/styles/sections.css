@@ -339,6 +339,37 @@ main { position: relative; z-index: 2; }
 .access__consent a { color: var(--stone); text-decoration: underline; text-underline-offset: 2px; transition: color 0.3s; }
 .access__consent a:hover { color: var(--bronze-soft); }
 
+.access__pos { color: var(--bronze-soft); font-style: italic; }
+.access__error { margin-top: 1rem; color: #d98a7a; font-size: 0.82rem; }
+
+.share {
+  display: flex;
+  gap: 0.6rem;
+  align-items: stretch;
+  max-width: 520px;
+  margin: 2rem auto 0;
+}
+.share__link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.2rem;
+  background: var(--raised);
+  border: 1px solid var(--line-strong);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  color: var(--marble-dim);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.share .btn { white-space: nowrap; }
+
+@media (max-width: 520px) {
+  .share { flex-direction: column; }
+  .share .btn { width: 100%; }
+}
+
 @media (max-width: 520px) {
   .access__form { flex-direction: column; }
   .access__form .btn { width: 100%; }
