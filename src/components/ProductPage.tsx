@@ -49,6 +49,7 @@ const productDetails: Record<string, {
           { icon: "⬌", title: "5 idiomas", body: "Português, inglês, espanhol, francês e chinês. O app inteiro traduzido — não só o menu, todas as telas." },
           { icon: "◐", title: "Notificações push", body: "Lembretes de recorrência e vencimento de parcelas. Notificações no celular e no desktop." },
           { icon: "◑", title: "Temas e acessibilidade", body: "Modo claro e escuro, cor de destaque personalizável e configurações de acessibilidade. O app se adapta a você." },
+          { icon: "⚿", title: "Segurança e auditoria", body: "Login com Google, tokens em secure storage criptografado e tela de auditoria que registra cada ação tomada no app. Você vê o histórico de tudo." },
         ],
       },
     ],
