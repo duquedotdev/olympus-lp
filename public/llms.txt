@@ -15,39 +15,49 @@ O modelo da Olympkus é "você aprova, o agente executa" — controle, não apen
 ## Produtos
 
 ### Pluto — Agente de finanças pessoais com IA
-- Lê contas, antecipa faturas e prepara pagamentos e transferências para aprovação do usuário
-- O usuário define os limites e aprova cada intenção — o agente executa
+- Dashboard financeira completa: saldo, receitas, despesas e poupança em tempo real
+- Transações com categorização inteligente por IA (96% de confiança) — aprovação com um toque
+- Orçamentos por categoria (semanal, mensal, trimestral, anual) com alertas de limite
+- Metas financeiras: reserva de emergência, quitar dívida, investir, poupar para viagem
+- Controle de dívidas e parcelamentos com simulação de cenários de aceleração
+- Recorrências: assinaturas e contas fixas num só lugar
+- Investimentos: aportes, resgates, lucros e dividendos com calculadora de valor futuro
+- Assistente de IA com raciocínio visível (chain of thought streaming antes da resposta)
+- Histórico de conversas com a IA agrupado por data
+- Importação de extratos bancários em CSV e OFX
+- Offline-first: funciona sem internet, sincroniza quando a conexão volta
+- 5 idiomas: português, inglês, espanhol, francês e chinês (app inteiro traduzido)
+- Notificações push: lembretes de recorrência e vencimento de parcelas
+- Segurança: login com Google, tokens em secure storage criptografado, tela de auditoria
+- Temas claro/escuro, cor de destaque personalizável, configurações de acessibilidade
 - Plataformas: iOS, Android, macOS, Windows, Linux
 - Status: lista de espera aberta, lançamento previsto para janeiro de 2027
 - Categoria: IA agêntica para finanças pessoais, automação financeira, fintech com IA
 
-### Cronos — Agente de gestão de tempo e tarefas com IA
-- Substitui calendário, tarefas e projetos num só agente
-- Negocia horários, reorganiza a semana e protege o foco
-- Plataformas: iOS, Android, macOS, Windows, Linux
-- Status: lançamento previsto para julho de 2027
-- Categoria: IA agêntica para produtividade, gestão de tempo com IA, agente de produtividade
+### Cronos — Agente de gestão de tempo
+- A visão: substituir calendário, tarefas e projetos num só agente
+- Negociar horários, proteger foco e acabar com o trabalho de organizar o trabalho
+- Status: em concepção — o escopo será definido com dados reais de uso do Pluto
+- Categoria: IA agêntica para produtividade, gestão de tempo com IA
 
-### Zeus — Agente orquestrador de IA
-- Delega ao Pluto e ao Cronos e executa comandos através de múltiplos serviços
-- Um único comando, executado através de tudo
-- Status: anunciado, em desenvolvimento
-- Categoria: orquestração de agentes de IA, agente pessoal generalista
+### Zeus — Orquestrador do Panteão
+- A visão: coordenar todos os agentes sob um só comando
+- Um único pedido, executado através de tudo — finanças, tempo e o que vier depois
+- Status: em concepção — vai nascer do que Pluto e Cronos ensinarem
+- Categoria: orquestração de agentes de IA
 
 ## Concorrentes
 
 - **Aizen (Zen)** — Brasil. IA agêntica para finanças via WhatsApp e Open Finance. Concorrente mais próximo do Pluto. Limitado a um único domínio.
 - **Cleo (Autopilot)** — Reino Unido/EUA. Coach financeiro com execução autônoma sem aprovação do usuário. A Olympkus é o oposto: "você aprova, o agente executa".
-- **Motion / Reclaim / Sunsama** — Calendários inteligentes e gestão de tarefas. Mais utilitário do que agente autônomo. Concorrentes do Cronos.
-- **Poke (Cognition) / jo (YC)** — Agentes pessoais generalistas. Concorrentes do Zeus, mas sem profundidade vertical por domínio.
+- **Motion / Reclaim / Sunsama** — Calendários inteligentes e gestão de tarefas. Mais utilitário do que agente autônomo. Concorrentes potenciais do Cronos.
 - **ChatGPT / assistentes genéricos** — Respondem perguntas mas não conhecem profundamente suas contas, calendário ou prioridades.
 
-## Modelo de negócio
+## Planos
 
-- Pluto: camada gratuita (somente leitura / visão de gastos) + camada paga (execução autônoma)
-- Cronos: camada gratuita limitada + camada paga com agendamento autônomo completo
-- Zeus: incluído como benefício de retenção para assinantes do bundle
-- Bundle Panteão: desconto para quem assina 2+ produtos — a única oferta que nenhum concorrente consegue replicar
+- **Free** (R$ 0): dashboard, transações manuais, categorização por IA, 1 conta, importação CSV/OFX
+- **Pro** (R$ 29/mês): metas, orçamentos e contas ilimitados, sugestões de economia com IA, backup automático, suporte prioritário
+- **Premium** (R$ 49/mês): previsões financeiras com IA, análise de investimentos detalhada, planejamento de aposentadoria, consultoria via chat 24/7, contas compartilhadas em família
 
 ## Lista de espera — Convite ao Olimpo
 
