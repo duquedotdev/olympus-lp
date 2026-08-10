@@ -2,9 +2,10 @@ import type { Deity } from "../data/content.ts";
 
 export function Exhibit({ deity, index }: { deity: Deity; index: number }) {
   return (
-    <article
+    <a
       className={`exhibit exhibit--${deity.status}`}
       id={deity.id}
+      href={`#${deity.id}`}
       data-reveal
       style={{ transitionDelay: `${index * 90}ms` }}
     >
@@ -22,7 +23,8 @@ export function Exhibit({ deity, index }: { deity: Deity; index: number }) {
 
       <footer className="exhibit__foot">
         <span className="exhibit__platforms mono">{deity.platforms}</span>
+        <span className="exhibit__more mono">EXPLORAR →</span>
       </footer>
-    </article>
+    </a>
   );
 }

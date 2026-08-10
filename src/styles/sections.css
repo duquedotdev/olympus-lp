@@ -308,8 +308,10 @@ main { position: relative; z-index: 2; }
 }
 .exhibit__tagline { color: var(--marble-dim); margin-top: 0.8rem; font-size: 1.02rem; }
 .exhibit__desc { color: var(--stone); margin-top: 1rem; font-size: 0.95rem; line-height: 1.65; }
-.exhibit__foot { margin-top: auto; padding-top: 1.8rem; }
+.exhibit__foot { margin-top: auto; padding-top: 1.8rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
 .exhibit__platforms { font-size: 0.66rem; letter-spacing: 0.08em; color: var(--stone-dim); }
+.exhibit__more { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--bronze-soft); opacity: 0; transition: opacity 0.4s; }
+.exhibit:hover .exhibit__more { opacity: 1; }
 
 .pantheon__note {
   margin-top: 1.4rem;

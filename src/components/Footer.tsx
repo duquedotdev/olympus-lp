@@ -1,5 +1,4 @@
 import { Logo } from "./Logo.tsx";
-import { deities } from "../data/content.ts";
 
 export function Footer() {
   return (
@@ -12,13 +11,15 @@ export function Footer() {
 
         <nav className="site-footer__col" aria-label="Produtos">
           <p className="site-footer__h mono">PRODUTOS</p>
-          {deities.map((d) => (
-            <a key={d.id} href={`#${d.id}`}>{d.name}</a>
-          ))}
+          <a href="#pluto">Pluto</a>
+          <a href="#cronos">Cronos</a>
+          <a href="#zeus">Zeus</a>
+          <a href="#panteao">Panteão</a>
         </nav>
 
         <nav className="site-footer__col" aria-label="Empresa">
           <p className="site-footer__h mono">OLYMPKUS</p>
+          <a href="#sobre">Sobre</a>
           <a href="#manifesto">Manifesto</a>
           <a href="#method">Método</a>
           <a href="#blog">Blog</a>
@@ -30,6 +31,7 @@ export function Footer() {
           <a href="#faq">Perguntas</a>
           <a href="#access">Acesso antecipado</a>
           <a href="#privacidade">Privacidade</a>
+          <a href="#termos">Termos</a>
           <a href="https://discord.gg/Y5GxgEY8Zt" target="_blank" rel="noopener noreferrer">Discord</a>
         </nav>
 
@@ -38,7 +40,6 @@ export function Footer() {
           <a href="https://linkedin.com/company/olympkusai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://instagram.com/olympkus" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://tiktok.com/@olympkus" target="_blank" rel="noopener noreferrer">TikTok</a>
-          <a href="https://discord.gg/Y5GxgEY8Zt" target="_blank" rel="noopener noreferrer">Discord</a>
         </nav>
       </div>
 
