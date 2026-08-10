@@ -30,7 +30,7 @@ export const deities: Deity[] = [
     glyph: "I",
     tagline: "Finanças agênticas — com você no comando.",
     description:
-      "Pluto lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação — sempre dentro dos limites que você define. Não é piloto automático: você aprova a intenção, ele cuida do resto.",
+      "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações com categorização por IA, orçamentos, metas, dívidas, investimentos, importação de extratos e um assistente de IA que raciocina. Offline-first, 5 idiomas, no celular e no desktop.",
     platforms: "iOS · Android · macOS · Windows · Linux",
     status: "shipping",
     statusLabel: "PREVISTO",

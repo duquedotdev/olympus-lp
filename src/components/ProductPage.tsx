@@ -2,36 +2,150 @@ import { useEffect } from "react";
 import { deities } from "../data/content.ts";
 import { CtaBand } from "./CtaBand.tsx";
 
+type Feature = { title: string; body: string; icon: string };
+type FeatureGroup = { label: string; features: Feature[] };
+type Plan = { name: string; price: string; period: string; description: string; features: string[]; highlight?: boolean };
+
 const productDetails: Record<string, {
   hero: string;
-  features: { title: string; body: string }[];
-  pricing: string;
+  featureGroups: FeatureGroup[];
+  plans: Plan[];
   faq: { q: string; a: string }[];
 }> = {
   pluto: {
-    hero: "Pluto é o agente de finanças pessoais da Olympkus. Ele lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação — sempre dentro dos limites que você define.",
-    features: [
-      { title: "Visão consolidada", body: "Pluto conecta às suas contas via Open Finance e mostra tudo num só lugar — gastos, receitas, faturas próximas e saldo real." },
-      { title: "Aprovação, não automação cega", body: "Cada pagamento ou transferência passa pela sua aprovação. Você define quais categorias o agente pode executar sozinho e quais precisam de permissão." },
-      { title: "Antecipação inteligente", body: "Pluto identifica faturas que vão vencer, contas duplicadas e oportunidades de economizar — e te avisa antes, não depois." },
-      { title: "Criptografia ponta a ponta", body: "Seus dados financeiros são criptografados em trânsito e em repouso. A Olympkus não vê suas credenciais bancárias — a conexão acontece via infraestrutura certificada do Open Finance." },
+    hero: "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações inteligentes com categorização por IA, orçamentos, metas, dívidas, investimentos e um assistente de IA que raciocina — tudo num só app, no celular e no desktop.",
+    featureGroups: [
+      {
+        label: "Visão geral",
+        features: [
+          { icon: "◎", title: "Dashboard financeira", body: "Saldo, receitas, despesas e poupança num só lugar. Cards de balanço, saúde financeira, gastos por categoria e faturas próximas — atualizados em tempo real." },
+          { icon: "◉", title: "Gráficos interativos", body: "Donut de gastos por categoria, sparklines de fluxo semanal, barras de comparação mensal e medidor de saúde financeira (sun gauge)." },
+          { icon: "◈", title: "Multi-conta", body: "Cadastre todas as suas contas — banco, carteira, investimento. Arquive as que não usa mais. Veja transações por conta ou consolidadas." },
+        ],
+      },
+      {
+        label: "Inteligência",
+        features: [
+          { icon: "✦", title: "Assistente de IA com raciocínio", body: "Chat streaming que mostra o raciocínio passo a passo antes de responder. Markdown renderizado, anexo de arquivos, histórico de conversas agrupado por data. Sugestões prontas: analisar gastos, orçamento, metas e dicas." },
+          { icon: "✧", title: "Categorização inteligente", body: "Pluto sugere a categoria correta para cada transação com 96% de confiança. Você aprova com um toque — não precisa categorizar tudo manualmente." },
+          { icon: "★", title: "Insights e quick wins", body: "Auditoria de assinaturas, caminho para quitar dívidas, projeção de metas e oportunidades de economia — gerados automaticamente a partir dos seus dados." },
+        ],
+      },
+      {
+        label: "Controle",
+        features: [
+          { icon: "▣", title: "Orçamentos por categoria", body: "Crie orçamentos semanais, mensais, trimestrais ou anuais por categoria. Acompanhe quanto já gastou e receba alertas ao se aproximar do limite." },
+          { icon: "◆", title: "Metas financeiras", body: "Reserva de emergência, quitar dívida, investir, poupar para uma viagem. Acompanhe progresso, contribuições e projeção de quando vai chegar lá." },
+          { icon: "▼", title: "Dívidas e parcelamentos", body: "Acompanhe dívidas ativas e quitadas, simule cenários de aceleração de pagamento e veja quanto economiza antecipando parcelas. Controle parcelamentos com vencimento agrupado." },
+          { icon: "◐", title: "Recorrências", body: "Assinaturas e contas fixas num só lugar. Veja quanto gasta por mês com recorrências e identifique assinaturas esquecidas." },
+          { icon: "▲", title: "Investimentos", body: "Aportes, resgates, lucros e dividendos. Calculadora de valor futuro com juros compostos para projetar o crescimento da carteira." },
+        ],
+      },
+      {
+        label: "Plataforma",
+        features: [
+          { icon: "⬆", title: "Importação de extratos", body: "Importe extratos bancários em CSV ou OFX. Pluto lê o arquivo, categoriza as transações e importa tudo — sem digitar linha por linha." },
+          { icon: "⬇", title: "Offline-first", body: "Funciona sem internet. Suas ações vão para uma fila e sincronizam automaticamente quando a conexão volta. Banner de status sempre visível." },
+          { icon: "⬌", title: "5 idiomas", body: "Português, inglês, espanhol, francês e chinês. O app inteiro traduzido — não só o menu, todas as telas." },
+          { icon: "◐", title: "Notificações push", body: "Lembretes de recorrência e vencimento de parcelas. Notificações no celular e no desktop." },
+          { icon: "◑", title: "Temas e acessibilidade", body: "Modo claro e escuro, cor de destaque personalizável e configurações de acessibilidade. O app se adapta a você." },
+        ],
+      },
     ],
-    pricing: "Camada gratuita com visão de gastos (somente leitura). Camada paga com execução autônoma — prepara pagamentos e transferências para sua aprovação. Preço exato anunciado no lançamento.",
+    plans: [
+      {
+        name: "Free",
+        price: "R$ 0",
+        period: "",
+        description: "Para começar a organizar suas finanças",
+        features: [
+          "Dashboard financeira completa",
+          "Transações manuais",
+          "Categorização inteligente",
+          "1 conta bancária",
+          "Importação de extratos (CSV/OFX)",
+        ],
+      },
+      {
+        name: "Pro",
+        price: "R$ 29",
+        period: "/mês",
+        description: "Para quem quer mais controle",
+        features: [
+          "Tudo do Free, mais:",
+          "Análise avançada de gastos",
+          "Metas e objetivos ilimitados",
+          "Orçamentos ilimitados",
+          "Sugestões de economia com IA",
+          "Contas ilimitadas",
+          "Backup automático",
+          "Suporte prioritário",
+        ],
+        highlight: true,
+      },
+      {
+        name: "Premium",
+        price: "R$ 49",
+        period: "/mês",
+        description: "Máximo controle e insights",
+        features: [
+          "Tudo do Pro, mais:",
+          "Previsões financeiras com IA",
+          "Análise de investimentos detalhada",
+          "Planejamento de aposentadoria",
+          "Consultoria financeira via chat 24/7",
+          "Contas compartilhadas em família",
+          "Ofertas exclusivas de parceiros",
+          "Suporte VIP",
+        ],
+      },
+    ],
     faq: [
-      { q: "Pluto move meu dinheiro sozinho?", a: "Não. Pluto prepara a ação e pede sua aprovação. Você define os limites — quais categorias o agente pode fazer sozinho, quais precisam de permissão. É delegação com controle, não piloto automático." },
-      { q: "Pluto funciona com meu banco?", a: "Pluto se conecta via Open Finance, o padrão regulamentado pelo Banco Central. Bancos brasileiros que aderiram ao Open Finance são compatíveis. A lista completa será publicada no lançamento." },
-      { q: "Preciso dar minha senha do banco?", a: "Não. A conexão acontece via infraestrutura certificada do Open Finance — a Olympkus nunca vê nem armazena suas credenciais bancárias." },
+      { q: "Pluto move meu dinheiro sozinho?", a: "Não. Pluto é um agente de finanças que organiza, categoriza e analisa — mas não executa transferências ou pagamentos sem sua ação. Você aprova cada intenção. É delegação com controle, não piloto automático." },
+      { q: "Pluto funciona com meu banco?", a: "Pluto importa extratos bancários em CSV e OFX — formatos suportados por todos os bancos brasileiros. A integração direta via Open Finance está no roadmap. A lista completa de bancos será publicada no lançamento." },
+      { q: "Preciso dar minha senha do banco?", a: "Não. Você importa o extrato que seu banco gera, ou lança transações manualmente. A Olympkus nunca pede nem armazena suas credenciais bancárias." },
+      { q: "O assistente de IA realmente raciocina?", a: "Sim. O chat mostra o raciocínio passo a passo antes de responder — cada etapa do chain of thought é exibida com o ícone do nó que a gerou. Você vê como o Pluto chegou à conclusão, não só a resposta." },
+      { q: "Pluto funciona offline?", a: "Sim. O app mobile é offline-first: suas ações vão para uma fila local e sincronizam automaticamente quando a conexão volta. Um banner de status mostra se você está online ou offline." },
+      { q: "Quais idiomas o Pluto suporta?", a: "Português (BR), inglês, espanhol, francês e chinês. O app inteiro é traduzido — todas as telas, não só o menu." },
+      { q: "Pluto tem versão desktop?", a: "Sim. Pluto roda no iOS, Android, macOS, Windows e Linux. O desktop é um app nativo Tauri com a mesma base de features do mobile, mais analytics avançados (cenários de dívida, projeção de metas, quick wins)." },
+      { q: "Qual a diferença entre Pro e Premium?", a: "Pro (R$ 29/mês) desbloqueia metas, orçamentos e contas ilimitadas, além de sugestões de economia com IA. Premium (R$ 49/mês) adiciona previsões financeiras, análise de investimentos detalhada, planejamento de aposentadoria, consultoria via chat 24/7 e contas compartilhadas em família." },
     ],
   },
   cronos: {
     hero: "Cronos é o agente de gestão de tempo da Olympkus. Substitui a pilha de apps que você usa para se organizar — calendário, tarefas e projetos num só agente. Cronos negocia horários, reorganiza a semana e protege o seu foco.",
-    features: [
-      { title: "Calendário unificado", body: "Cronos agrega seus calendários (Google, Apple, Outlook) num só lugar e entende seus compromissos, prazos e blocos de foco." },
-      { title: "Negociação de horários", body: "Precisa remarcar uma reunião? Cronos propõe alternativas que funcionam para todos, respeitando suas prioridades e seus blocos de foco." },
-      { title: "Tarefas e projetos num só lugar", body: "Chega de alternar entre Notion, Todoist, Trello e calendário. Cronos consolida tudo e sugere o que fazer agora, com base nas suas prioridades." },
-      { title: "Proteção de foco", body: "Cronos defende seus blocos de foco — bloqueia notificações, recusa reuniões que cabem mal e te avisa quando está sobrecarregado." },
+    featureGroups: [
+      {
+        label: "Gestão",
+        features: [
+          { icon: "◎", title: "Calendário unificado", body: "Cronos agrega seus calendários (Google, Apple, Outlook) num só lugar e entende seus compromissos, prazos e blocos de foco." },
+          { icon: "◉", title: "Negociação de horários", body: "Precisa remarcar uma reunião? Cronos propõe alternativas que funcionam para todos, respeitando suas prioridades e seus blocos de foco." },
+          { icon: "◈", title: "Tarefas e projetos", body: "Chega de alternar entre Notion, Todoist, Trello e calendário. Cronos consolida tudo e sugere o que fazer agora, com base nas suas prioridades." },
+        ],
+      },
+      {
+        label: "Foco",
+        features: [
+          { icon: "✦", title: "Proteção de foco", body: "Cronos defende seus blocos de foco — bloqueia notificações, recusa reuniões que cabem mal e te avisa quando está sobrecarregado." },
+        ],
+      },
     ],
-    pricing: "Camada gratuita com calendário unificado (sem automação plena). Camada paga com agendamento autônomo completo. Preço exato anunciado no lançamento.",
+    plans: [
+      {
+        name: "Free",
+        price: "R$ 0",
+        period: "",
+        description: "Calendário unificado",
+        features: ["Calendário unificado", "Tarefas manuais", "1 calendário conectado"],
+      },
+      {
+        name: "Pro",
+        price: "R$ 29",
+        period: "/mês",
+        description: "Agendamento autônomo completo",
+        features: ["Tudo do Free, mais:", "Negociação de horários", "Tarefas e projetos ilimitados", "Proteção de foco", "Calendários ilimitados"],
+        highlight: true,
+      },
+    ],
     faq: [
       { q: "Cronos substitui meu calendário?", a: "Sim. Cronos agrega Google Calendar, Apple Calendar e Outlook num só lugar. Você não precisa abandonar seu calendário — Cronos trabalha por cima dele." },
       { q: "Cronos marca reuniões por mim?", a: "Cronos propõe horários e negocia remanejamentos, mas você aprova antes de confirmar. Ele não envia convites sem sua permissão." },
@@ -40,13 +154,32 @@ const productDetails: Record<string, {
   },
   zeus: {
     hero: "Zeus é o agente orquestrador da Olympkus. Ele delega ao Pluto e ao Cronos e executa comandos através de múltiplos serviços. Um único comando, executado através de tudo.",
-    features: [
-      { title: "Um comando, tudo executado", body: "Diga 'paga a fatura do cartão e bloqueia minha agenda amanhã' e Zeus coordena Pluto (pagamento) e Cronos (agenda) em sequência." },
-      { title: "Delegação entre agentes", body: "Zeus sabe qual agente é especialista em quê. Ele não tenta fazer tudo — ele delega ao agente certo e orquestra o resultado." },
-      { title: "Conexão com o mundo", body: "Zeus se conecta a serviços externos — APIs, automações, integrações — para executar comandos que vão além do Panteão." },
-      { title: "Escopo em desenvolvimento", body: "Zeus é o agente mais ambicioso do Panteão e ainda está em desenvolvimento. O escopo final será definido com dados reais de uso do Pluto e do Cronos." },
+    featureGroups: [
+      {
+        label: "Orquestração",
+        features: [
+          { icon: "◎", title: "Um comando, tudo executado", body: "Diga 'paga a fatura do cartão e bloqueia minha agenda amanhã' e Zeus coordena Pluto (pagamento) e Cronos (agenda) em sequência." },
+          { icon: "◉", title: "Delegação entre agentes", body: "Zeus sabe qual agente é especialista em quê. Ele não tenta fazer tudo — ele delega ao agente certo e orquestra o resultado." },
+          { icon: "◈", title: "Conexão com o mundo", body: "Zeus se conecta a serviços externos — APIs, automações, integrações — para executar comandos que vão além do Panteão." },
+        ],
+      },
+      {
+        label: "Status",
+        features: [
+          { icon: "◐", title: "Escopo em desenvolvimento", body: "Zeus é o agente mais ambicioso do Panteão e ainda está em desenvolvimento. O escopo final será definido com dados reais de uso do Pluto e do Cronos." },
+        ],
+      },
     ],
-    pricing: "Zeus não será vendido isoladamente no início. Será incluído como benefício de retenção para assinantes do bundle Panteão (Pluto + Cronos).",
+    plans: [
+      {
+        name: "Bundle",
+        price: "Incluso",
+        period: "",
+        description: "Benefício do bundle Panteão",
+        features: ["Incluso para assinantes Pluto + Cronos", "Orquestração entre agentes", "Comandos multi-domínio"],
+        highlight: true,
+      },
+    ],
     faq: [
       { q: "Quando o Zeus vai lançar?", a: "Zeus está em desenvolvimento. O escopo será definido com dados reais de uso do Pluto e do Cronos — não vamos lançar às cegas. Segundo semestre de 2027 é a janela atual." },
       { q: "Preciso assinar Pluto e Cronos para usar Zeus?", a: "No início, sim. Zeus será um benefício do bundle Panteão — não vendido isoladamente. Isso garante que Zeus tenha agentes reais para orquestrar." },
@@ -75,25 +208,48 @@ export function ProductPage({ id }: { id: string }) {
         </div>
       </section>
 
-      <section className="product-features">
-        <div className="section-head">
-          <p className="eyebrow" data-reveal>O que faz</p>
-          <h2 className="section-title" data-reveal>Recursos</h2>
-        </div>
-        <div className="product-features__grid">
-          {details.features.map((f, i) => (
-            <article className="product-feature" key={i} data-reveal>
-              <h3 className="product-feature__title">{f.title}</h3>
-              <p className="product-feature__body">{f.body}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      {details.featureGroups.map((group, gi) => (
+        <section className="product-features" key={gi}>
+          <div className="section-head">
+            <p className="eyebrow" data-reveal>{group.label}</p>
+            <h2 className="section-title" data-reveal>{gi === 0 ? "Recursos" : group.label}</h2>
+          </div>
+          <div className="product-features__grid">
+            {group.features.map((f, i) => (
+              <article className="product-feature" key={i} data-reveal>
+                <span className="product-feature__icon" aria-hidden="true">{f.icon}</span>
+                <h3 className="product-feature__title">{f.title}</h3>
+                <p className="product-feature__body">{f.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))}
 
       <section className="product-pricing">
-        <div className="product-pricing__inner" data-reveal>
-          <p className="eyebrow eyebrow--center">Preço</p>
-          <p className="product-pricing__text">{details.pricing}</p>
+        <div className="section-head" style={{ textAlign: "center" }}>
+          <p className="eyebrow eyebrow--center" data-reveal>Planos</p>
+          <h2 className="section-title" data-reveal style={{ textAlign: "center" }}>Escolha o seu</h2>
+        </div>
+        <div className="pricing-grid">
+          {details.plans.map((plan, i) => (
+            <div className={`pricing-card ${plan.highlight ? "pricing-card--highlight" : ""}`} key={i} data-reveal>
+              {plan.highlight && <span className="pricing-card__badge mono">RECOMENDADO</span>}
+              <h3 className="pricing-card__name">{plan.name}</h3>
+              <p className="pricing-card__price">
+                {plan.price}<span className="pricing-card__period">{plan.period}</span>
+              </p>
+              <p className="pricing-card__desc">{plan.description}</p>
+              <ul className="pricing-card__features">
+                {plan.features.map((f, j) => (
+                  <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
+                ))}
+              </ul>
+              <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+                Entrar para a lista
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
