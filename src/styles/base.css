@@ -150,16 +150,9 @@ button { font: inherit; cursor: pointer; }
   align-items: center;
   gap: 2rem;
 }
-.logo { display: inline-flex; align-items: center; gap: 0.6rem; transition: opacity 0.3s; }
+.logo { display: inline-flex; align-items: center; transition: opacity 0.3s; color: #fff; }
 .logo:hover { opacity: 0.8; }
-.logo__mark { width: 30px; height: auto; }
-.logo__word {
-  font-family: var(--serif);
-  font-size: 1.32rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-}
-.logo__ai { color: var(--bronze-soft); }
+.logo__mark { width: 54px; height: auto; color: #fff; }
 
 .site-nav { display: flex; gap: 2rem; margin-left: auto; }
 .site-nav__link {
@@ -187,6 +180,7 @@ button { font: inherit; cursor: pointer; }
   padding-bottom: 3rem;
 }
 .site-footer__tag { color: var(--stone); margin-top: 1rem; max-width: 34ch; }
+.site-footer__brand .logo__mark { width: 99px; }
 .site-footer__col { display: flex; flex-direction: column; gap: 0.7rem; }
 .site-footer__h { font-size: 0.68rem; letter-spacing: 0.2em; color: var(--stone-dim); margin-bottom: 0.3rem; }
 .site-footer__col a { color: var(--stone); transition: color 0.3s; width: fit-content; }
