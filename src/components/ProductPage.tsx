@@ -116,46 +116,12 @@ const productDetails: Record<string, {
     ],
   },
   cronos: {
-    hero: "Cronos é o agente de gestão de tempo da Olympkus. Substitui a pilha de apps que você usa para se organizar — calendário, tarefas e projetos num só agente. Cronos negocia horários, reorganiza a semana e protege o seu foco.",
-    featureGroups: [
-      {
-        label: "Gestão",
-        features: [
-          { icon: "◎", title: "Calendário unificado", body: "Cronos agrega seus calendários (Google, Apple, Outlook) num só lugar e entende seus compromissos, prazos e blocos de foco." },
-          { icon: "◉", title: "Negociação de horários", body: "Precisa remarcar uma reunião? Cronos propõe alternativas que funcionam para todos, respeitando suas prioridades e seus blocos de foco." },
-          { icon: "◈", title: "Tarefas e projetos", body: "Chega de alternar entre Notion, Todoist, Trello e calendário. Cronos consolida tudo e sugere o que fazer agora, com base nas suas prioridades." },
-          { icon: "◇", title: "Prioridades dinâmicas", body: "Cronos reordena suas tarefas automaticamente com base em prazos, dependências e energia disponível. O que é urgente sobe; o que pode esperar desce." },
-        ],
-      },
-      {
-        label: "Foco",
-        features: [
-          { icon: "✦", title: "Proteção de foco", body: "Cronos defende seus blocos de foco — bloqueia notificações, recusa reuniões que cabem mal e te avisa quando está sobrecarregado." },
-          { icon: "✧", title: "Detecção de sobrecarga", body: "Cronos identifica quando sua semana está lotada demais e sugere o que delegar, adiar ou cancelar — antes que você chegue ao limite." },
-        ],
-      },
-    ],
-    plans: [
-      {
-        name: "Free",
-        price: "R$ 0",
-        period: "",
-        description: "Calendário unificado",
-        features: ["Calendário unificado", "Tarefas manuais", "1 calendário conectado"],
-      },
-      {
-        name: "Pro",
-        price: "R$ 29",
-        period: "/mês",
-        description: "Agendamento autônomo completo",
-        features: ["Tudo do Free, mais:", "Negociação de horários", "Tarefas e projetos ilimitados", "Proteção de foco", "Calendários ilimitados"],
-        highlight: true,
-      },
-    ],
+    hero: "Cronos é a ideia de um agente de gestão de tempo para o Panteão. Ainda não é um produto — não sabemos exatamente o que fará nem quando. Quando soubermos, você saberá.",
+    featureGroups: [],
+    plans: [],
     faq: [
-      { q: "Cronos substitui meu calendário?", a: "Sim. Cronos agrega Google Calendar, Apple Calendar e Outlook num só lugar. Você não precisa abandonar seu calendário — Cronos trabalha por cima dele." },
-      { q: "Cronos marca reuniões por mim?", a: "Cronos propõe horários e negocia remanejamentos, mas você aprova antes de confirmar. Ele não envia convites sem sua permissão." },
-      { q: "Cronos funciona com Notion/Todoist?", a: "Sim. Cronos se integra com as principais ferramentas de tarefas e projetos para consolidar tudo num só agente." },
+      { q: "O que o Cronos vai fazer?", a: "Ainda não sabemos. A ideia é um agente que substitui a pilha de apps de organização — calendário, tarefas, projetos — num só lugar. Mas o escopo só será definido depois que o Pluto estiver no ar e tivermos dados reais de uso." },
+      { q: "Quando o Cronos vai lançar?", a: "Não há data. O Cronos só existe de verdade quando tivermos aprendido o suficiente com o Pluto. Pode ser 2027, pode ser depois." },
     ],
   },
   zeus: {
