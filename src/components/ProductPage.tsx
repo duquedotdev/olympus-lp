@@ -159,39 +159,12 @@ const productDetails: Record<string, {
     ],
   },
   zeus: {
-    hero: "Zeus é o agente orquestrador da Olympkus. Ele delega ao Pluto e ao Cronos e executa comandos através de múltiplos serviços. Um único comando, executado através de tudo.",
-    featureGroups: [
-      {
-        label: "Orquestração",
-        features: [
-          { icon: "◎", title: "Um comando, tudo executado", body: "Diga 'paga a fatura do cartão e bloqueia minha agenda amanhã' e Zeus coordena Pluto (pagamento) e Cronos (agenda) em sequência." },
-          { icon: "◉", title: "Delegação entre agentes", body: "Zeus sabe qual agente é especialista em quê. Ele não tenta fazer tudo — ele delega ao agente certo e orquestra o resultado." },
-          { icon: "◈", title: "Conexão com o mundo", body: "Zeus se conecta a serviços externos — APIs, automações, integrações — para executar comandos que vão além do Panteão." },
-          { icon: "◇", title: "Contexto compartilhado", body: "Zeus carrega o contexto do Pluto e do Cronos — suas finanças, seu tempo, suas prioridades — para tomar decisões que consideram tudo, não só um domínio." },
-        ],
-      },
-      {
-        label: "Status",
-        features: [
-          { icon: "◐", title: "Escopo em desenvolvimento", body: "Zeus é o agente mais ambicioso do Panteão e ainda está em desenvolvimento. O escopo final será definido com dados reais de uso do Pluto e do Cronos." },
-          { icon: "◑", title: "Roadmap aberto", body: "As capacidades do Zeus serão definidas com dados reais de uso do Pluto e do Cronos. Nada de lançar às cegas — o Zeus nasce do que os outros agentes aprendem." },
-        ],
-      },
-    ],
-    plans: [
-      {
-        name: "Bundle",
-        price: "Incluso",
-        period: "",
-        description: "Benefício do bundle Panteão",
-        features: ["Incluso para assinantes Pluto + Cronos", "Orquestração entre agentes", "Comandos multi-domínio"],
-        highlight: true,
-      },
-    ],
+    hero: "Zeus é o agente orquestrador do Panteão. Ainda não sabemos o que ele vai fazer — só sabemos que vai coordenar os outros agentes sob um só comando. Quando soubermos, você saberá.",
+    featureGroups: [],
+    plans: [],
     faq: [
-      { q: "Quando o Zeus vai lançar?", a: "Zeus está em desenvolvimento. O escopo será definido com dados reais de uso do Pluto e do Cronos — não vamos lançar às cegas. Segundo semestre de 2027 é a janela atual." },
-      { q: "Preciso assinar Pluto e Cronos para usar Zeus?", a: "No início, sim. Zeus será um benefício do bundle Panteão — não vendido isoladamente. Isso garante que Zeus tenha agentes reais para orquestrar." },
-      { q: "Zeus é como o ChatGPT?", a: "Não. Zeus não responde perguntas genéricas — ele orquestra agentes especializados que já conhecem suas finanças (Pluto) e seu tempo (Cronos). A diferença é profundidade de domínio." },
+      { q: "O que o Zeus vai fazer?", a: "Ainda não sabemos. O Zeus é a ideia de um orquestrador — um agente que coordena os outros sob um só comando. O escopo será definido com dados reais de uso do Pluto e do Cronos. Nada de lançar às cegas." },
+      { q: "Quando o Zeus vai lançar?", a: "Não há data. O Zeus só existe de verdade quando tiver agentes reais para orquestrar e dados reais para aprender com eles. Pode ser 2027, pode ser depois, pode nunca ser — se o Pluto e o Cronos já bastarem." },
     ],
   },
 };
@@ -216,7 +189,7 @@ export function ProductPage({ id }: { id: string }) {
         </div>
       </section>
 
-      {details.featureGroups.map((group, gi) => (
+      {details.featureGroups.length > 0 && details.featureGroups.map((group, gi) => (
         <section className="product-features" key={gi}>
           <div className="section-head">
             <p className="eyebrow" data-reveal>{group.label}</p>
@@ -234,32 +207,34 @@ export function ProductPage({ id }: { id: string }) {
         </section>
       ))}
 
-      <section className="product-pricing">
-        <div className="section-head" style={{ textAlign: "center" }}>
-          <p className="eyebrow eyebrow--center" data-reveal>Planos</p>
-          <h2 className="section-title" data-reveal style={{ textAlign: "center" }}>Escolha o seu</h2>
-        </div>
-        <div className="pricing-grid">
-          {details.plans.map((plan, i) => (
-            <div className={`pricing-card ${plan.highlight ? "pricing-card--highlight" : ""}`} key={i} data-reveal>
-              {plan.highlight && <span className="pricing-card__badge mono">RECOMENDADO</span>}
-              <h3 className="pricing-card__name">{plan.name}</h3>
-              <p className="pricing-card__price">
-                {plan.price}<span className="pricing-card__period">{plan.period}</span>
-              </p>
-              <p className="pricing-card__desc">{plan.description}</p>
-              <ul className="pricing-card__features">
-                {plan.features.map((f, j) => (
-                  <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
-                ))}
-              </ul>
-              <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
-                Entrar para a lista
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
+      {details.plans.length > 0 && (
+        <section className="product-pricing">
+          <div className="section-head" style={{ textAlign: "center" }}>
+            <p className="eyebrow eyebrow--center" data-reveal>Planos</p>
+            <h2 className="section-title" data-reveal style={{ textAlign: "center" }}>Escolha o seu</h2>
+          </div>
+          <div className="pricing-grid">
+            {details.plans.map((plan, i) => (
+              <div className={`pricing-card ${plan.highlight ? "pricing-card--highlight" : ""}`} key={i} data-reveal>
+                {plan.highlight && <span className="pricing-card__badge mono">RECOMENDADO</span>}
+                <h3 className="pricing-card__name">{plan.name}</h3>
+                <p className="pricing-card__price">
+                  {plan.price}<span className="pricing-card__period">{plan.period}</span>
+                </p>
+                <p className="pricing-card__desc">{plan.description}</p>
+                <ul className="pricing-card__features">
+                  {plan.features.map((f, j) => (
+                    <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
+                  ))}
+                </ul>
+                <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+                  Entrar para a lista
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="product-faq">
         <div className="section-head">

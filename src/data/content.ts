@@ -54,13 +54,13 @@ export const deities: Deity[] = [
     name: "Zeus",
     domain: "Vontade",
     glyph: "III",
-    tagline: "O agente que rege os outros.",
+    tagline: "O orquestrador — se existir.",
     description:
-      "Zeus orquestra a sua vida inteira: delega ao Pluto, ao Cronos e ao mundo lá fora. Um único comando, executado através de tudo. Recém-anunciado.",
+      "Zeus é a ideia de um orquestrador do Panteão. Ainda não sabemos se será um produto, o que fará ou quando. Quando soubermos, você saberá.",
     platforms: "A definir",
     status: "announced",
-    statusLabel: "ANUNCIADO",
-    eta: "EM BREVE",
+    statusLabel: "AGUARDE",
+    eta: "—",
   },
 ];
 
