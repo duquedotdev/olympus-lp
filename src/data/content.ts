@@ -41,12 +41,12 @@ export const deities: Deity[] = [
     name: "Cronos",
     domain: "Tempo",
     glyph: "II",
-    tagline: "O agente de tempo — se existir.",
+    tagline: "O agente que devolve o seu tempo.",
     description:
-      "Cronos é a ideia de um agente de gestão de tempo para o Panteão. Ainda não é um produto. Quando soubermos o que fará, você saberá.",
+      "Cronos é a próxima fronteira do Panteão: um agente de gestão de tempo que substitui calendário, tarefas e projetos num só lugar. Em concepção.",
     platforms: "A definir",
     status: "announced",
-    statusLabel: "AGUARDE",
+    statusLabel: "EM CONCEPÇÃO",
     eta: "—",
   },
   {
@@ -54,12 +54,12 @@ export const deities: Deity[] = [
     name: "Zeus",
     domain: "Vontade",
     glyph: "III",
-    tagline: "O orquestrador — se existir.",
+    tagline: "O orquestrador do Panteão.",
     description:
-      "Zeus é a ideia de um orquestrador do Panteão. Ainda não sabemos se será um produto, o que fará ou quando. Quando soubermos, você saberá.",
+      "Zeus é a visão final do Panteão: um orquestrador que coordena todos os agentes sob um só comando. Um único pedido, executado através de tudo. Em concepção.",
     platforms: "A definir",
     status: "announced",
-    statusLabel: "AGUARDE",
+    statusLabel: "EM CONCEPÇÃO",
     eta: "—",
   },
 ];

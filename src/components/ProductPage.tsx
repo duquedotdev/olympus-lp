@@ -116,21 +116,21 @@ const productDetails: Record<string, {
     ],
   },
   cronos: {
-    hero: "Cronos é a ideia de um agente de gestão de tempo para o Panteão. Ainda não é um produto — não sabemos exatamente o que fará nem quando. Quando soubermos, você saberá.",
+    hero: "Cronos é a próxima fronteira do Panteão: um agente que devolve o seu tempo. Calendário, tarefas e projetos num só lugar — negociando horários, protegendo seu foco e acabando com o trabalho de organizar o trabalho. Em concepção.",
     featureGroups: [],
     plans: [],
     faq: [
-      { q: "O que o Cronos vai fazer?", a: "Ainda não sabemos. A ideia é um agente que substitui a pilha de apps de organização — calendário, tarefas, projetos — num só lugar. Mas o escopo só será definido depois que o Pluto estiver no ar e tivermos dados reais de uso." },
-      { q: "Quando o Cronos vai lançar?", a: "Não há data. O Cronos só existe de verdade quando tivermos aprendido o suficiente com o Pluto. Pode ser 2027, pode ser depois." },
+      { q: "O que o Cronos vai fazer?", a: "A visão é um agente de gestão de tempo que substitui a pilha de apps que você usa para se organizar. Calendário, tarefas e projetos consolidados num só lugar, com IA que negocia horários e protege seu foco. O escopo exato será definido com o que aprendermos com o Pluto." },
+      { q: "Quando o Cronos vai lançar?", a: "Ainda em concepção. O Cronos será desenvolvido depois que o Pluto estiver no ar e tivermos dados reais de uso para informar o design. Não vamos lançar às cegas." },
     ],
   },
   zeus: {
-    hero: "Zeus é o agente orquestrador do Panteão. Ainda não sabemos o que ele vai fazer — só sabemos que vai coordenar os outros agentes sob um só comando. Quando soubermos, você saberá.",
+    hero: "Zeus é a visão final do Panteão: um orquestrador que coordena todos os agentes sob um só comando. Um único pedido, executado através de tudo — finanças, tempo e o que vier depois. Em concepção.",
     featureGroups: [],
     plans: [],
     faq: [
-      { q: "O que o Zeus vai fazer?", a: "Ainda não sabemos. O Zeus é a ideia de um orquestrador — um agente que coordena os outros sob um só comando. O escopo será definido com dados reais de uso do Pluto e do Cronos. Nada de lançar às cegas." },
-      { q: "Quando o Zeus vai lançar?", a: "Não há data. O Zeus só existe de verdade quando tiver agentes reais para orquestrar e dados reais para aprender com eles. Pode ser 2027, pode ser depois, pode nunca ser — se o Pluto e o Cronos já bastarem." },
+      { q: "O que o Zeus vai fazer?", a: "A visão é um orquestrador: você dá um comando e Zeus coordena os agentes especializados — Pluto, Cronos e o que vier depois — para executar tudo em sequência. Um pedido, múltiplos domínios, um só resultado. O escopo exato será definido com dados reais de uso dos outros agentes." },
+      { q: "Quando o Zeus vai lançar?", a: "Ainda em concepção. Zeus só faz sentido quando há agentes reais para orquestrar e dados reais para aprender com eles. Vai nascer do que o Pluto e o Cronos ensinarem — não de um PowerPoint." },
     ],
   },
 };
