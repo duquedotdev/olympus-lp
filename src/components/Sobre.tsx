@@ -8,7 +8,7 @@ export function Sobre() {
     <>
       <section className="page-hero" id="sobre">
         <div className="page-hero__inner">
-          <a href="#" className="blog-back">← Voltar</a>
+          <a href="/" className="blog-back">← Voltar</a>
           <p className="eyebrow"><span className="eyebrow__dot" />SOBRE</p>
           <h1 className="page-hero__title">Construímos o oposto do que a tecnologia prometeu.</h1>
           <p className="page-hero__lede">
@@ -32,8 +32,8 @@ export function Sobre() {
           <h2>O que construímos</h2>
           <p>
             Uma suíte de agentes de IA chamada Panteão. Cada agente é especializado
-            em um domínio da vida pessoal — <a href="#pluto">Pluto</a> cuida do
-            dinheiro, <a href="#cronos">Cronos</a> do tempo, <a href="#zeus">Zeus</a>
+            em um domínio da vida pessoal — <a href="/pluto">Pluto</a> cuida do
+            dinheiro, <a href="/cronos">Cronos</a> do tempo, <a href="/zeus">Zeus</a>
             orquestra tudo. Você aprova a intenção; eles cuidam da execução.
           </p>
 

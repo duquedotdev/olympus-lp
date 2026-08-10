@@ -11,27 +11,27 @@ export function Footer() {
 
         <nav className="site-footer__col" aria-label="Produtos">
           <p className="site-footer__h mono">PRODUTOS</p>
-          <a href="#pluto">Pluto</a>
-          <a href="#cronos">Cronos</a>
-          <a href="#zeus">Zeus</a>
-          <a href="#panteao">Panteão</a>
+          <a href="/pluto">Pluto</a>
+          <a href="/cronos">Cronos</a>
+          <a href="/zeus">Zeus</a>
+          <a href="/pantheon">Panteão</a>
         </nav>
 
         <nav className="site-footer__col" aria-label="Empresa">
           <p className="site-footer__h mono">OLYMPKUS</p>
-          <a href="#sobre">Sobre</a>
-          <a href="#manifesto">Manifesto</a>
-          <a href="#method">Método</a>
-          <a href="#blog">Blog</a>
-          <a href="#imprensa">Imprensa</a>
+          <a href="/about">Sobre</a>
+          <a href="/#manifesto">Manifesto</a>
+          <a href="/#method">Método</a>
+          <a href="/blog">Blog</a>
+          <a href="/press">Imprensa</a>
         </nav>
 
         <nav className="site-footer__col" aria-label="Comunidade">
           <p className="site-footer__h mono">COMUNIDADE</p>
-          <a href="#faq">Perguntas</a>
-          <a href="#access">Acesso antecipado</a>
-          <a href="#privacidade">Privacidade</a>
-          <a href="#termos">Termos</a>
+          <a href="/#faq">Perguntas</a>
+          <a href="/#access">Acesso antecipado</a>
+          <a href="/privacy">Privacidade</a>
+          <a href="/terms">Termos</a>
           <a href="https://discord.gg/Y5GxgEY8Zt" target="_blank" rel="noopener noreferrer">Discord</a>
         </nav>
 

@@ -146,7 +146,7 @@ export function ProductPage({ id }: { id: string }) {
     <>
       <section className="product-hero" id={id}>
         <div className="product-hero__inner">
-          <a href="#panteao" className="blog-back">← Panteão</a>
+          <a href="/pantheon" className="blog-back">← Panteão</a>
           <p className="eyebrow"><span className="eyebrow__dot" />{deity.domain.toUpperCase()} · {deity.statusLabel} {deity.eta}</p>
           <h1 className="product-hero__title">{deity.name}</h1>
           <p className="product-hero__tagline">{deity.tagline}</p>
@@ -193,7 +193,7 @@ export function ProductPage({ id }: { id: string }) {
                     <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
                   ))}
                 </ul>
-                <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+                <a href="/#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
                   Entrar para a lista
                 </a>
               </div>

@@ -46,4 +46,4 @@ A linguagem cautelosa não é só proteção legal. É vantagem competitiva. É 
 
 O Pluto abre o portão em janeiro de 2027. Cronos vem depois. Zeus é o bet de P&D, alimentado pelos dados de uso de Pluto e Cronos — não lançado às cegas.
 
-A lista de espera está aberta. [Garanta seu lugar no Panteão.](#access)
+A lista de espera está aberta. [Garanta seu lugar no Panteão.](/#access)

@@ -67,5 +67,5 @@ A lista de espera está aberta em https://olympkusai.com. Os primeiros da fila e
 
 - Site: https://olympkusai.com
 - API: https://api.olympkusai.com
-- Política de privacidade: https://olympkusai.com/#privacidade
+- Política de privacidade: https://olympkusai.com/privacy
 - Sitemap: https://olympkusai.com/sitemap.xml

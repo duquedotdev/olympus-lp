@@ -18,7 +18,8 @@ import { Panteao } from "./components/Panteao.tsx";
 import { Sobre } from "./components/Sobre.tsx";
 import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal.ts";
-import { useHashRoute } from "./hooks/useHashRoute.ts";
+import { usePathRoute } from "./hooks/usePathRoute.ts";
+import { NotFound } from "./components/NotFound.tsx";
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
@@ -33,10 +34,10 @@ function Shell({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const route = useHashRoute();
+  const route = usePathRoute();
   useReveal(route);
 
-  if (route === "privacidade") {
+  if (route === "privacy") {
     return (
       <>
         <div className="grain" aria-hidden="true" />
@@ -47,7 +48,7 @@ export default function App() {
     );
   }
 
-  if (route === "termos") {
+  if (route === "terms") {
     return (
       <>
         <div className="grain" aria-hidden="true" />
@@ -61,8 +62,8 @@ export default function App() {
   if (route === "pluto") return <Shell><ProductPage id="pluto" /></Shell>;
   if (route === "cronos") return <Shell><ProductPage id="cronos" /></Shell>;
   if (route === "zeus") return <Shell><ProductPage id="zeus" /></Shell>;
-  if (route === "panteao") return <Shell><Panteao /></Shell>;
-  if (route === "sobre") return <Shell><Sobre /></Shell>;
+  if (route === "pantheon") return <Shell><Panteao /></Shell>;
+  if (route === "about") return <Shell><Sobre /></Shell>;
 
   if (route === "blog") return <Shell><BlogList /></Shell>;
 
@@ -71,12 +72,15 @@ export default function App() {
     return <Shell><BlogPost slug={slug} /></Shell>;
   }
 
-  if (route === "imprensa") return <Shell><PressList /></Shell>;
+  if (route === "press") return <Shell><PressList /></Shell>;
 
-  if (route.startsWith("imprensa/")) {
-    const slug = route.slice("imprensa/".length);
+  if (route.startsWith("press/")) {
+    const slug = route.slice("press/".length);
     return <Shell><PressRelease slug={slug} /></Shell>;
   }
+
+  // Unknown path → custom 404.
+  if (route !== "") return <Shell><NotFound /></Shell>;
 
   return (
     <>

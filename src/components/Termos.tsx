@@ -8,7 +8,7 @@ export function Termos() {
     <div className="legal">
       <header className="legal__bar">
         <Logo />
-        <a href="#top" className="legal__back">← Voltar ao site</a>
+        <a href="/" className="legal__back">← Voltar ao site</a>
       </header>
 
       <article className="legal__doc">

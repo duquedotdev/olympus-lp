@@ -6,7 +6,7 @@ export function PressList() {
   return (
     <div className="blog-list">
       <header className="blog-header">
-        <a href="#" className="blog-back">← Voltar</a>
+        <a href="/" className="blog-back">← Voltar</a>
         <p className="eyebrow eyebrow--center"><span className="eyebrow__dot" />IMPRENSA</p>
         <h1 className="blog-title">Sala de Imprensa</h1>
         <p className="blog-lede">Comunicados, posicionamento e materiais para jornalistas e criadores de conteúdo.</p>
@@ -19,7 +19,7 @@ export function PressList() {
 
       <div className="blog-grid">
         {releases.map((release) => (
-          <a key={release.slug} href={`#imprensa/${release.slug}`} className="blog-card">
+          <a key={release.slug} href={`/press/${release.slug}`} className="blog-card">
             <time className="blog-card__date mono">{formatDate(release.date)}</time>
             <span className="chip chip--shipping">COMUNICADO</span>
             <h2 className="blog-card__title">{release.title}</h2>

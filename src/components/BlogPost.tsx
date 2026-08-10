@@ -6,7 +6,7 @@ export function BlogPost({ slug }: { slug: string }) {
   if (!post) {
     return (
       <div className="blog-post">
-        <a href="#blog" className="blog-back">← Voltar ao blog</a>
+        <a href="/blog" className="blog-back">← Voltar ao blog</a>
         <h1 className="blog-title">Artigo não encontrado</h1>
       </div>
     );
@@ -14,7 +14,7 @@ export function BlogPost({ slug }: { slug: string }) {
 
   return (
     <article className="blog-post">
-      <a href="#blog" className="blog-back">← Voltar ao blog</a>
+      <a href="/blog" className="blog-back">← Voltar ao blog</a>
 
       <header className="blog-post__header">
         <p className="eyebrow"><span className="eyebrow__dot" />{formatDate(post.date)}</p>
@@ -26,8 +26,8 @@ export function BlogPost({ slug }: { slug: string }) {
       <div className="blog-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
 
       <footer className="blog-post__footer">
-        <a href="#access" className="btn btn--solid">Garanta seu lugar no Panteão</a>
-        <a href="#blog" className="blog-back">← Voltar ao blog</a>
+        <a href="/#access" className="btn btn--solid">Garanta seu lugar no Panteão</a>
+        <a href="/blog" className="blog-back">← Voltar ao blog</a>
       </footer>
     </article>
   );

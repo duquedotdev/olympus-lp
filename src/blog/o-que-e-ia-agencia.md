@@ -40,4 +40,4 @@ Cada agente é excelente no que faz. Nenhum tenta ser tudo para todos. É a dife
 
 Se você usa três apps para organizar a vida e ainda assim sente que administra ferramentas em vez de viver, a IA agêntica é para você. A promessa não é mais um app para operar — é um agente que opera por você, dentro dos limites que você define.
 
-As vagas para o Panteão são limitadas. O Pluto abre o portão em janeiro de 2027. [Garanta seu lugar antes que o Olimpo abra as portas.](#access)
+As vagas para o Panteão são limitadas. O Pluto abre o portão em janeiro de 2027. [Garanta seu lugar antes que o Olimpo abra as portas.](/#access)

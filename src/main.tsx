@@ -7,6 +7,9 @@ import "./styles/legal.css";
 import "./styles/blog.css";
 import "./styles/pages.css";
 import App from "./App.tsx";
+import { setupLinkInterceptor } from "./lib/router.ts";
+
+setupLinkInterceptor();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

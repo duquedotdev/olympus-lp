@@ -21,8 +21,8 @@ export function Hero() {
           </p>
 
           <div className="hero__actions">
-            <a href="#access" className="btn btn--solid">Entrar para a lista</a>
-            <a href="#pantheon" className="btn btn--ghost">Conhecer o panteão</a>
+            <a href="/#access" className="btn btn--solid">Entrar para a lista</a>
+            <a href="/#pantheon" className="btn btn--ghost">Conhecer o panteão</a>
           </div>
 
           <dl className="hero__stats">

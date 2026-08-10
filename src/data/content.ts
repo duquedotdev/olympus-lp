@@ -14,12 +14,11 @@ export interface Deity {
 }
 
 export const nav = [
-  { label: "Panteão", href: "#pantheon" },
-  { label: "Manifesto", href: "#manifesto" },
-  { label: "Método", href: "#method" },
-  { label: "Blog", href: "#blog" },
-  { label: "Imprensa", href: "#imprensa" },
-  { label: "Perguntas", href: "#faq" },
+  { label: "Panteão", href: "/#pantheon" },
+  { label: "Manifesto", href: "/#manifesto" },
+  { label: "Método", href: "/#method" },
+  { label: "Blog", href: "/blog" },
+  { label: "Perguntas", href: "/#faq" },
 ];
 
 export const deities: Deity[] = [

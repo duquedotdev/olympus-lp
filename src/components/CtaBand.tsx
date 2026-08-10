@@ -134,7 +134,7 @@ export function CtaBand() {
             <p className="access__consent">
               Ao entrar na lista, você concorda em receber e-mails da Olympkus AI sobre
               o lançamento e pode cancelar quando quiser. Tratamos seus dados conforme a
-              LGPD — veja a <a href="#privacidade">Política de Privacidade</a>.
+              LGPD — veja a <a href="/privacy">Política de Privacidade</a>.
             </p>
           </>
         )}

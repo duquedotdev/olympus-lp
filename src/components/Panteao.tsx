@@ -9,7 +9,7 @@ export function Panteao() {
     <>
       <section className="page-hero" id="panteao">
         <div className="page-hero__inner">
-          <a href="#" className="blog-back">← Voltar</a>
+          <a href="/" className="blog-back">← Voltar</a>
           <p className="eyebrow"><span className="eyebrow__dot" />PANTEÃO</p>
           <h1 className="page-hero__title">Três domínios. Três agentes. Um só comando.</h1>
           <p className="page-hero__lede">
@@ -22,7 +22,7 @@ export function Panteao() {
 
       <section className="panteao-grid">
         {deities.map((d) => (
-          <a key={d.id} href={`#${d.id}`} className="panteao-card" data-reveal>
+          <a key={d.id} href={`/${d.id}`} className="panteao-card" data-reveal>
             <div className="panteao-card__head">
               <span className="panteao-card__glyph">{d.glyph}</span>
               <span className={`chip chip--${d.status}`}>{d.statusLabel} {d.eta}</span>

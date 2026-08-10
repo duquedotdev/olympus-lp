@@ -6,7 +6,7 @@ export function PressRelease({ slug }: { slug: string }) {
   if (!release) {
     return (
       <div className="blog-post">
-        <a href="#imprensa" className="blog-back">← Voltar à sala de imprensa</a>
+        <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
         <h1 className="blog-title">Comunicado não encontrado</h1>
       </div>
     );
@@ -14,7 +14,7 @@ export function PressRelease({ slug }: { slug: string }) {
 
   return (
     <article className="blog-post">
-      <a href="#imprensa" className="blog-back">← Voltar à sala de imprensa</a>
+      <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
 
       <header className="blog-post__header">
         <p className="eyebrow"><span className="eyebrow__dot" />{formatDate(release.date)}</p>
@@ -28,7 +28,7 @@ export function PressRelease({ slug }: { slug: string }) {
       <footer className="blog-post__footer">
         <p className="mono" style={{ color: "var(--stone-dim)", fontSize: "0.78rem" }}>CONTATO PARA IMPRENSA</p>
         <a href="mailto:imprensa@olympkus.ai" style={{ color: "var(--bronze-soft)" }}>imprensa@olympkus.ai</a>
-        <a href="#imprensa" className="blog-back">← Voltar à sala de imprensa</a>
+        <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
       </footer>
     </article>
   );
