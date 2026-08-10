@@ -21,6 +21,7 @@ const productDetails: Record<string, {
           { icon: "◎", title: "Dashboard financeira", body: "Saldo, receitas, despesas e poupança num só lugar. Cards de balanço, saúde financeira, gastos por categoria e faturas próximas — atualizados em tempo real." },
           { icon: "◉", title: "Gráficos interativos", body: "Donut de gastos por categoria, sparklines de fluxo semanal, barras de comparação mensal e medidor de saúde financeira (sun gauge)." },
           { icon: "◈", title: "Multi-conta", body: "Cadastre todas as suas contas — banco, carteira, investimento. Arquive as que não usa mais. Veja transações por conta ou consolidadas." },
+          { icon: "⬗", title: "Transações completas", body: "Crie, edite e estorne transações com poucos toques. Filtre por conta, categoria e período. Cada transação tem descrição, categoria, conta e data — tudo editável." },
         ],
       },
       {
@@ -29,6 +30,7 @@ const productDetails: Record<string, {
           { icon: "✦", title: "Assistente de IA com raciocínio", body: "Chat streaming que mostra o raciocínio passo a passo antes de responder. Markdown renderizado, anexo de arquivos, histórico de conversas agrupado por data. Sugestões prontas: analisar gastos, orçamento, metas e dicas." },
           { icon: "✧", title: "Categorização inteligente", body: "Pluto sugere a categoria correta para cada transação com 96% de confiança. Você aprova com um toque — não precisa categorizar tudo manualmente." },
           { icon: "★", title: "Insights e quick wins", body: "Auditoria de assinaturas, caminho para quitar dívidas, projeção de metas e oportunidades de economia — gerados automaticamente a partir dos seus dados." },
+          { icon: "☆", title: "Histórico de conversas", body: "Cada conversa com a IA fica salva e agrupada por data — hoje, ontem, última semana, últimos 30 dias. Volte a qualquer conversa anterior e continue de onde parou." },
         ],
       },
       {
@@ -39,6 +41,7 @@ const productDetails: Record<string, {
           { icon: "▼", title: "Dívidas e parcelamentos", body: "Acompanhe dívidas ativas e quitadas, simule cenários de aceleração de pagamento e veja quanto economiza antecipando parcelas. Controle parcelamentos com vencimento agrupado." },
           { icon: "◐", title: "Recorrências", body: "Assinaturas e contas fixas num só lugar. Veja quanto gasta por mês com recorrências e identifique assinaturas esquecidas." },
           { icon: "▲", title: "Investimentos", body: "Aportes, resgates, lucros e dividendos. Calculadora de valor futuro com juros compostos para projetar o crescimento da carteira." },
+          { icon: "◇", title: "Lista de desejos", body: "Guarde o que quer comprar com preço, categoria e data alvo. Pluto acompanha quanto você já juntou e te avisa quando pode comprar — sem comprometer o orçamento." },
         ],
       },
       {
@@ -121,12 +124,14 @@ const productDetails: Record<string, {
           { icon: "◎", title: "Calendário unificado", body: "Cronos agrega seus calendários (Google, Apple, Outlook) num só lugar e entende seus compromissos, prazos e blocos de foco." },
           { icon: "◉", title: "Negociação de horários", body: "Precisa remarcar uma reunião? Cronos propõe alternativas que funcionam para todos, respeitando suas prioridades e seus blocos de foco." },
           { icon: "◈", title: "Tarefas e projetos", body: "Chega de alternar entre Notion, Todoist, Trello e calendário. Cronos consolida tudo e sugere o que fazer agora, com base nas suas prioridades." },
+          { icon: "◇", title: "Prioridades dinâmicas", body: "Cronos reordena suas tarefas automaticamente com base em prazos, dependências e energia disponível. O que é urgente sobe; o que pode esperar desce." },
         ],
       },
       {
         label: "Foco",
         features: [
           { icon: "✦", title: "Proteção de foco", body: "Cronos defende seus blocos de foco — bloqueia notificações, recusa reuniões que cabem mal e te avisa quando está sobrecarregado." },
+          { icon: "✧", title: "Detecção de sobrecarga", body: "Cronos identifica quando sua semana está lotada demais e sugere o que delegar, adiar ou cancelar — antes que você chegue ao limite." },
         ],
       },
     ],
@@ -162,12 +167,14 @@ const productDetails: Record<string, {
           { icon: "◎", title: "Um comando, tudo executado", body: "Diga 'paga a fatura do cartão e bloqueia minha agenda amanhã' e Zeus coordena Pluto (pagamento) e Cronos (agenda) em sequência." },
           { icon: "◉", title: "Delegação entre agentes", body: "Zeus sabe qual agente é especialista em quê. Ele não tenta fazer tudo — ele delega ao agente certo e orquestra o resultado." },
           { icon: "◈", title: "Conexão com o mundo", body: "Zeus se conecta a serviços externos — APIs, automações, integrações — para executar comandos que vão além do Panteão." },
+          { icon: "◇", title: "Contexto compartilhado", body: "Zeus carrega o contexto do Pluto e do Cronos — suas finanças, seu tempo, suas prioridades — para tomar decisões que consideram tudo, não só um domínio." },
         ],
       },
       {
         label: "Status",
         features: [
           { icon: "◐", title: "Escopo em desenvolvimento", body: "Zeus é o agente mais ambicioso do Panteão e ainda está em desenvolvimento. O escopo final será definido com dados reais de uso do Pluto e do Cronos." },
+          { icon: "◑", title: "Roadmap aberto", body: "As capacidades do Zeus serão definidas com dados reais de uso do Pluto e do Cronos. Nada de lançar às cegas — o Zeus nasce do que os outros agentes aprendem." },
         ],
       },
     ],
