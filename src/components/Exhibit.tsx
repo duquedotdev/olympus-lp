@@ -5,7 +5,7 @@ export function Exhibit({ deity, index }: { deity: Deity; index: number }) {
     <a
       className={`exhibit exhibit--${deity.status}`}
       id={deity.id}
-      href={`#${deity.id}`}
+      href={`/${deity.id}`}
       data-reveal
       style={{ transitionDelay: `${index * 90}ms` }}
     >

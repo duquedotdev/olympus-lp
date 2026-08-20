@@ -3,18 +3,18 @@ title: Olympkus AI anuncia o Panteão: suíte de agentes de IA para a vida pesso
 slug: olympkus-anuncia-panteao
 date: 2026-08-11
 type: press-release
-excerpt: Startup brasileira apresenta arquitetura inédita no mercado: três agentes especializados — Pluto, Cronos e Zeus — orquestrados por um comando único. Lista de espera aberta para o Pluto, previsto para janeiro de 2027.
+excerpt: Startup brasileira apresenta arquitetura inédita no mercado: três agentes especializados — Pluto, Aion e Zeus — orquestrados por um comando único. Lista de espera aberta para o Pluto, previsto para janeiro de 2027.
 ---
 
-**São Paulo, 11 de agosto de 2026** — A Olympkus AI, startup brasileira de inteligência artificial, anuncia o Panteão: uma suíte de agentes de IA para a vida pessoal, composta por três agentes especializados — Pluto (finanças), Cronos (tempo) e Zeus (orquestração) — orquestrados por um comando único.
+**São Paulo, 11 de agosto de 2026** — A Olympkus AI, startup brasileira de inteligência artificial, anuncia o Panteão: uma suíte de agentes de IA para a vida pessoal, composta por três agentes especializados — Pluto (finanças), Aion (tempo) e Zeus (orquestração) — orquestrados por um comando único.
 
 A Olympkus propõe uma arquitetura inédita no mercado brasileiro: em vez de um assistente genérico, um agente especializado por domínio. Cada agente é excelente no que faz, e Zeus orquestra todos sob um único comando.
 
 ## O Panteão
 
 - **Pluto** — agente de finanças pessoais. Lê contas, antecipa faturas e prepara pagamentos para aprovação do usuário. Lançamento previsto para janeiro de 2027.
-- **Cronos** — agente de gestão de tempo. Substitui calendário, tarefas e projetos num só agente. Lançamento previsto para julho de 2027.
-- **Zeus** — orquestrador. Delega ao Pluto, ao Cronos e ao mundo lá fora. Um comando, executado através de tudo. Recém-anunciado.
+- **Aion** — agente de gestão de tempo. Substitui calendário, tarefas e projetos num só agente. Lançamento previsto para julho de 2027.
+- **Zeus** — orquestrador. Delega ao Pluto, ao Aion e ao mundo lá fora. Um comando, executado através de tudo. Recém-anunciado.
 
 ## Diferencial
 
@@ -28,7 +28,7 @@ A lista de espera para o Pluto está aberta. Os primeiros da fila entram como me
 
 ## Sobre a Olympkus AI
 
-A Olympkus AI é uma empresa brasileira que desenvolve agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Cronos (tempo e tarefas) e Zeus (orquestração). O diferencial é ter um agente por domínio, orquestrados por um comando único — em vez de um assistente genérico.
+A Olympkus AI é uma empresa brasileira que desenvolve agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Aion (tempo e tarefas) e Zeus (orquestração). O diferencial é ter um agente por domínio, orquestrados por um comando único — em vez de um assistente genérico.
 
 **Contato para imprensa:** imprensa@olympkus.ai
 

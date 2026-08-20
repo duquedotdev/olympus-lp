@@ -197,3 +197,56 @@
 .press-contact a:hover { color: var(--bronze); }
 
 .blog-card .chip { margin-bottom: 0.4rem; width: fit-content; }
+
+/* ---------- Blog controls (busca + filtros) ---------- */
+.blog-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+.blog-search {
+  width: 100%;
+  max-width: 460px;
+  padding: 0.85em 1.1em;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--marble);
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color 0.3s;
+}
+.blog-search::placeholder { color: var(--stone-dim); }
+.blog-search:focus {
+  outline: none;
+  border-color: var(--bronze-line);
+}
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.blog-filter {
+  cursor: pointer;
+  background: transparent;
+  transition: color 0.3s, border-color 0.3s, background 0.3s;
+}
+.blog-filter:hover {
+  border-color: var(--bronze-line);
+  color: var(--bronze-soft);
+}
+.blog-filter--active {
+  color: var(--marble);
+  border-color: var(--bronze);
+  background: var(--raised-2);
+}
+.blog-empty {
+  text-align: center;
+  color: var(--stone-dim);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  padding: 2rem 0;
+}

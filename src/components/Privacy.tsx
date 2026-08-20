@@ -14,7 +14,7 @@ export function Privacy() {
       </header>
 
       <article className="legal__doc">
-        <p className="eyebrow">Legal</p>
+        <p className="eyebrow">PRIVACIDADE</p>
         <h1 className="legal__title">Política de Privacidade</h1>
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 
@@ -82,13 +82,13 @@ export function Privacy() {
           <h2>4. Cookies e armazenamento local</h2>
           <p>
             Não usamos cookies de publicidade. Guardamos no seu navegador
-            (<em>localStorage</em>) dois itens estritamente funcionais: o código de
-            quem indicou você e o seu próprio código, para exibir a sua posição na fila
-            quando você retorna. Você pode limpá-los apagando os dados do site no
-            navegador.
+            (<em>armazenamento local do navegador</em>) dois itens estritamente
+            funcionais: o código de quem indicou você e o seu próprio código,
+            para exibir a sua posição na fila quando você retorna. Você pode
+            limpá-los apagando os dados do site no navegador.
           </p>
           <p>
-            Usamos ainda uma ferramenta de <strong>analytics de audiência sem
+            Usamos ainda uma ferramenta de <strong>medição de audiência sem
             cookies</strong>, que mede o alcance das páginas de forma agregada e
             anônima, sem criar perfis individuais.
           </p>

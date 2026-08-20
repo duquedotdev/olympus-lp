@@ -14,11 +14,11 @@ export interface Deity {
 }
 
 export const nav = [
-  { label: "Panteão", href: "/#pantheon" },
-  { label: "Manifesto", href: "/#manifesto" },
-  { label: "Método", href: "/#method" },
+  { label: "Panteão", href: "/pantheon" },
+  { label: "Manifesto", href: "/" },
+  { label: "Método", href: "/" },
   { label: "Blog", href: "/blog" },
-  { label: "Perguntas", href: "/#faq" },
+  { label: "Perguntas", href: "/ajuda" },
 ];
 
 export const deities: Deity[] = [
@@ -29,24 +29,24 @@ export const deities: Deity[] = [
     glyph: "I",
     tagline: "Finanças agênticas — com você no comando.",
     description:
-      "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações com categorização por IA, orçamentos, metas, dívidas, investimentos, importação de extratos e um assistente de IA que raciocina. Offline-first, 5 idiomas, no celular e no desktop.",
+      "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações com categorização por IA, orçamentos, metas, dívidas, investimentos, importação de extratos e um assistente de IA que raciocina. Funciona sem internet, 5 idiomas, no celular e no desktop.",
     platforms: "iOS · Android · macOS · Windows · Linux",
     status: "shipping",
     statusLabel: "PREVISTO",
     eta: "JAN 2027",
   },
   {
-    id: "cronos",
-    name: "Cronos",
+    id: "aion",
+    name: "Aion",
     domain: "Tempo",
     glyph: "II",
-    tagline: "O agente que devolve o seu tempo.",
+    tagline: "Fale. O Aion faz.",
     description:
-      "Cronos é a próxima fronteira do Panteão: um agente de gestão de tempo que substitui calendário, tarefas e projetos num só lugar. Em concepção.",
-    platforms: "A definir",
-    status: "announced",
-    statusLabel: "EM CONCEPÇÃO",
-    eta: "—",
+      "Aion é o agente de tempo da Olympkus. Tarefas, calendário, quadro, hábitos e notas num só app — com IA que age por padrão. Você fala o que precisa; o Aion organiza tudo em ciclos, não em listas intermináveis.",
+    platforms: "macOS · Windows · Linux · iOS · Android",
+    status: "arriving",
+    statusLabel: "PREVISTO",
+    eta: "JUL 2027",
   },
   {
     id: "zeus",
@@ -89,7 +89,7 @@ export interface FaqItem {
 export const faqs: FaqItem[] = [
   {
     q: "O que é a Olympkus AI?",
-    a: "A Olympkus AI é uma empresa brasileira que constrói uma suíte de agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Cronos (tempo e tarefas) e Zeus (orquestração). O diferencial é ter um agente por domínio, orquestrados por um comando único — em vez de um assistente genérico.",
+    a: "A Olympkus AI é uma empresa brasileira que constrói uma suíte de agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Aion (tempo e tarefas) e Zeus (orquestração). O diferencial é ter um agente por domínio, orquestrados por um comando único — em vez de um assistente genérico.",
   },
   {
     q: "O que é IA agêntica?",
@@ -105,7 +105,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: "Qual a diferença entre Olympkus e assistentes de IA como ChatGPT?",
-    a: "O ChatGPT e outros assistentes genéricos respondem perguntas sobre qualquer assunto, mas não conhecem profundamente suas contas, seu calendário ou suas prioridades — você precisa explicar tudo, toda vez. A Olympkus tem um agente especializado por domínio: Pluto conhece suas finanças em profundidade, Cronos conhece seu tempo. Cada agente é excelente no que faz, e Zeus orquestra tudo sob um só comando.",
+    a: "O ChatGPT e outros assistentes genéricos respondem perguntas sobre qualquer assunto, mas não conhecem profundamente suas contas, seu calendário ou suas prioridades — você precisa explicar tudo, toda vez. A Olympkus tem um agente especializado por domínio: Pluto conhece suas finanças em profundidade, Aion conhece seu tempo. Cada agente é excelente no que faz, e Zeus orquestra tudo sob um só comando.",
   },
   {
     q: "Qual a diferença entre Olympkus e apps de finanças com IA?",

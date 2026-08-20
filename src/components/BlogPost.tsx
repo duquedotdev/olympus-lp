@@ -17,7 +17,7 @@ export function BlogPost({ slug }: { slug: string }) {
       <a href="/blog" className="blog-back">← Voltar ao blog</a>
 
       <header className="blog-post__header">
-        <p className="eyebrow"><span className="eyebrow__dot" />{formatDate(post.date)}</p>
+        <p className="eyebrow"><span className="eyebrow__dot" />{formatDate(post.date)} · {post.category.toUpperCase()} · {post.readingTime} MIN DE LEITURA</p>
         <h1 className="blog-post__title">{post.title}</h1>
         <p className="blog-post__excerpt">{post.excerpt}</p>
         <p className="blog-post__author mono">POR {post.author.toUpperCase()}</p>
@@ -26,7 +26,7 @@ export function BlogPost({ slug }: { slug: string }) {
       <div className="blog-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
 
       <footer className="blog-post__footer">
-        <a href="/#access" className="btn btn--solid">Garanta seu lugar no Panteão</a>
+        <a href="/" className="btn btn--solid">Garanta seu lugar no Panteão</a>
         <a href="/blog" className="blog-back">← Voltar ao blog</a>
       </footer>
     </article>

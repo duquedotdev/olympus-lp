@@ -12,26 +12,29 @@ export function Footer() {
         <nav className="site-footer__col" aria-label="Produtos">
           <p className="site-footer__h mono">PRODUTOS</p>
           <a href="/pluto">Pluto</a>
-          <a href="/cronos">Cronos</a>
-          <a href="/zeus">Zeus</a>
-          <a href="/pantheon">Panteão</a>
+          <a href="/funcionalidades">Funcionalidades</a>
+          <a href="/precos">Planos</a>
+          <a href="/comparativo">Comparativo</a>
+          <a href="/seguranca">Segurança</a>
         </nav>
 
         <nav className="site-footer__col" aria-label="Empresa">
           <p className="site-footer__h mono">OLYMPKUS</p>
           <a href="/about">Sobre</a>
-          <a href="/#manifesto">Manifesto</a>
-          <a href="/#method">Método</a>
+          <a href="/">Manifesto</a>
+          <a href="/">Método</a>
           <a href="/blog">Blog</a>
           <a href="/press">Imprensa</a>
         </nav>
 
         <nav className="site-footer__col" aria-label="Comunidade">
           <p className="site-footer__h mono">COMUNIDADE</p>
-          <a href="/#faq">Perguntas</a>
-          <a href="/#access">Acesso antecipado</a>
+          <a href="/ajuda">Ajuda</a>
+          <a href="/contato">Contato</a>
+          <a href="/">Acesso antecipado</a>
           <a href="/privacy">Privacidade</a>
           <a href="/terms">Termos</a>
+          <a href="/cookies">Cookies</a>
           <a href="https://discord.gg/Y5GxgEY8Zt" target="_blank" rel="noopener noreferrer">Discord</a>
         </nav>
 

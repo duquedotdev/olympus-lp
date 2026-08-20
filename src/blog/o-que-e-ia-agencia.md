@@ -4,6 +4,7 @@ slug: o-que-e-ia-agencia
 date: 2026-08-11
 excerpt: IA agêntica não é mais um chatbot para você operar. É um agente que age por você, dentro dos limites que você define. Entenda a diferença entre pedir e delegar.
 author: Olympkus AI
+category: "Dentro do Pluto"
 ---
 
 A tecnologia prometeu tempo livre e entregou mais telas. Você usa cinco apps para organizar a vida e ainda assim sente que administra ferramentas em vez de viver. A IA agêntica é a resposta a esse problema — não mais um app para você operar, mas um agente que opera por você.
@@ -31,8 +32,8 @@ A pergunta não é mais "a IA consegue fazer isso?". A pergunta é "como constru
 A Olympkus não constrói um assistente genérico. Constrói um panteão: três agentes especializados, orquestrados por um comando único.
 
 - **Pluto** — finanças agênticas. Lê suas contas, antecipa faturas, prepara pagamentos para sua aprovação.
-- **Cronos** — gestão de tempo agêntica. Substitui a pilha de apps de calendário e tarefas num só agente.
-- **Zeus** — orquestração. Delega ao Pluto, ao Cronos e ao mundo lá fora. Um comando, executado através de tudo.
+- **Aion** — gestão de tempo agêntica. Substitui a pilha de apps de calendário e tarefas num só agente.
+- **Zeus** — orquestração. Delega ao Pluto, ao Aion e ao mundo lá fora. Um comando, executado através de tudo.
 
 Cada agente é excelente no que faz. Nenhum tenta ser tudo para todos. É a diferença entre um canivete suíço e um panteão de especialistas.
 
@@ -40,4 +41,4 @@ Cada agente é excelente no que faz. Nenhum tenta ser tudo para todos. É a dife
 
 Se você usa três apps para organizar a vida e ainda assim sente que administra ferramentas em vez de viver, a IA agêntica é para você. A promessa não é mais um app para operar — é um agente que opera por você, dentro dos limites que você define.
 
-As vagas para o Panteão são limitadas. O Pluto abre o portão em janeiro de 2027. [Garanta seu lugar antes que o Olimpo abra as portas.](/#access)
+As vagas para o Panteão são limitadas. O Pluto abre o portão em janeiro de 2027. [Garanta seu lugar antes que o Olimpo abra as portas.](/)

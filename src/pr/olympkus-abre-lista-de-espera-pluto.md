@@ -25,7 +25,7 @@ O acesso ao Pluto é por convite. Cada indicação sobe a posição do usuário 
 O Pluto é o primeiro dos três agentes do Panteão:
 
 - **Pluto** — finanças agênticas (previsto para janeiro de 2027)
-- **Cronos** — gestão de tempo agêntica (previsto para julho de 2027)
+- **Aion** — gestão de tempo agêntica (previsto para julho de 2027)
 - **Zeus** — orquestração de vida pessoal (anunciado)
 
 Cada agente é especialista no seu domínio. Zeus orquestra todos sob um comando único — a arquitetura que diferencia a Olympkus de concorrentes como Aizen, Cleo, Motion e Poke, que atuam em apenas um eixo.

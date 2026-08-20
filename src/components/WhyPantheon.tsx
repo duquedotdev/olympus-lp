@@ -32,7 +32,7 @@ export function WhyPantheon() {
           <p className="why__label mono">PANTEÃO OLYMPKUS</p>
           <p className="why__body">
             Um agente especializado por domínio — Pluto conhece suas finanças
-            em profundidade, Cronos conhece seu tempo — e um orquestrador, Zeus,
+            em profundidade, Aion conhece seu tempo — e um orquestrador, Zeus,
             que coordena tudo sob um só comando. Cada agente é excelente no
             que faz. Você delega, não integra.
           </p>

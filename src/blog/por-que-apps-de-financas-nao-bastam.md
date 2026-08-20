@@ -4,6 +4,7 @@ slug: por-que-apps-de-financas-nao-bastam
 date: 2026-08-18
 excerpt: Apps de finanças mostram onde seu dinheiro foi. Mas mostrar não é agir. O problema não é falta de informação — é falta de execução. Entenda por que o Pluto é diferente.
 author: Olympkus AI
+category: "Comparativos"
 ---
 
 Você abre o app do banco. Vê onde gastou. Vê quanto sobrou. Fecha o app. Continua fazendo as mesmas escolhas. O app te mostrou os dados, mas não mudou nada. Mostrar não é agir.
@@ -36,10 +37,10 @@ Isso não é uma limitação técnica. É uma escolha de design. É a diferença
 
 Aizen, no Brasil, já valida a tese de finanças agênticas via WhatsApp. Cleo, global, valida a tese com a geração Z. O mercado está sendo educado: a ideia de que uma IA pode cuidar das suas finanças deixou de ser ficção.
 
-O que a Olympkus adiciona não é a categoria — é a arquitetura. Um agente de finanças que faz parte de um panteão, orquestrado por um comando único. Pluto cuida do dinheiro, Cronos cuida do tempo, Zeus orquestra tudo. Nenhum concorrente tem os três.
+O que a Olympkus adiciona não é a categoria — é a arquitetura. Um agente de finanças que faz parte de um panteão, orquestrado por um comando único. Pluto cuida do dinheiro, Aion cuida do tempo, Zeus orquestra tudo. Nenhum concorrente tem os três.
 
 ## O que esperar
 
 O Pluto está previsto para janeiro de 2027. Enquanto isso, a lista de espera está aberta. Os primeiros da fila entram como membros fundadores, com condições especiais no lançamento.
 
-Se você está cansado de administrar apps em vez de viver, [garanta seu lugar no Panteão.](/#access)
+Se você está cansado de administrar apps em vez de viver, [garanta seu lugar no Panteão.](/)

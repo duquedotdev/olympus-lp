@@ -15,7 +15,7 @@ excerpt: Empresa brasileira argumenta que o problema não é falta de apps, mas 
 A Olympkus estabelece uma distinção clara entre IA assistiva e IA agêntica:
 
 - **IA assistiva** responde perguntas e sugere ações. O usuário precisa interpretar, decidir e executar. Exemplos: ChatGPT, assistentes de calendário, apps de finanças com dashboards.
-- **IA agêntica** executa ações dentro de limites que o usuário define. O usuário aprova a intenção, o agente cuida da execução. Exemplos: Pluto (finanças), Cronos (tempo).
+- **IA agêntica** executa ações dentro de limites que o usuário define. O usuário aprova a intenção, o agente cuida da execução. Exemplos: Pluto (finanças), Aion (tempo).
 
 "A diferença é entre olhar para o retrovisor e dirigir o carro", afirma a empresa. "Apps de finanças mostram onde seu dinheiro foi. Um agente prepara onde seu dinheiro vai."
 
@@ -33,7 +33,7 @@ A Olympkus se diferencia pela arquitetura do Panteão: três agentes especializa
 
 ## Sobre a Olympkus AI
 
-A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida pessoal. A suíte Panteão reúne Pluto (finanças, previsto para janeiro de 2027), Cronos (tempo, previsto para julho de 2027) e Zeus (orquestração, anunciado). A lista de espera para o Pluto está aberta.
+A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida pessoal. A suíte Panteão reúne Pluto (finanças, previsto para janeiro de 2027), Aion (tempo, previsto para julho de 2027) e Zeus (orquestração, anunciado). A lista de espera para o Pluto está aberta.
 
 **Contato para imprensa:** imprensa@olympkus.ai
 

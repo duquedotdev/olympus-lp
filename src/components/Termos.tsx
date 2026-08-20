@@ -12,7 +12,7 @@ export function Termos() {
       </header>
 
       <article className="legal__doc">
-        <p className="eyebrow">Legal</p>
+        <p className="eyebrow">TERMOS</p>
         <h1 className="legal__title">Termos de Uso</h1>
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 
@@ -26,7 +26,7 @@ export function Termos() {
           <h2>1. Sobre os produtos</h2>
           <p>
             A Olympkus AI desenvolve uma suíte de agentes de IA (Panteão) composta
-            por Pluto, Cronos e Zeus. Nenhum produto está em produção no momento.
+            por Pluto, Aion e Zeus. Nenhum produto está em produção no momento.
             Todas as datas de lançamento são <strong>previstas</strong> e podem
             ser alteradas a qualquer tempo, sem aviso prévio.
           </p>
@@ -64,7 +64,7 @@ export function Termos() {
           <ul>
             <li>usar o site para fins ilegais ou não autorizados;</li>
             <li>tentar acessar sistemas internos, bancos de dados ou infraestrutura da Olympkus;</li>
-            <li>automatizar cadastros em massa, usar bots ou scrapers sem autorização;</li>
+            <li>automatizar cadastros em massa, usar robôs ou programas automatizados sem autorização;</li>
             <li>se cadastrar com e-mails falsos, descartáveis ou de terceiros sem consentimento.</li>
           </ul>
         </section>
@@ -73,7 +73,7 @@ export function Termos() {
           <h2>5. Propriedade intelectual</h2>
           <p>
             Todo o conteúdo do site — textos, imagens, vídeos, logos, identidade
-            visual, nomes (Olympkus, Pluto, Cronos, Zeus, Panteão) — é propriedade
+            visual, nomes (Olympkus, Pluto, Aion, Zeus, Panteão) — é propriedade
             da Olympkus AI. Você não pode copiar, reproduzir ou usar esses elementos
             sem autorização expressa.
           </p>

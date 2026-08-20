@@ -1,6 +1,6 @@
 # Olympkus AI — Landing Page
 
-Single-page landing for the Olympkus AI agentic suite (Pluto · Cronos · Zeus).
+Single-page landing for the Olympkus AI agentic suite (Pluto · Aion · Zeus).
 Vite + React 19 + TypeScript. The waitlist backend lives in **Cérbero**
 (`github.com/olympkusai/cerbero`), exposed via the **Nike** API gateway at
 `api.olympkusai.com/cerbero`.

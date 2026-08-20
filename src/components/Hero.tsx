@@ -15,14 +15,14 @@ export function Hero() {
           </h1>
 
           <p className="hero__sub">
-            Pluto cuida do seu dinheiro. Cronos do seu tempo. Zeus orquestra
+            Pluto cuida do seu dinheiro. Aion do seu tempo. Zeus orquestra
             tudo. Você aprova a intenção; eles cuidam da execução. Devolvemos
             o seu recurso mais escasso — atenção.
           </p>
 
           <div className="hero__actions">
-            <a href="/#access" className="btn btn--solid">Entrar para a lista</a>
-            <a href="/#pantheon" className="btn btn--ghost">Conhecer o panteão</a>
+            <a href="/" className="btn btn--solid">Entrar para a lista</a>
+            <a href="/pantheon" className="btn btn--ghost">Conhecer o panteão</a>
           </div>
 
           <dl className="hero__stats">

@@ -6,6 +6,8 @@ export interface BlogPost {
   date: string;
   excerpt: string;
   author: string;
+  category: string;
+  readingTime: number;
   content: string;
   html: string;
 }
@@ -22,11 +24,23 @@ function parseFrontmatter(raw: string): { data: Record<string, string>; body: st
     const idx = line.indexOf(":");
     if (idx === -1) continue;
     const key = line.slice(0, idx).trim();
-    const value = line.slice(idx + 1).trim();
+    let value = line.slice(idx + 1).trim();
+    // Remove aspas duplas ou simples envolvendo o valor
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
     data[key] = value;
   }
 
   return { data, body };
+}
+
+function calcReadingTime(body: string): number {
+  const words = body.trim().split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(words / 200));
 }
 
 // Vite import.meta.glob carrega todos os .md em tempo de build
@@ -43,6 +57,8 @@ const posts: BlogPost[] = Object.entries(modules).map(([path, raw]) => {
     date: data.date || "",
     excerpt: data.excerpt || "",
     author: data.author || "Olympkus AI",
+    category: data.category || "Geral",
+    readingTime: calcReadingTime(body),
     content: body,
     html: marked.parse(body, { async: false }) as string,
   };
@@ -56,4 +72,14 @@ export function getAllPosts(): BlogPost[] {
 
 export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);
+}
+
+export function getPostsByCategory(category: string): BlogPost[] {
+  return posts.filter((p) => p.category === category);
+}
+
+export function getAllCategories(): string[] {
+  const set = new Set<string>();
+  for (const p of posts) set.add(p.category);
+  return Array.from(set);
 }

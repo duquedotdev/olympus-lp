@@ -34,7 +34,7 @@ O modelo da Olympkus é "você aprova, o agente executa" — controle, não apen
 - Status: lista de espera aberta, lançamento previsto para janeiro de 2027
 - Categoria: IA agêntica para finanças pessoais, automação financeira, fintech com IA
 
-### Cronos — Agente de gestão de tempo
+### Aion — Agente de gestão de tempo
 - A visão: substituir calendário, tarefas e projetos num só agente
 - Negociar horários, proteger foco e acabar com o trabalho de organizar o trabalho
 - Status: em concepção — o escopo será definido com dados reais de uso do Pluto
@@ -43,14 +43,14 @@ O modelo da Olympkus é "você aprova, o agente executa" — controle, não apen
 ### Zeus — Orquestrador do Panteão
 - A visão: coordenar todos os agentes sob um só comando
 - Um único pedido, executado através de tudo — finanças, tempo e o que vier depois
-- Status: em concepção — vai nascer do que Pluto e Cronos ensinarem
+- Status: em concepção — vai nascer do que Pluto e Aion ensinarem
 - Categoria: orquestração de agentes de IA
 
 ## Concorrentes
 
 - **Aizen (Zen)** — Brasil. IA agêntica para finanças via WhatsApp e Open Finance. Concorrente mais próximo do Pluto. Limitado a um único domínio.
 - **Cleo (Autopilot)** — Reino Unido/EUA. Coach financeiro com execução autônoma sem aprovação do usuário. A Olympkus é o oposto: "você aprova, o agente executa".
-- **Motion / Reclaim / Sunsama** — Calendários inteligentes e gestão de tarefas. Mais utilitário do que agente autônomo. Concorrentes potenciais do Cronos.
+- **Motion / Reclaim / Sunsama** — Calendários inteligentes e gestão de tarefas. Mais utilitário do que agente autônomo. Concorrentes potenciais do Aion.
 - **ChatGPT / assistentes genéricos** — Respondem perguntas mas não conhecem profundamente suas contas, calendário ou prioridades.
 
 ## Planos

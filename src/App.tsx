@@ -20,6 +20,18 @@ import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal.ts";
 import { usePathRoute } from "./hooks/usePathRoute.ts";
 import { NotFound } from "./components/NotFound.tsx";
+import { Funcionalidades } from "./components/Funcionalidades.tsx";
+import { FuncionalidadeIA } from "./components/FuncionalidadeIA.tsx";
+import { FuncionalidadeOrcamentos } from "./components/FuncionalidadeOrcamentos.tsx";
+import { FuncionalidadeDividas } from "./components/FuncionalidadeDividas.tsx";
+import { FuncionalidadeMetas } from "./components/FuncionalidadeMetas.tsx";
+import { FuncionalidadeRecorrencias } from "./components/FuncionalidadeRecorrencias.tsx";
+import { Seguranca } from "./components/Seguranca.tsx";
+import { Comparativo } from "./components/Comparativo.tsx";
+import { Cookies } from "./components/Cookies.tsx";
+import { Precos } from "./components/Precos.tsx";
+import { Ajuda } from "./components/Ajuda.tsx";
+import { Contato } from "./components/Contato.tsx";
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
@@ -59,11 +71,33 @@ export default function App() {
     );
   }
 
+  if (route === "cookies") {
+    return (
+      <>
+        <div className="grain" aria-hidden="true" />
+        <Cookies />
+        <Footer />
+        <Analytics />
+      </>
+    );
+  }
+
   if (route === "pluto") return <Shell><ProductPage id="pluto" /></Shell>;
-  if (route === "cronos") return <Shell><ProductPage id="cronos" /></Shell>;
+  if (route === "aion") return <Shell><ProductPage id="aion" /></Shell>;
   if (route === "zeus") return <Shell><ProductPage id="zeus" /></Shell>;
   if (route === "pantheon") return <Shell><Panteao /></Shell>;
   if (route === "about") return <Shell><Sobre /></Shell>;
+  if (route === "funcionalidades") return <Shell><Funcionalidades /></Shell>;
+  if (route === "funcionalidades/ia-metis") return <Shell><FuncionalidadeIA /></Shell>;
+  if (route === "funcionalidades/orcamentos") return <Shell><FuncionalidadeOrcamentos /></Shell>;
+  if (route === "funcionalidades/dividas-parcelas") return <Shell><FuncionalidadeDividas /></Shell>;
+  if (route === "funcionalidades/metas") return <Shell><FuncionalidadeMetas /></Shell>;
+  if (route === "funcionalidades/recorrencias") return <Shell><FuncionalidadeRecorrencias /></Shell>;
+  if (route === "seguranca") return <Shell><Seguranca /></Shell>;
+  if (route === "comparativo") return <Shell><Comparativo /></Shell>;
+  if (route === "precos") return <Shell><Precos /></Shell>;
+  if (route === "ajuda") return <Shell><Ajuda /></Shell>;
+  if (route === "contato") return <Shell><Contato /></Shell>;
 
   if (route === "blog") return <Shell><BlogList /></Shell>;
 
