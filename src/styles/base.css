@@ -117,6 +117,7 @@ button { font: inherit; cursor: pointer; }
 }
 .chip--shipping { color: var(--bronze-soft); border-color: var(--bronze-line); }
 .chip--shipping::before { content: "● "; color: var(--bronze); }
+.chip--arriving { color: var(--marble-dim); border-color: var(--line-strong); }
 .chip--arriving::before { content: "◐ "; }
 .chip--announced { color: var(--stone-dim); }
 .chip--announced::before { content: "○ "; }

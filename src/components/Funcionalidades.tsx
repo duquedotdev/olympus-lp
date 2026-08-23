@@ -13,31 +13,31 @@ const cards: FeatureCard[] = [
     icon: "✦",
     title: "Assistente de IA",
     desc: "Chat com raciocínio visível, categorização com 96% de confiança, insights e quick wins gerados a partir dos seus dados.",
-    href: "/funcionalidades/ia-metis",
+    href: "/features/ai-metis",
   },
   {
     icon: "▣",
     title: "Orçamentos",
     desc: "Orçamentos por categoria que se montam sozinhos. Semanal, mensal, trimestral ou anual — com alertas de limite.",
-    href: "/funcionalidades/orcamentos",
+    href: "/features/budgets",
   },
   {
     icon: "▼",
     title: "Dívidas & Parcelamentos",
     desc: "Dívidas ativas e quitadas, simulação de cenários de aceleração, parcelamentos com vencimento agrupado. O maior diferencial do Pluto.",
-    href: "/funcionalidades/dividas-parcelas",
+    href: "/features/debts-installments",
   },
   {
     icon: "◆",
     title: "Metas",
     desc: "Reserva de emergência, quitar dívida, investir, poupar para uma viagem. Progresso visível e projeção de quando chega lá.",
-    href: "/funcionalidades/metas",
+    href: "/features/goals",
   },
   {
     icon: "◐",
     title: "Recorrências & Assinaturas",
     desc: "Streaming, academia, software, contas fixas — tudo numa tela. Pluto soma o total mensal e identifica assinaturas esquecidas.",
-    href: "/funcionalidades/recorrencias",
+    href: "/features/recurring",
   },
   {
     icon: "⚿",
@@ -55,7 +55,6 @@ export function Funcionalidades() {
       <section className="page-hero" id="funcionalidades">
         <div className="page-hero__inner">
           <a href="/pluto" className="blog-back">← Pluto</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />FUNCIONALIDADES</p>
           <h1 className="page-hero__title">Tudo o que o Pluto faz — e por que importa.</h1>
           <p className="page-hero__lede">
             Cada área do Pluto resolve uma dor real de quem tenta controlar o

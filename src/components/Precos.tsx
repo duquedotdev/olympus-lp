@@ -90,7 +90,6 @@ export function Precos() {
       <section className="page-hero" id="precos">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />PLANOS</p>
           <h1 className="page-hero__title">Escolha o seu plano.</h1>
           <p className="page-hero__lede">
             Comece grátis. Faça upgrade quando precisar de mais controle.

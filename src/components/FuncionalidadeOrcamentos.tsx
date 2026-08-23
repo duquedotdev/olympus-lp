@@ -33,8 +33,7 @@ export function FuncionalidadeOrcamentos() {
     <>
       <section className="page-hero" id="orcamentos">
         <div className="page-hero__inner">
-          <a href="/funcionalidades" className="blog-back">← Voltar para funcionalidades</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />PLANEJAMENTO</p>
+          <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Orçamentos que se montam sozinhos.</h1>
           <p className="page-hero__lede">
             Orçamento manual é a razão número um de abandono de apps financeiros.

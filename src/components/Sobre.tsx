@@ -30,7 +30,6 @@ export function Sobre() {
       <section className="page-hero" id="sobre">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />SOBRE</p>
           <h1 className="page-hero__title">Construímos o oposto do que a tecnologia prometeu.</h1>
           <p className="page-hero__lede">
             A tecnologia prometeu tempo livre e entregou mais telas para vigiar.
@@ -119,7 +118,7 @@ export function Sobre() {
             ))}
           </ul>
           <p>
-            <a href="/contato">Todos os canais em /contato</a>
+            <a href="/contact">Todos os canais em /contact</a>
           </p>
           <p style={socialWrapStyle}>
             {SOCIAL.map((s, i) => (

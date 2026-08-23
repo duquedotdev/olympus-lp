@@ -27,7 +27,6 @@ export function BlogList() {
     <div className="blog-list">
       <header className="blog-header">
         <a href="/" className="blog-back">← Voltar</a>
-        <p className="eyebrow eyebrow--center"><span className="eyebrow__dot" />BLOG</p>
         <h1 className="blog-title">Bastidores do Panteão</h1>
         <p className="blog-lede">Reflexões sobre IA agêntica, finanças pessoais e o futuro da delegação.</p>
       </header>

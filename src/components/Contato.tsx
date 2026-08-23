@@ -1,5 +1,7 @@
+import type { ComponentType } from "react";
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { DiscordIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "./icons/SocialIcons.tsx";
 
 type ContactCard = {
   label: string;
@@ -29,17 +31,17 @@ const contacts: ContactCard[] = [
     description: "Assuntos legais e contratos.",
   },
   {
-    label: "Parcerias/Institucional",
+    label: "Institucional",
     email: "[A PREENCHER — email geral]",
     description: "Parcerias, investidores e contato institucional.",
   },
 ];
 
-const socials: { label: string; url: string }[] = [
-  { label: "Discord", url: "https://discord.gg/Y5GxgEY8Zt" },
-  { label: "LinkedIn", url: "https://linkedin.com/company/olympkusai" },
-  { label: "Instagram", url: "https://instagram.com/olympkus" },
-  { label: "TikTok", url: "https://tiktok.com/@olympkus" },
+const socials: { label: string; url: string; Icon: ComponentType<{ className?: string }> }[] = [
+  { label: "Discord", url: "https://discord.gg/Y5GxgEY8Zt", Icon: DiscordIcon },
+  { label: "LinkedIn", url: "https://linkedin.com/company/olympkusai", Icon: LinkedInIcon },
+  { label: "Instagram", url: "https://instagram.com/olympkus", Icon: InstagramIcon },
+  { label: "TikTok", url: "https://tiktok.com/@olympkus", Icon: TikTokIcon },
 ];
 
 export function Contato() {
@@ -50,7 +52,6 @@ export function Contato() {
       <section className="page-hero" id="contato">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />CONTATO</p>
           <h1 className="page-hero__title">Fale com a gente — pelo canal certo.</h1>
           <p className="page-hero__lede">
             Cada assunto tem um endereço. Escolha o que mais combina com a sua
@@ -60,14 +61,14 @@ export function Contato() {
       </section>
 
       <section className="product-pricing">
-        <div className="panteao-grid">
+        <div className="panteao-grid contact-grid">
           {contacts.map((c, i) => (
             <article className="panteao-card" key={i} data-reveal>
               <div className="panteao-card__head">
                 <span className="panteao-card__glyph" aria-hidden="true">✉</span>
                 <span className="panteao-card__domain mono">{c.label.toUpperCase()}</span>
               </div>
-              <h3 className="panteao-card__name">
+              <h3 className="panteao-card__name contact-card__email">
                 <a href={`mailto:${c.email}`}>{c.email}</a>
               </h3>
               <p className="panteao-card__desc">{c.description}</p>
@@ -82,13 +83,16 @@ export function Contato() {
           <p>
             Acompanhe a Olympkus e participe da comunidade:
           </p>
-          <ol>
-            {socials.map((s, i) => (
-              <li key={i}>
-                <a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a>
+          <ul className="social-links">
+            {socials.map((s) => (
+              <li key={s.label}>
+                <a href={s.url} target="_blank" rel="noopener noreferrer" className="social-links__item">
+                  <s.Icon className="social-links__icon" />
+                  <span>{s.label}</span>
+                </a>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
       </section>
 

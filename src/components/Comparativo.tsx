@@ -88,7 +88,6 @@ export function Comparativo() {
       <section className="page-hero" id="comparativo">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />COMPARATIVO</p>
           <h1 className="page-hero__title">Pluto vs. os outros — sem esconder onde perdemos.</h1>
           <p className="page-hero__lede">
             A página mais honesta do site. Comparamos o Pluto com os principais

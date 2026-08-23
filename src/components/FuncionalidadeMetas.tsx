@@ -33,8 +33,7 @@ export function FuncionalidadeMetas() {
     <>
       <section className="page-hero" id="metas">
         <div className="page-hero__inner">
-          <a href="/funcionalidades" className="blog-back">← Voltar para funcionalidades</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />OBJETIVOS</p>
+          <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Metas e lista de desejos.</h1>
           <p className="page-hero__lede">
             Reserva de emergência, quitar dívida, investir, poupar para uma

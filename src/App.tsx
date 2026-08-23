@@ -87,17 +87,17 @@ export default function App() {
   if (route === "zeus") return <Shell><ProductPage id="zeus" /></Shell>;
   if (route === "pantheon") return <Shell><Panteao /></Shell>;
   if (route === "about") return <Shell><Sobre /></Shell>;
-  if (route === "funcionalidades") return <Shell><Funcionalidades /></Shell>;
-  if (route === "funcionalidades/ia-metis") return <Shell><FuncionalidadeIA /></Shell>;
-  if (route === "funcionalidades/orcamentos") return <Shell><FuncionalidadeOrcamentos /></Shell>;
-  if (route === "funcionalidades/dividas-parcelas") return <Shell><FuncionalidadeDividas /></Shell>;
-  if (route === "funcionalidades/metas") return <Shell><FuncionalidadeMetas /></Shell>;
-  if (route === "funcionalidades/recorrencias") return <Shell><FuncionalidadeRecorrencias /></Shell>;
-  if (route === "seguranca") return <Shell><Seguranca /></Shell>;
-  if (route === "comparativo") return <Shell><Comparativo /></Shell>;
-  if (route === "precos") return <Shell><Precos /></Shell>;
-  if (route === "ajuda") return <Shell><Ajuda /></Shell>;
-  if (route === "contato") return <Shell><Contato /></Shell>;
+  if (route === "features") return <Shell><Funcionalidades /></Shell>;
+  if (route === "features/ai-metis") return <Shell><FuncionalidadeIA /></Shell>;
+  if (route === "features/budgets") return <Shell><FuncionalidadeOrcamentos /></Shell>;
+  if (route === "features/debts-installments") return <Shell><FuncionalidadeDividas /></Shell>;
+  if (route === "features/goals") return <Shell><FuncionalidadeMetas /></Shell>;
+  if (route === "features/recurring") return <Shell><FuncionalidadeRecorrencias /></Shell>;
+  if (route === "security") return <Shell><Seguranca /></Shell>;
+  if (route === "comparison") return <Shell><Comparativo /></Shell>;
+  if (route === "pricing") return <Shell><Precos /></Shell>;
+  if (route === "help") return <Shell><Ajuda /></Shell>;
+  if (route === "contact") return <Shell><Contato /></Shell>;
 
   if (route === "blog") return <Shell><BlogList /></Shell>;
 

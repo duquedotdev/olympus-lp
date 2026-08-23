@@ -26,7 +26,6 @@ export function PressList() {
     <div className="blog-list">
       <header className="blog-header">
         <a href="/" className="blog-back">← Voltar</a>
-        <p className="eyebrow eyebrow--center"><span className="eyebrow__dot" />IMPRENSA</p>
         <h1 className="blog-title">Sala de Imprensa</h1>
         <p className="blog-lede">Comunicados, posicionamento e materiais para jornalistas e criadores de conteúdo.</p>
       </header>
@@ -34,7 +33,6 @@ export function PressList() {
       {/* ---------- Kit de Mídia ---------- */}
       <section style={kitStyle}>
         <div style={{ marginBottom: "2.4rem" }}>
-          <p className="eyebrow"><span className="eyebrow__dot" />KIT DE MÍDIA</p>
           <h2 style={kitTitleStyle}>Tudo que você precisa para falar da Olympkus.</h2>
         </div>
 

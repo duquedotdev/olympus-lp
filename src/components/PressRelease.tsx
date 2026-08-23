@@ -17,7 +17,6 @@ export function PressRelease({ slug }: { slug: string }) {
       <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
 
       <header className="blog-post__header">
-        <p className="eyebrow"><span className="eyebrow__dot" />{formatDate(release.date)}</p>
         <span className="chip chip--shipping">COMUNICADO</span>
         <h1 className="blog-post__title">{release.title}</h1>
         <p className="blog-post__excerpt">{release.excerpt}</p>
@@ -32,9 +31,4 @@ export function PressRelease({ slug }: { slug: string }) {
       </footer>
     </article>
   );
-}
-
-function formatDate(iso: string): string {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" }).toUpperCase();
 }

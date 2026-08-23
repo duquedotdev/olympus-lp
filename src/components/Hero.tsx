@@ -3,11 +3,6 @@ export function Hero() {
     <section className="hero" id="top">
       <div className="hero__grid">
         <div className="hero__lede">
-          <p className="eyebrow hero__eyebrow">
-            <span className="eyebrow__dot" aria-hidden="true" />
-            Olympkus AI &nbsp;//&nbsp; suíte agêntica
-          </p>
-
           <h1 className="hero__title">
             <span className="reveal-line"><span>Um panteão de agentes</span></span>
             <span className="reveal-line"><span>de IA — um por domínio,</span></span>

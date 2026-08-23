@@ -17,7 +17,6 @@ export function BlogPost({ slug }: { slug: string }) {
       <a href="/blog" className="blog-back">← Voltar ao blog</a>
 
       <header className="blog-post__header">
-        <p className="eyebrow"><span className="eyebrow__dot" />{formatDate(post.date)} · {post.category.toUpperCase()} · {post.readingTime} MIN DE LEITURA</p>
         <h1 className="blog-post__title">{post.title}</h1>
         <p className="blog-post__excerpt">{post.excerpt}</p>
         <p className="blog-post__author mono">POR {post.author.toUpperCase()}</p>
@@ -31,9 +30,4 @@ export function BlogPost({ slug }: { slug: string }) {
       </footer>
     </article>
   );
-}
-
-function formatDate(iso: string): string {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" }).toUpperCase();
 }

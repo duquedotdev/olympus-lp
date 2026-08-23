@@ -11,7 +11,6 @@ export function Seguranca() {
       <section className="page-hero" id="seguranca">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />SEGURANÇA</p>
           <h1 className="page-hero__title">Seus dados financeiros, protegidos por padrão.</h1>
           <p className="page-hero__lede">
             Um app financeiro vive ou morre de confiança. Esta página é onde o

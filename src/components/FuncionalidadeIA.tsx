@@ -38,9 +38,8 @@ export function FuncionalidadeIA() {
     <>
       <section className="page-hero" id="ia">
         <div className="page-hero__inner">
-          <a href="/funcionalidades" className="blog-back">← Voltar para funcionalidades</a>
+          <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <img src="/ia_logo.svg" alt="" className="page-hero__logo" aria-hidden="true" />
-          <p className="eyebrow"><span className="eyebrow__dot" />INTELIGÊNCIA</p>
           <h1 className="page-hero__title">Assistente de IA com raciocínio visível.</h1>
           <p className="page-hero__lede">
             O assistente de IA do Pluto não entrega só a resposta — mostra como

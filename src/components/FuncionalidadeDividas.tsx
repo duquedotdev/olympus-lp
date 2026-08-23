@@ -33,8 +33,7 @@ export function FuncionalidadeDividas() {
     <>
       <section className="page-hero" id="dividas">
         <div className="page-hero__inner">
-          <a href="/funcionalidades" className="blog-back">← Voltar para funcionalidades</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />DÍVIDAS</p>
+          <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Dívidas e parcelamentos como módulo dedicado.</h1>
           <p className="page-hero__lede">
             No Brasil, quase tudo é parcelado. O Pluto trata isso como fato, não

@@ -256,7 +256,6 @@ export function ProductPage({ id }: { id: string }) {
           {id === "pluto" && (
             <img src="/pluto_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />
           )}
-          <p className="eyebrow"><span className="eyebrow__dot" />{deity.domain.toUpperCase()} · {deity.statusLabel} {deity.eta}</p>
           <h1 className="product-hero__title">{deity.name}</h1>
           <p className="product-hero__tagline">{deity.tagline}</p>
           <p className="product-hero__desc">{details.hero}</p>

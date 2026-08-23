@@ -33,8 +33,7 @@ export function FuncionalidadeRecorrencias() {
     <>
       <section className="page-hero" id="recorrencias">
         <div className="page-hero__inner">
-          <a href="/funcionalidades" className="blog-back">← Voltar para funcionalidades</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />RECORRÊNCIAS</p>
+          <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Assinaturas e contas fixas num só lugar.</h1>
           <p className="page-hero__lede">
             Streaming, academia, software, condomínio, internet. O Pluto reúne

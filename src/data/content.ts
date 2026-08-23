@@ -18,7 +18,7 @@ export const nav = [
   { label: "Manifesto", href: "/#manifesto" },
   { label: "Método", href: "/#method" },
   { label: "Blog", href: "/blog" },
-  { label: "Perguntas", href: "/ajuda" },
+  { label: "Perguntas", href: "/help" },
 ];
 
 export const deities: Deity[] = [

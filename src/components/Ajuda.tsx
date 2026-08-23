@@ -92,7 +92,6 @@ export function Ajuda() {
       <section className="page-hero" id="ajuda">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
-          <p className="eyebrow"><span className="eyebrow__dot" />AJUDA</p>
           <h1 className="page-hero__title">Perguntas frequentes e suporte.</h1>
           <p className="page-hero__lede">
             Tudo o que você precisa saber sobre o Pluto — da importação de

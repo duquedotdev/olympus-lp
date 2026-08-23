@@ -66,7 +66,6 @@ export function CtaBand() {
       <div className="access__inner" data-reveal>
         {standing ? (
           <>
-            <p className="eyebrow eyebrow--center">Você está no Olimpo</p>
             <h2 className="access__title">
               Posição <span className="access__pos">#{standing.position}</span>
             </h2>
@@ -90,7 +89,6 @@ export function CtaBand() {
           </>
         ) : (
           <>
-            <p className="eyebrow eyebrow--center">Convite ao Olimpo</p>
             <h2 className="access__title">Entre para a lista.</h2>
             <p className="access__sub">
               Os primeiros da lista entram como fundadores, com condições especiais

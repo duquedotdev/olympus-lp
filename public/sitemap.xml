@@ -27,57 +27,57 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/funcionalidades</loc>
+    <loc>https://olympkusai.com/features</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/funcionalidades/ia-metis</loc>
+    <loc>https://olympkusai.com/features/ai-metis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/funcionalidades/orcamentos</loc>
+    <loc>https://olympkusai.com/features/budgets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/funcionalidades/dividas-parcelas</loc>
+    <loc>https://olympkusai.com/features/debts-installments</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/funcionalidades/metas</loc>
+    <loc>https://olympkusai.com/features/goals</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/funcionalidades/recorrencias</loc>
+    <loc>https://olympkusai.com/features/recurring</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/seguranca</loc>
+    <loc>https://olympkusai.com/security</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/comparativo</loc>
+    <loc>https://olympkusai.com/comparison</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/precos</loc>
+    <loc>https://olympkusai.com/pricing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/ajuda</loc>
+    <loc>https://olympkusai.com/help</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://olympkusai.com/contato</loc>
+    <loc>https://olympkusai.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -14,7 +14,6 @@ export function Privacy() {
       </header>
 
       <article className="legal__doc">
-        <p className="eyebrow">PRIVACIDADE</p>
         <h1 className="legal__title">Política de Privacidade</h1>
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 

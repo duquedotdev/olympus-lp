@@ -12,7 +12,6 @@ export function Termos() {
       </header>
 
       <article className="legal__doc">
-        <p className="eyebrow">TERMOS</p>
         <h1 className="legal__title">Termos de Uso</h1>
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 
