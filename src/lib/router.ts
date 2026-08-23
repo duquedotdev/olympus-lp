@@ -31,8 +31,14 @@ export function setupLinkInterceptor(): void {
     const href = anchor.getAttribute("href");
     if (!href) return;
     if (href.startsWith("mailto:") || href.startsWith("tel:")) return;
-    // Pure in-page hash anchors (e.g. "#access") — let the browser scroll natively.
-    if (href.startsWith("#")) return;
+    // Pure in-page hash anchors (e.g. "#access") — scroll manually instead of
+    // letting the browser handle it natively, since that would append the
+    // hash to the address bar.
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      scrollToHash(href);
+      return;
+    }
 
     let url: URL;
     try {
@@ -43,8 +49,9 @@ export function setupLinkInterceptor(): void {
     if (url.origin !== window.location.origin) return;
 
     e.preventDefault();
-    navigate(url.pathname + url.search + url.hash);
-    // After client-side render, jump to the requested section (if any).
+    // Never push the hash to the address bar — navigate to the clean path
+    // and just scroll to the section once it's rendered.
+    navigate(url.pathname + url.search);
     if (url.hash) {
       setTimeout(() => scrollToHash(url.hash), 80);
     }
