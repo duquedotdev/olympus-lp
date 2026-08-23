@@ -26,7 +26,7 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a href="/" className="btn btn--ghost site-header__cta" onClick={close}>
+        <a href="/#access" className="btn btn--ghost site-header__cta" onClick={close}>
           Solicitar acesso
         </a>
         <button
