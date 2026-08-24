@@ -46,7 +46,7 @@ const categories: FaqCategory[] = [
     items: [
       {
         q: "É grátis?",
-        a: "Durante o beta, sim. Após o lançamento, há planos Free, Pro (R$29/mês) e Premium (R$49/mês). Veja /precos para detalhes.",
+        a: "Há planos Free, Pro (R$ 9,90/mês) e Max (R$ 19,90/mês). Veja /precos para detalhes.",
       },
       {
         q: "Como cancelo?",
