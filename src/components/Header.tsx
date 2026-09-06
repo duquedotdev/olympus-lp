@@ -30,7 +30,7 @@ export function Header() {
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""} ${menuOpen ? "is-open" : ""}`}>
       <div className="site-header__inner">
-        <div className="site-header__brand"><Logo /><span aria-hidden="true">OLYMPKUS <small>AI</small></span></div>
+        <div className="site-header__brand"><Logo /></div>
         <nav className="site-nav" id="site-navigation" aria-label="Navegação principal">
           {nav.map((n) => (
             <a key={n.href} href={n.href} className="site-nav__link" onClick={close}>
