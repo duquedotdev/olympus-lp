@@ -1,0 +1,480 @@
+{
+  "shared": {
+    "back": "← Volver",
+    "backToHome": "← Volver al inicio",
+    "backToBlog": "← Volver al blog",
+    "backToSite": "← Volver al sitio",
+    "backToPantheon": "← Panteón",
+    "backToFeatures": "← Volver a características",
+    "interiorHero": {
+      "frieze1": "OLYMPKUS AI",
+      "frieze2": "LA MITOLOGÍA ENCUENTRA LA INTELIGENCIA"
+    }
+  },
+  "header": {
+    "brand": "OLYMPKUS AI",
+    "navAriaLabel": "Navegación principal",
+    "nav": {
+      "pantheon": "Panteón",
+      "manifesto": "Manifiesto",
+      "blog": "Blog",
+      "questions": "Preguntas"
+    },
+    "cta": "Saber más",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
+  },
+  "footer": {
+    "tagline": "Un panteón agéntico para la vida personal.",
+    "pluto": {
+      "heading": "PLUTO",
+      "about": "Sobre Pluto",
+      "features": "Características",
+      "plans": "Planes",
+      "comparison": "Comparativa",
+      "security": "Seguridad"
+    },
+    "olympkus": {
+      "heading": "OLYMPKUS",
+      "pantheon": "Panteón",
+      "manifesto": "Manifiesto",
+      "blog": "Blog",
+      "press": "Prensa"
+    },
+    "community": {
+      "heading": "COMUNIDAD",
+      "help": "Ayuda",
+      "contact": "Contacto"
+    },
+    "legal": {
+      "heading": "LEGAL",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "cookies": "Cookies"
+    },
+    "social": {
+      "heading": "SOCIAL",
+      "discord": "Discord",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "copyright": "© {{year}} OLYMPKUS AI · CNPJ 52.911.352/0001-00",
+    "countryAriaLabel": "Elegir país o región"
+  },
+  "hero": {
+    "eyebrow": "El futuro tiene raíces eternas",
+    "title1": "Tu tiempo",
+    "title2": "es sagrado.",
+    "overture": "Tu propio panteón de IA.",
+    "subtitle": "Pluto cuida de tu dinero. Aion de tu tiempo. Zeus cuida de tu cuerpo. Tú apruebas la intención; ellos se encargan de la ejecución.",
+    "primaryCta": "Quiero ser avisado",
+    "secondaryCta": "Conocer el panteón",
+    "availability": "Pluto disponible · Aion previsto para jul. 2027",
+    "scrollPrompt": "El viaje comienza aquí",
+    "coordinates": "MONTE OLIMPO · 40°N 22°E",
+    "motionPause": "Pausar movimiento",
+    "motionResume": "Reanudar movimiento",
+    "shrineNumber": "III",
+    "shrineName": "Zeus",
+    "shrineRole": "El agente de tu cuerpo"
+  },
+  "manifesto": {
+    "eyebrow": "I · Más allá de las nubes",
+    "quote": "La tecnología prometió tiempo libre y entregó más pantallas para vigilar. Nosotros construimos lo opuesto: agentes que actúan por ti — silenciosos, responsables y bajo tu mando.",
+    "signature": "— OLYMPKUS AI, DESDE EL MONTE OLIMPO",
+    "statAgents": "agentes",
+    "statPlatforms": "plataformas",
+    "statCountries": "países",
+    "statLanguages": "idiomas"
+  },
+  "whyPantheon": {
+    "eyebrow": "Por qué el Panteón",
+    "title": "Un especialista por dominio — no un generalista que hace de todo un poco.",
+    "genericLabel": "ASISTENTES GENÉRICOS",
+    "genericBody": "Un chatbot que responde sobre cualquier tema, pero no conoce profundamente tus cuentas, tu calendario o tus prioridades. Necesitas explicarlo todo, cada vez — y acabas operando la herramienta en vez de vivir.",
+    "appsLabel": "APPS INDIVIDUALES",
+    "appsBody": "Una app de finanzas, una de tareas, una de calendario — cada una con su login, su interfaz, su contexto aislado. Ninguna sabe lo que hace la otra. Tú te conviertes en el integrador humano entre ellas.",
+    "pantheonLabel": "PANTEÓN OLYMPKUS",
+    "pantheonBody": "Un agente especializado por dominio — Pluto conoce tus finanzas en profundidad, Aion conoce tu tiempo, Zeus conoce tu cuerpo. Cada agente es excelente en lo que hace. Tú delegas, no integras.",
+    "closing": "La autonomía aislada se está comoditizando. Lo que ningún competidor ofrece es autonomía por dominio — agentes especializados que conocen tu vida en profundidad, cada uno en su eje."
+  },
+  "pantheon": {
+    "eyebrow": "II · El Panteón",
+    "title": "Fuerzas distintas. Un solo cuerpo. Un solo mando. El tuyo.",
+    "lede": "En la mitología, cada deidad tiene su dominio. Aquí, cada agente tiene su especialidad. Dinero, tiempo y cuerpo — en sintonía.",
+    "note": "Fechas previstas y sujetas a cambios.",
+    "explore": "EXPLORAR →",
+    "pluto": {
+      "name": "Pluto",
+      "domain": "Riqueza",
+      "tagline": "Finanzas agénticas — contigo al mando.",
+      "description": "Pluto es el agente de finanzas personales de Olympkus. Dashboard completo, transacciones con categorización por IA, presupuestos, metas, deudas, inversiones, importación de extractos y un asistente de IA que razona. Funciona sin internet, 5 idiomas, en el móvil.",
+      "platforms": "Android · iOS",
+      "statusLabel": "DISPONIBLE",
+      "eta": "DESDE AGO 2026"
+    },
+    "aion": {
+      "name": "Aion",
+      "domain": "Tiempo",
+      "tagline": "Habla. Aion hace.",
+      "description": "Aion es el agente de tiempo de Olympkus. Tareas, calendario, tablero, hábitos y notas en una sola app — con IA que actúa por defecto. Tú dices lo que necesitas; Aion lo organiza todo en ciclos, no en listas interminables.",
+      "platforms": "Android · iOS",
+      "statusLabel": "PREVISTO",
+      "eta": "JUL 2027"
+    },
+    "zeus": {
+      "name": "Zeus",
+      "domain": "Cuerpo",
+      "tagline": "Orquesta tus aspectos fisiológicos para que te enfoques en lo que importa.",
+      "description": "Zeus es el agente de tu cuerpo. Agua, alimentación, sueño, peso, humor, ejercicio, ciclo menstrual, enfermedades — de la ansiedad a la diabetes. Te entiende como organismo y te ayuda a llegar donde quieres llegar, controlando el ascenso. Sin influencia externa. Eres tú, 1% mejor cada día. En concepción.",
+      "platforms": "Android · iOS",
+      "statusLabel": "EN CONCEPCIÓN",
+      "eta": "—"
+    }
+  },
+  "method": {
+    "eyebrow": "III · El poder de delegar",
+    "title": "Agéntico significa que actúa. Bajo tus reglas.",
+    "p1Title": "Tú defines la intención",
+    "p1Body": "Nada sucede fuera de los límites que tú trazas. El agente pide permiso donde importa y actúa donde fue autorizado.",
+    "p2Title": "El agente ejecuta",
+    "p2Body": "En vez de otra app más para que operes, un agente que opera por ti — a través de tus dispositivos y de tus cuentas.",
+    "p3Title": "Todo permanece tuyo",
+    "p3Body": "Tus datos viven bajo tu control, con cifrado fuerte y transparencia sobre cada acción tomada. Tú ves — y revocas — lo que quieras, cuando quieras."
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "title": "Lo que necesitas saber.",
+    "q1": "¿Qué es Olympkus AI?",
+    "a1": "Olympkus AI es una empresa brasileña que construye una suite de agentes de inteligencia artificial para la vida personal. La suite, llamada Panteón, reúne tres agentes especializados: Pluto (finanzas), Aion (tiempo y tareas) y Zeus (cuerpo y fisiología). El diferencial es tener un agente por dominio — en vez de un asistente genérico.",
+    "q2": "¿Qué es IA agéntica?",
+    "a2": "IA agéntica es inteligencia artificial que actúa por ti, no solo responde preguntas. En vez de un chatbot que necesitas operar, un agente ejecuta tareas dentro de límites que tú defines: tú apruebas la intención, el agente se encarga de la ejecución. Olympkus aplica este concepto a finanzas personales, gestión del tiempo y bienestar fisiológico.",
+    "q3": "¿Qué es el Pluto de Olympkus?",
+    "a3": "Pluto es el agente de finanzas personales de Olympkus AI. Lee tus cuentas, anticipa facturas y prepara pagos y transferencias para tu aprobación. Tú defines los límites y apruebas cada intención — no es piloto automático, es delegación con control. Disponible desde agosto de 2026.",
+    "q4": "¿Pluto ya está disponible?",
+    "a4": "Pluto está disponible desde agosto de 2026. La lista de novedades está abierta para los próximos productos de Olympkus AI.",
+    "q5": "¿Cuál es la diferencia entre Olympkus y asistentes de IA como ChatGPT?",
+    "a5": "ChatGPT y otros asistentes genéricos responden preguntas sobre cualquier tema, pero no conocen profundamente tus cuentas, tu calendario o tus prioridades — necesitas explicarlo todo, cada vez. Olympkus tiene un agente especializado por dominio: Pluto conoce tus finanzas en profundidad, Aion conoce tu tiempo, Zeus conoce tu cuerpo. Cada agente es excelente en lo que hace.",
+    "q6": "¿Cuál es la diferencia entre Olympkus y apps de finanzas con IA?",
+    "a6": "Apps como Aizen y Cleo hacen autonomía en un solo dominio (dinero). Olympkus propone autonomía en toda la vida personal — finanzas, tiempo y cuerpo — con un agente especializado por dominio. Además, el modelo de Olympkus es 'tú apruebas, el agente ejecuta': control, no solo automatización ciega. Es lo opuesto explícito a productos que ejecutan sin tu permiso.",
+    "q7": "¿Qué significa 'tú apruebas, el agente ejecuta'?",
+    "a7": "Significa que ningún agente de Olympkus ejecuta una acción significativa sin tu aprobación. Tú defines los límites — qué categorías de acción el agente puede hacer solo, cuáles necesitan permiso — y el agente actúa dentro de esos límites. No es piloto automático: es delegación con control. Puedes ver y revocar cualquier permiso en cualquier momento.",
+    "q8": "¿Olympkus AI es brasileña?",
+    "a8": "Sí. Olympkus AI es una empresa brasileña que desarrolla agentes de IA para el mercado brasileño, con soporte en portugués y enfoque en el ecosistema financiero nacional.",
+    "q9": "¿Mis datos están seguros con Olympkus?",
+    "a9": "Tus datos viven bajo tu control, con cifrado fuerte y transparencia sobre cada acción tomada. Tú ves lo que el agente hizo y puedes revocar permisos cuando quieras. Olympkus no vende tus datos — los ingresos vienen de la suscripción, no de tu información."
+  },
+  "ctaBand": {
+    "eyebrow": "Tu lugar en el Olimpo",
+    "title": "Los grandes viajes comienzan con un primer paso.",
+    "subtitle": "Recibe las novedades de Pluto y de los próximos productos de Olympkus AI antes que nadie. Sin spam — solo actualizaciones que importan.",
+    "counterLabel": "YA ESTÁN EN LA LISTA",
+    "placeholder": "tu@email.com",
+    "emailAria": "Tu email",
+    "submit": "Quiero ser avisado",
+    "submitting": "Enviando…",
+    "consent": "Al unirte a la lista, aceptas recibir correos de Olympkus AI sobre el lanzamiento y puedes cancelar cuando quieras. Tratamos tus datos conforme a la LGPD — consulta la Política de Privacidad.",
+    "privacyLink": "Política de Privacidad",
+    "errorGeneric": "No se pudo completar ahora. Inténtalo de nuevo.",
+    "errorCopy": "Copia el enlace manualmente.",
+    "successTitle": "Posición #{{position}}",
+    "successSubtitle": "de {{total}} en la lista. Cada amigo que entre por tu enlace te acerca a la cima.",
+    "copyLink": "Copiar enlace",
+    "copied": "Copiado ✓",
+    "referralSingular": "✳ {{count}} REFERENCIA CONFIRMADA",
+    "referralPlural": "✳ {{count}} REFERENCIAS CONFIRMADAS"
+  },
+  "sobre": {
+    "title": "Construimos lo opuesto a lo que la tecnología prometió.",
+    "lede": "La tecnología prometió tiempo libre y entregó más pantallas para vigilar. Olympkus AI construye agentes que actúan por ti — silenciosos, responsables y bajo tu mando.",
+    "whyExist": {
+      "heading": "Por qué existimos",
+      "p1": "La tecnología prometió liberarnos. Entregó más trabajo.",
+      "p2": "No en el sentido obvio, de código o máquinas. En el sentido traicionero: cambió el esfuerzo físico por el esfuerzo mental. Ya no cargas peso, pero cargas decisiones. Notificaciones. Dashboards. Actualizaciones manuales. Elecciones que no deberían ser tuyas.",
+      "p3": "El problema no eres tú. Es el modelo. La industria construyó herramientas que exigen operación constante porque así es como te mantienen cautivo. Cuanto más operas, más atrapado quedas. Y lo llaman \"empoderamiento\".",
+      "p4": "Nosotros lo llamamos defecto."
+    },
+    "theTurn": {
+      "heading": "El giro",
+      "p1": "¿Y si la tecnología no te pidiera nada?",
+      "p2": "¿Y si, en vez de gráficos para que interpretes, actuara? En vez de informes para que leas, resolviera? En vez de paneles para que gestiones, simplemente hiciera — con tu permiso, pero sin tu intervención?",
+      "p3": "Esa es la única pregunta que importa en Olympkus.",
+      "p4": "No creamos otra app más para que operes. Creamos agentes que operan por ti. Y esa diferencia no es incremental — es categórica. Es la diferencia entre conducir un coche y tener un chófer de confianza. Entre cocinar todos los días y tener un chef privado que solo cocina lo que apruebas."
+    },
+    "origin": {
+      "heading": "El origen",
+      "p1": "Olympkus nació de una constatación indigesta: la IA ya es lo suficientemente buena para pensar, categorizar, sugerir y actuar. Pero casi nadie la está usando para eso. Están usando IA para generar textos bonitos o dibujos creativos. No para cuidar de tu vida.",
+      "p2": "Empecé solo. Con un ordenador, un móvil y la terquedad de quien se niega a lanzar producto que no usa. No tengo inversor dictando el roadmap. No tengo equipo de marketing creando hype. Tengo una convicción: el buen software es software que desaparece. Que hace el trabajo y te devuelve el tiempo."
+    },
+    "theName": {
+      "heading": "El nombre",
+      "p1": "Olympkus. Olimpo.",
+      "p2": "En la cima de la montaña, ningún dios lo hacía todo. Zeus tenía el cielo. Poseidón, el mar. Hades, el inframundo. Cada uno en su dominio, con total soberanía. Especialistas, no generalistas.",
+      "p3": "Olympkus es un panteón digital exactamente así:",
+      "deity1": "Pluto — soberano de tu dinero.",
+      "deity2": "Aion — soberano de tu tiempo.",
+      "deity3": "Zeus — soberano de tu cuerpo.",
+      "p4": "No un asistente genérico que se despedaza intentando abrazar el mundo. Sino especialistas silenciosos, cooperando entre bastidores, para que vivas sin necesidad de saber que están ahí."
+    },
+    "whoAmI": {
+      "heading": "Quién soy",
+      "p1": "Felipe Duque. Brasileño, programador desde crío, solo en este viaje.",
+      "p2": "Cada línea de código, cada píxel del diseño, cada servidor del backend — lo hice yo. No por ego. Porque no se puede subcontratar lo que no sientes en la piel. Si no lo uso, no lo lanzo. Si no resuelve mi vida, no resuelve la tuya.",
+      "p3": "Y cuando hables conmigo — en Discord, email, lo que sea — no habrá bot de filtrado. No habrá \"responderemos en 48 horas\". Seré yo. Sin filtro, sin rodeos."
+    },
+    "whatBuilt": {
+      "heading": "Lo que construí",
+      "p1": "El Panteón: una suite de agentes de IA.",
+      "p2": "Tú apruebas la intención. Ellos ejecutan. Sin dashboards, sin gráficos, sin informe de fin de mes. Tú no operas. Tú decides. El agente hace el resto.",
+      "p3": "Esto no es automatización. La automatización es una máquina que repite. Esto es delegación — es una entidad inteligente que entiende lo que quieres, pide tu ok y actúa como si fuera tú, pero sin gastar tu energía."
+    },
+    "difference": {
+      "heading": "Lo que nos diferencia",
+      "p1": "El mercado está lleno de \"IA que lo hace todo\". Robots genéricos que prometen el mundo y entregan respuestas vagas.",
+      "p2": "Olympkus es lo opuesto: un equipo de especialistas. Cada agente con autonomía restringida a lo que realmente sabe hacer, y con total autoridad en ese territorio.",
+      "p3": "Mientras ellos intentan hacer una navaja suiza que no corta nada bien, nosotros tenemos un conjunto de cuchillos japoneses. Cada uno para un propósito. Cada uno afiladísimo."
+    },
+    "principles": {
+      "heading": "Nuestros principios",
+      "p1": "Tú mandas. Nada sucede sin tu ok explícito.",
+      "p2": "Ellos trabajan. Tú no tocas ninguna herramienta después de dar la orden.",
+      "p3": "Todo tuyo. Tus datos, tus hábitos, tu privacidad. No los vendemos, no los exponemos, no los miramos gratis.",
+      "p4": "Despacio y bien. No hay prisa por lanzar basura. Hay paciencia para entregar oro.",
+      "p5": "Sin ataduras. Cero publi disfrazada, cero comisión sobre ti, cero conflicto con tus intereses."
+    },
+    "whereWeAre": {
+      "heading": "Dónde estamos",
+      "p1": "Brasileños. Independientes. Vivos.",
+      "p2": "¿Quieres seguir? La lista de novedades está abierta. Recibes antes que nadie.",
+      "p3": "Pluto está en Google Play desde agosto de 2026.",
+      "p4": "Aion llega en julio de 2027.",
+      "p5": "Zeus se está moldeando por lo que aprenda sobre ti — no por un PowerPoint de inversor."
+    },
+    "contact": {
+      "heading": "Contacto",
+      "general": "General",
+      "press": "Prensa",
+      "privacy": "Privacidad",
+      "legal": "Legal",
+      "allChannels": "Todos los canales en /contact"
+    }
+  },
+  "panteaoPage": {
+    "title": "Tres dominios. Tres agentes. Un solo mando.",
+    "lede": "Olympkus construye un agente especializado para cada dominio de la vida personal — dinero, tiempo y cuerpo. Cada uno es excelente en lo que hace. Tú delegas, no integras.",
+    "explore": "EXPLORAR →"
+  },
+  "contato": {
+    "title": "Habla con nosotros — por el canal adecuado.",
+    "lede": "Cada tema tiene una dirección. Elige la que mejor se adapte a tu necesidad y escribe directamente — sin formulario intermediario.",
+    "supportLabel": "Soporte",
+    "supportDesc": "Dudas sobre la app, bugs, problemas técnicos.",
+    "pressLabel": "Prensa",
+    "pressDesc": "Periodistas y creadores de contenido. Ver también nuestra sala de prensa en /press.",
+    "privacyLabel": "Privacidad/LGPD",
+    "privacyDesc": "Cuestiones sobre tus datos, ejercicio de derechos LGPD.",
+    "legalLabel": "Legal",
+    "legalDesc": "Asuntos legales y contratos.",
+    "generalLabel": "General",
+    "generalDesc": "Alianzas, inversores y contacto institucional.",
+    "formHeading": "O escribe ahora",
+    "formIntro": "Rellena el formulario y el mensaje llega directo a mi correo.",
+    "formSuccess": "Mensaje enviado. Gracias — respondo lo antes posible.",
+    "formName": "Nombre",
+    "formNamePlaceholder": "Tu nombre",
+    "formEmail": "Correo",
+    "formEmailPlaceholder": "tu@email.com",
+    "formSubject": "Asunto",
+    "formSubjectPlaceholder": "¿De qué trata?",
+    "formMessage": "Mensaje",
+    "formMessagePlaceholder": "¿Cómo puedo ayudar?",
+    "formSubmit": "Enviar mensaje",
+    "formSubmitting": "Enviando…",
+    "formError": "Algo salió mal. Inténtalo de nuevo o escribe a hello@olympkusai.com."
+  },
+  "ajuda": {
+    "title": "Preguntas frecuentes y soporte.",
+    "lede": "Todo lo que necesitas saber sobre Pluto — desde la importación de extractos hasta la privacidad de tus datos.",
+    "cat1Label": "Cuenta e inicio de sesión",
+    "cat1q1": "¿Cómo activo la autenticación de dos factores?",
+    "cat1a1": "El 2FA es obligatorio en toda cuenta de Pluto. La primera vez que entras, la app te guía por la configuración — generalmente vía app autenticadora en tu móvil.",
+    "cat1q2": "¿Puedo entrar con Google?",
+    "cat1a2": "Sí. Pluto usa inicio de sesión con Google. No necesitas crear una contraseña nueva.",
+    "cat2Label": "Importación de extractos",
+    "cat2q1": "¿Pluto se sincroniza con mi banco automáticamente?",
+    "cat2a1": "No. Actualmente Pluto importa extractos bancarios en CSV y OFX — formatos soportados por todos los bancos brasileños. La integración directa vía Open Finance está en el roadmap. Esta es una elección deliberada de seguridad: nunca pedimos ni almacenamos tus credenciales bancarias.",
+    "cat2q2": "¿Cómo importo mi extracto?",
+    "cat2a2": "Exporta el extracto de tu banco en formato CSV u OFX. En Pluto, ve a Importar, selecciona el archivo, y Pluto lee, categoriza e importa todo automáticamente.",
+    "cat2q3": "¿Qué bancos funcionan?",
+    "cat2a3": "Todos los bancos brasileños que permiten exportar extractos en CSV u OFX — que es prácticamente todos.",
+    "cat3Label": "Suscripción y facturación",
+    "cat3q1": "¿Es gratis?",
+    "cat3a1": "Hay planes Free, Pro (R$ 9,90/mes) y Max (R$ 19,90/mes). Ver /precos para detalles.",
+    "cat3q2": "¿Cómo cancelo?",
+    "cat3a2": "Cancela cuando quieras en los ajustes. Sin permanencia, sin penalización.",
+    "cat4Label": "Privacidad y datos",
+    "cat4q1": "¿Mis datos están seguros?",
+    "cat4a1": "Sí. Los datos sensibles están protegidos con el cifrado del propio sistema. Tus datos de acceso nunca se guardan en el dispositivo. Todo siempre cifrado. Ver /seguranca para detalles.",
+    "cat4q2": "¿Vendéis mis datos?",
+    "cat4a2": "No. Nunca. Los ingresos vienen de la suscripción, no de tu información.",
+    "cat5Label": "Problemas técnicos",
+    "cat5q1": "¿Pluto funciona sin internet?",
+    "cat5a1": "Sí. La app funciona sin internet — tus acciones van a una cola local y se sincronizan cuando la conexión vuelve.",
+    "cat5q2": "¿Qué idiomas?",
+    "cat5a2": "Portugués, inglés, español, francés y chino. La app entera traducida.",
+    "formHeading": "¿No encontraste tu respuesta?",
+    "formIntro": "Escribe directamente. Hablas conmigo — sin bot, sin cola.",
+    "formSuccess": "Mensaje enviado. Gracias — respondo lo antes posible.",
+    "formName": "Nombre",
+    "formNamePlaceholder": "Tu nombre",
+    "formEmail": "Correo",
+    "formEmailPlaceholder": "tu@email.com",
+    "formSubject": "Asunto",
+    "formSubjectPlaceholder": "¿De qué trata?",
+    "formMessage": "Mensaje",
+    "formMessagePlaceholder": "¿Cómo puedo ayudar?",
+    "formSubmit": "Enviar mensaje",
+    "formSubmitting": "Enviando…",
+    "formError": "Algo salió mal. Inténtalo de nuevo o escribe a support@olympkusai.com."
+  },
+  "comparativo": {
+    "title": "Pluto vs. los demás — sin esconder dónde perdemos.",
+    "lede": "La página más honesta del sitio. Comparamos Pluto con las principales apps de finanzas personales del mercado, incluyendo donde siguen por delante. Si ganamos en todo, desconfía.",
+    "tableHint": "Compara las características. En pantallas más pequeñas, desliza la tabla a los lados.",
+    "tableAriaLabel": "Comparación de características de las apps",
+    "thFeature": "Característica",
+    "thPluto": "Pluto",
+    "thOrganizze": "Organizze",
+    "thMobills": "Mobills",
+    "thMonarch": "Monarch",
+    "note": "La sincronización bancária automática es la única área donde Pluto todavía pierde. Es una elección deliberada de seguridad — integramos vía importación de extractos (CSV/OFX) hasta que la integración vía Open Finance cumpla nuestros estándares. En todo lo que depende de IA, parcelamiento y control, Pluto va por delante."
+  },
+  "precos": {
+    "title": "Elige tu plan.",
+    "lede": "Empieza gratis. Haz upgrade cuando necesites más control. Sin permanencia, sin sorpresas — cancelas cuando quieras.",
+    "freeName": "Free",
+    "freePrice": "R$ 0",
+    "freeDesc": "Para empezar a organizar tus finanzas",
+    "proName": "Pro",
+    "proPrice": "R$ 9,90",
+    "proPeriod": "/mes",
+    "proDesc": "Para quien quiere más control",
+    "maxName": "Max",
+    "maxPrice": "R$ 19,90",
+    "maxPeriod": "/mes",
+    "maxDesc": "Máximo control e insights",
+    "recommended": "RECOMENDADO",
+    "cta": "Quiero ser avisado",
+    "faqEyebrow": "Facturación",
+    "faqHeading": "Preguntas sobre planes y pago"
+  },
+  "seguranca": {
+    "title": "Tus datos financieros, protegidos por defecto.",
+    "lede": "Una app de finanzas vive o muere por la confianza. Esta página es donde el escéptico y la prensa buscan antes de confiar sus datos a Pluto. Sin marketing, sin promesas vacías — solo lo que realmente hacemos.",
+    "h2fa": "Autenticación de dos factores (2FA) obligatoria",
+    "p2fa": "Toda cuenta de Pluto exige verificación en dos pasos. Aunque alguien descubra tu contraseña, no entra sin el segundo factor — generalmente tu móvil. No es opcional, no es una función premium: es la puerta de entrada. Si la contraseña se filtra en una brecha de otro sitio, tu cuenta de Pluto permanece intacta.",
+    "hWhere": "Dónde están tus datos",
+    "pWhere": "En el móvil, los datos sensibles están protegidos con el cifrado del propio sistema. Tus datos de acceso nunca se guardan en el dispositivo. En el servidor, todo está siempre cifrado — en tránsito y en reposo. Nada queda suelto, nada en texto plano.",
+    "hGoogle": "Inicio de sesión con Google",
+    "pGoogle": "Entras con Google, sin necesidad de crear una contraseña nueva. Nunca pedimos ni almacenamos tu contraseña del banco — importas extractos en CSV/OFX. Olympkus no tiene acceso a tus credenciales bancarias en ningún momento. Tú decides qué entra y qué no.",
+    "hAudit": "Pantalla de auditoría",
+    "pAudit": "Cada acción tomada en la app se registra. Ves el historial completo de todo lo que pasó — transparencia total. Nada sucede silenciosamente a espaldas del usuario. Si la IA sugirió algo, si aprobaste, si una transacción fue editada: está todo ahí, con fecha y hora.",
+    "hDataPolicy": "Política de datos",
+    "dpCollect": "Qué recopilamos: nombre, correo, transacciones financieras que registras o importas, categorías, presupuestos, metas, deudas, pagos recurrentes y conversaciones con el asistente de IA. También recopilamos datos de uso anónimos (qué pantallas abres, cuánto tiempo usas la app) para mejorar el producto.",
+    "dpPurpose": "Para qué sirve: exclusivamente para que Pluto funcione para ti. Categorizar transacciones, generar insights, responder preguntas en el asistente, sincronizar entre dispositivos. Nada más allá de eso.",
+    "dpRetention": "Cuánto tiempo: mientras tu cuenta esté activa. Si eliminas la cuenta, tus datos se eliminan en hasta 30 días. El historial de conversaciones con la IA está disponible mientras mantengas la cuenta — puedes borrar conversaciones individuales en cualquier momento.",
+    "dpSell": "¿Vendemos tus datos? No. Nunca. Los ingresos de Olympkus vienen de la suscripción, no de tu información. Tus datos no se comparten, venden, alquilan ni intercambian con terceros. Punto.",
+    "dpWhere": "Dónde están: en servidores con cifrado en tránsito (TLS) y en reposo. El acceso es restringido — solo yo, el fundador, tengo acceso a la infraestructura, y aun así no accedo al contenido de tus transacciones sin motivo técnico justificado.",
+    "dpRights": "Tus derechos (LGPD): puedes solicitar acceso, corrección, portabilidad o eliminación de tus datos en cualquier momento escribiendo a privacy@olympkusai.com.",
+    "hCerts": "Certificaciones",
+    "pCerts": "Estamos en proceso de evaluación de certificaciones. No inventamos sellos que no tenemos. Cuando consigamos una certificación real, aparece aquí — con el documento y la fecha. Hasta entonces, preferimos la honestidad a una insignia decorativa.",
+    "privacyLink": "Ver la Política de Privacidad completa."
+  },
+  "notFound": {
+    "title": "Este camino no lleva a ninguna parte.",
+    "lede": "El oráculo consultó cada columna del Olimpo y no encontró nada aquí. Quizá la página cambió de dirección — o quizá nunca existió.",
+    "home": "Volver al inicio",
+    "pantheon": "Conocer el panteón"
+  },
+  "socialLinks": {
+    "heading": "Redes sociales",
+    "intro": "Sigue a Olympkus y únete a la comunidad:"
+  },
+  "pressList": {
+    "title": "Sala de Prensa",
+    "lede": "Comunicados, posicionamiento y materiales para periodistas y creadores de contenido.",
+    "kitTitle": "Todo lo que necesitas para hablar de Olympkus.",
+    "aboutLabel": "SOBRE OLYMPKUS",
+    "aboutText": "Olympkus AI es una empresa brasileña que desarrolla agentes de IA para la vida personal. La suite Panteón reúne tres agentes especializados — Pluto (finanzas), Aion (tiempo) y Zeus (cuerpo) — cada uno en su dominio. El primer producto, Pluto, está disponible desde agosto de 2026.",
+    "downloadsLabel": "DESCARGAS",
+    "factsLabel": "DATOS",
+    "factsCompany": "Olympkus AI",
+    "factsHq": "Brasil",
+    "factsProducts": "Pluto (ago/2026), Aion (jul/2027), Zeus (en concepción)",
+    "pressContactLabel": "CONTACTO DE PRENSA",
+    "chip": "COMUNICADO",
+    "readLink": "LEER →"
+  },
+  "languages": {
+    "title": "Elige tu país o región.",
+    "lede": "Pluto está disponible en 86 países y regiones. El sitio todavía está solo en portugués — pero no por mucho tiempo.",
+    "latam": "América Latina y Caribe",
+    "northAmerica": "América del Norte",
+    "europe": "Europa",
+    "asiaPacific": "Asia-Pacífico",
+    "africa": "África"
+  },
+  "regionPopup": {
+    "text": "Elige otro país o región para ver contenido específico para tu ubicación.",
+    "continue": "Continuar"
+  },
+  "productPage": {
+    "storeGoogleAria": "Disponible en Google Play",
+    "storeGoogleSmall": "DISPONIBLE EN",
+    "storeGoogleBig": "Google Play",
+    "storeAppleAria": "Próximamente en Apple Store",
+    "storeAppleSmall": "PRÓXIMAMENTE",
+    "storeAppleBig": "Apple Store",
+    "comingSoon": "Quiero ser avisado ↗",
+    "pricingEyebrow": "Planes",
+    "pricingTitle": "Elige el tuyo",
+    "pricingBadge": "RECOMENDADO",
+    "pricingCta": "Quiero ser avisado",
+    "faqEyebrow": "Preguntas",
+    "faqTitle": "Sobre {{name}}"
+  },
+  "funcionalidades": {
+    "title": "Todo lo que Pluto hace — y por qué importa.",
+    "lede": "Cada área de Pluto resuelve un dolor real de quien intenta controlar su propio dinero. No es una lista de características — es lo que cambia en tu día cuando dejas de usar hojas de cálculo y empiezas a delegar.",
+    "card1Title": "Suite agéntica",
+    "card1Desc": "Una suite que lee tus documentos, razona sobre tus datos, categoriza transacciones con alta confianza, anticipa problemas y prepara acciones para que apruebes.",
+    "card2Title": "Presupuestos",
+    "card2Desc": "Presupuestos por categoría que se montan solos. Semanal, mensual, trimestral o anual — con alertas de límite.",
+    "card3Title": "Deudas y parcelamientos",
+    "card3Desc": "Deudas activas y saldadas, simulación de escenarios de aceleración, parcelamientos con vencimientos agrupados. El mayor diferencial de Pluto.",
+    "card4Title": "Metas",
+    "card4Desc": "Fondo de emergencia, saldar deudas, invertir, ahorrar para un viaje. Progreso visible y proyección de cuándo llegarás.",
+    "card5Title": "Recurrencias y suscripciones",
+    "card5Desc": "Streaming, gimnasio, software, facturas fijas — todo en una pantalla. Pluto suma el total mensual e identifica suscripciones olvidadas.",
+    "card6Title": "Seguridad y auditoría",
+    "card6Desc": "Inicio de sesión con Google, datos sensibles protegidos con cifrado y pantalla de auditoría que registra cada acción. Ves el historial de todo.",
+    "detailsLink": "VER DETALLES →"
+  },
+  "blogList": {
+    "title": "Tras el Panteón",
+    "lede": "Reflexiones sobre IA agéntica, finanzas personales y el futuro de la delegación.",
+    "searchPlaceholder": "Buscar artículos...",
+    "searchAria": "Buscar artículos",
+    "allCategories": "Todos",
+    "empty": "Ningún artículo encontrado.",
+    "readLink": "LEER →",
+    "readingTimeSuffix": " MIN"
+  },
+  "blogPost": {
+    "readingMark": "Crónicas del Panteón",
+    "authorPrefix": "POR",
+    "notFoundTitle": "Artículo no encontrado",
+    "cta": "Quiero ser avisado"
+  }
+}

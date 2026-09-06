@@ -28,9 +28,8 @@ export function Privacy() {
         <section className="legal__section">
           <h2>1. Quem é o controlador</h2>
           <p>
-            O controlador dos seus dados é a Olympkus AI (<span className="fill">[razão
-            social]</span>, inscrita no CNPJ sob o nº <span className="fill">[•]</span>,
-            com sede em <span className="fill">[endereço]</span>). Para questões de
+            O controlador dos seus dados é a Olympkus AI (<span>FOXETY TECNOLOGIA LTDA</span>, inscrita no CNPJ sob o nº <span>52.911.352/0001-00</span>,
+            com sede em Avenida Brig. Faria Lima, 1572 — Anexo, Esc. 1022, Jardim Paulistano, São Paulo — SP, CEP 01451-917). Para questões de
             privacidade, fale com o nosso Encarregado (DPO) pelo e-mail{" "}
             <a href="mailto:privacy@olympkusai.com">privacy@olympkusai.com</a>.
           </p>

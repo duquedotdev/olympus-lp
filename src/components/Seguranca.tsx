@@ -60,12 +60,39 @@ export function Seguranca() {
 
           <h2>Política de dados</h2>
           <p>
-            <span className="fill">[A PREENCHER pela Olympkus/jurídico]</span> —
-            o que é coletado, por quanto tempo, se é vendido a terceiros (a
-            resposta deve ser <em>não</em>). Esta seção será preenchida com a
-            descrição exata de quais dados o Pluto coleta, a finalidade de cada
-            um, o prazo de retenção e a confirmação de que nenhum dado é
-            comercializado.
+            <strong>O que coletamos:</strong> nome, e-mail, transações financeiras
+            que você cadastra ou importa, categorias, orçamentos, metas, dívidas,
+            recorrências e conversas com o assistente de IA. Também coletamos dados
+            de uso anônimos (quais telas você abre, quanto tempo usa o app) para
+            melhorar o produto.
+          </p>
+          <p>
+            <strong>Para que serve:</strong> exclusivamente para fazer o Pluto
+            funcionar para você. Categorizar transações, gerar insights, responder
+            perguntas no assistente, sincronizar entre dispositivos. Nada além disso.
+          </p>
+          <p>
+            <strong>Por quanto tempo:</strong> enquanto sua conta estiver ativa.
+            Se você excluir a conta, seus dados são removidos em até 30 dias. O
+            histórico de conversas com a IA fica disponível enquanto você mantiver
+            a conta — você pode apagar conversas individuais a qualquer momento.
+          </p>
+          <p>
+            <strong>Vendemos seus dados?</strong> Não. Nunca. A receita da Olympkus
+            vem da assinatura, não da sua informação. Seus dados não são
+            compartilhados, vendidos, alugados ou trocados com terceiros. Ponto.
+          </p>
+          <p>
+            <strong>Onde ficam:</strong> em servidores com criptografia em trânsito
+            (TLS) e em repouso. O acesso é restrito — só eu, fundador, tenho acesso
+            à infraestrutura, e mesmo assim não acesso ao conteúdo das suas
+            transações sem motivo técnico justificado.
+          </p>
+          <p>
+            <strong>Seus direitos (LGPD):</strong> você pode solicitar acesso,
+            correção, portabilidade ou exclusão dos seus dados a qualquer momento
+            escrevendo para{" "}
+            <a href="mailto:privacy@olympkusai.com">privacy@olympkusai.com</a>.
           </p>
 
           <h2>Certificações</h2>

@@ -495,3 +495,86 @@
   line-height: 1.65;
   color: var(--stone);
 }
+
+/* ============ HELP FORM ============ */
+.help-form { display: flex; flex-direction: column; gap: 1.2rem; max-width: 540px; margin-top: 1.5rem; }
+.help-form__honeypot { display: none; }
+.help-form__label { display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.8rem; color: var(--stone-dim); }
+.help-form__label span { letter-spacing: 0.06em; text-transform: uppercase; }
+.help-form__label input,
+.help-form__label textarea {
+  font: 1rem var(--sans);
+  padding: 0.7em 0.9em;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--text);
+  resize: vertical;
+}
+.help-form__label input:focus,
+.help-form__label textarea:focus {
+  outline: none;
+  border-color: var(--bronze);
+}
+.help-form__submit { align-self: flex-start; margin-top: 0.4rem; }
+.help-form__success { color: var(--bronze-soft); font-size: 1.05rem; margin-top: 1.5rem; }
+.help-form__error { color: #e57373; font-size: 0.9rem; margin-top: 0.4rem; }
+
+/* ============ COUNTRY PICKER ============ */
+.country-picker { padding: clamp(60px, 8vw, 100px) var(--gutter) 80px; }
+.country-picker__inner { max-width: 1100px; margin: 0 auto; }
+.country-picker__title { font: clamp(2rem, 4vw, 3rem)/1.1 var(--serif); color: var(--text); margin: 20px 0 50px; }
+.country-picker__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.country-picker__region { padding: 28px 30px; background: var(--raised); border: 1px solid var(--line); border-radius: 6px; }
+.country-picker__region-label { font: 0.62rem var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--bronze-soft); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--bronze-line); }
+.country-picker__list { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 24px; }
+.country-picker__list li { break-inside: avoid; margin-bottom: 0.5rem; }
+.country-picker__list a { font: 0.88rem var(--sans); color: var(--stone); transition: color 0.2s; width: fit-content; }
+.country-picker__list a:hover { color: var(--bronze-soft); }
+@media (max-width: 800px) {
+  .country-picker__grid { grid-template-columns: 1fr; }
+  .country-picker__list { columns: 2; }
+}
+@media (max-width: 480px) {
+  .country-picker__list { columns: 1; }
+}
+
+/* ============ REGION POPUP ============ */
+.region-popup { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; padding: var(--gutter); }
+.region-popup__backdrop { position: absolute; inset: 0; background: rgba(6, 10, 14, 0.55); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.region-popup__card {
+  position: relative; z-index: 1;
+  max-width: 440px; width: 100%;
+  padding: 40px 36px 32px;
+  background: rgba(13, 19, 26, 0.92);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  text-align: center;
+  animation: region-popup-in 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes region-popup-in {
+  from { opacity: 0; transform: translateY(20px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.region-popup__globe { width: 48px; height: 48px; margin: 0 auto 20px; color: var(--bronze-soft); }
+.region-popup__globe svg { width: 100%; height: 100%; }
+.region-popup__text { font: 1.05rem/1.5 var(--sans); color: var(--stone); margin-bottom: 24px; }
+.region-popup__select {
+  width: 100%; padding: 0.8em 1em;
+  font: 0.95rem var(--sans); color: var(--text);
+  background: var(--raised); border: 1px solid var(--line); border-radius: 4px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23a8855e' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 1em center;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.region-popup__select:focus { outline: none; border-color: var(--bronze); }
+.region-popup__select option { background: var(--onyx); color: var(--text); }
+.region-popup__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.region-popup__btn { font-size: 0.88rem; padding: 0.7em 1.4em; }
+@media (max-width: 420px) {
+  .region-popup__card { padding: 32px 24px 24px; }
+  .region-popup__actions { flex-direction: column; }
+  .region-popup__btn { width: 100%; }
+}

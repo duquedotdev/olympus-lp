@@ -33,6 +33,8 @@ import { Cookies } from "./components/Cookies.tsx";
 import { Precos } from "./components/Precos.tsx";
 import { Ajuda } from "./components/Ajuda.tsx";
 import { Contato } from "./components/Contato.tsx";
+import { Languages } from "./components/Languages.tsx";
+import { RegionPopup } from "./components/RegionPopup.tsx";
 import { getInteriorRealm } from "./data/interior-scenes.ts";
 
 function Shell({ children, route, legal = false }: { children: React.ReactNode; route: string; legal?: boolean }) {
@@ -52,6 +54,15 @@ export default function App() {
   useReveal(route);
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [route]);
 
+  return (
+    <>
+      <RegionPopup />
+      {renderRoute(route)}
+    </>
+  );
+}
+
+function renderRoute(route: string) {
   if (route === "privacy") return <Shell route={route} legal><Privacy /></Shell>;
   if (route === "terms") return <Shell route={route} legal><Termos /></Shell>;
   if (route === "cookies") return <Shell route={route} legal><Cookies /></Shell>;
@@ -72,6 +83,7 @@ export default function App() {
   if (route === "pricing") return <Shell route={route}><Precos /></Shell>;
   if (route === "help") return <Shell route={route}><Ajuda /></Shell>;
   if (route === "contact") return <Shell route={route}><Contato /></Shell>;
+  if (route === "languages") return <Shell route={route}><Languages /></Shell>;
 
   if (route === "blog") return <Shell route={route}><BlogList /></Shell>;
 

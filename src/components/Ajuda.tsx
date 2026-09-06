@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { CtaBand } from "./CtaBand.tsx";
 import { InteriorHero } from "./interior-hero.tsx";
 
@@ -87,6 +87,31 @@ const categories: FaqCategory[] = [
 
 export function Ajuda() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const assunto = formData.get("assunto") as string;
+    formData.set("subject", `Suporte — ${assunto}`);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <>
@@ -124,10 +149,50 @@ export function Ajuda() {
       <section className="prose">
         <div className="prose__inner">
           <h2>Não encontrou sua resposta?</h2>
-          <p>
-            Escreva para <a href="mailto:[A PREENCHER — email de suporte]">[A PREENCHER — email de suporte]</a>{" "}
-            e a gente responde o quanto antes.
-          </p>
+          <p>Escreva direto. Você fala comigo — sem bot, sem fila.</p>
+
+          {status === "success" ? (
+            <p className="help-form__success" role="status">
+              Mensagem enviada. Obrigado — respondo o quanto antes.
+            </p>
+          ) : (
+            <form className="help-form" onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value="46934dd6-15ce-4411-a348-3a47dc642f44" />
+              <input type="hidden" name="from_name" value="Olympkus — Suporte" />
+              <input type="checkbox" name="botcheck" className="help-form__honeypot" tabIndex={-1} autoComplete="off" />
+
+              <label className="help-form__label">
+                <span>Nome</span>
+                <input type="text" name="name" required placeholder="Seu nome" />
+              </label>
+
+              <label className="help-form__label">
+                <span>E-mail</span>
+                <input type="email" name="email" required placeholder="voce@email.com" />
+              </label>
+
+              <label className="help-form__label">
+                <span>Assunto</span>
+                <input type="text" name="assunto" required placeholder="Sobre o que é?" />
+              </label>
+
+              <label className="help-form__label">
+                <span>Mensagem</span>
+                <textarea name="message" required rows={5} placeholder="Como posso ajudar?" />
+              </label>
+
+              <button type="submit" className="btn btn--solid help-form__submit" disabled={status === "sending"}>
+                {status === "sending" ? "Enviando…" : "Enviar mensagem"}
+              </button>
+
+              {status === "error" && (
+                <p className="help-form__error" role="alert">
+                  Algo deu errado. Tente novamente ou escreva para{" "}
+                  <a href="mailto:support@olympkusai.com">support@olympkusai.com</a>.
+                </p>
+              )}
+            </form>
+          )}
         </div>
       </section>
 

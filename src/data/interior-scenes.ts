@@ -19,6 +19,7 @@ export const interiorScenes: Record<string, InteriorScene> = {
   precos: { chapter: "Acesso · Planos", inscription: "ΑΡΧΗ", caption: "Um convite à autonomia", symbol: "key" },
   ajuda: { chapter: "O oráculo · Central de ajuda", inscription: "ΛΟΓΟΣ", caption: "Conhecimento que orienta", symbol: "scroll" },
   contato: { chapter: "Conexões · Contato", inscription: "ΕΡΜΗΣ", caption: "Hermes · Caminhos que se encontram", symbol: "compass" },
+  languages: { chapter: "Territórios · Idiomas e regiões", inscription: "ΓΗ", caption: "O Panteão fala a sua língua", symbol: "compass" },
   blog: { chapter: "Crônicas · O pensamento por trás", inscription: "ΛΟΓΟΣ", caption: "Ideias que merecem permanecer", symbol: "scroll" },
   press: { chapter: "Registros · Sala de imprensa", inscription: "ΚΗΡΥΞ", caption: "A voz do Panteão", symbol: "laurel" },
   notfound: { chapter: "404 · Fora dos mapas", inscription: "ΟΔΟΣ", caption: "Há sempre um caminho de volta", symbol: "compass" },

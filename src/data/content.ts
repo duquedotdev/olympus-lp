@@ -16,7 +16,6 @@ export interface Deity {
 export const nav = [
   { label: "Panteão", href: "/pantheon" },
   { label: "Manifesto", href: "/about" },
-  { label: "Método", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Perguntas", href: "/help" },
 ];
