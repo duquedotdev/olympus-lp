@@ -15,8 +15,8 @@ export interface Deity {
 
 export const nav = [
   { label: "Panteão", href: "/pantheon" },
-  { label: "Manifesto", href: "/#manifesto" },
-  { label: "Método", href: "/#method" },
+  { label: "Manifesto", href: "/about" },
+  { label: "Método", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Perguntas", href: "/help" },
 ];
@@ -101,7 +101,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: "Quando o Pluto vai lançar?",
-    a: "O lançamento do Pluto está previsto para janeiro de 2027. A lista de espera está aberta — os primeiros da fila entram como membros fundadores, com condições especiais no lançamento.",
+    a: "O lançamento do Pluto está previsto para janeiro de 2027. A lista de novidades está aberta — receba as atualizações do Pluto e dos próximos produtos antes do lançamento.",
   },
   {
     q: "Qual a diferença entre Olympkus e assistentes de IA como ChatGPT?",

@@ -28,7 +28,7 @@ export function BlogPost({ slug }: { slug: string }) {
       <div className="blog-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
 
       <footer className="blog-post__footer">
-        <a href="/#access" className="btn btn--solid">Garanta seu lugar no Panteão</a>
+        <a href="/" className="btn btn--solid">Quero ser avisado</a>
         <a href="/blog" className="blog-back">← Voltar ao blog</a>
       </footer>
     </article>

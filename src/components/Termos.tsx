@@ -18,7 +18,7 @@ export function Termos() {
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 
         <p className="legal__lead">
-          Estes termos regem o uso do site olympkusai.com e da lista de espera
+          Estes termos regem o uso do site olympkusai.com e da lista de novidades
           dos produtos da Olympkus AI. Ao entrar na lista ou usar qualquer
           funcionalidade do site, você concorda com estes termos.
         </p>
@@ -34,28 +34,28 @@ export function Termos() {
         </section>
 
         <section className="legal__section">
-          <h2>2. Lista de espera</h2>
+          <h2>2. Lista de novidades</h2>
           <p>
-            Ao entrar na lista de espera, você fornece seu endereço de e-mail
+            Ao entrar na lista de novidades, você fornece seu endereço de e-mail
             voluntariamente. Usamos seu e-mail para: confirmar seu cadastro,
-            comunicar novidades sobre o lançamento e exibir sua posição na fila.
+            comunicar novidades sobre o lançamento e exibir sua posição na lista.
           </p>
           <p>
             O programa de indicação é opcional. Cada indicação confirmada sobe
-            sua posição na fila. A Olympkus não garante que membros fundadores
-            terão acesso prioritário em caso de lançamento gradual (beta),
-            embora essa seja a intenção.
+            sua posição na lista. A Olympkus não garante que inscritos terão
+            acesso prioritário em caso de lançamento gradual (beta), embora essa
+            seja a intenção.
           </p>
         </section>
 
         <section className="legal__section">
-          <h2>3. Acesso antecipado e condições de fundador</h2>
+          <h2>3. Acesso antecipado</h2>
           <p>
-            "Membros fundadores" refere-se aos primeiros inscritos na lista de
-            espera. Condições especiais no lançamento (preço, acesso prioritário,
-            benefícios) serão definidas e comunicadas antes do lançamento do Pluto.
-            A Olympkus reserva-se o direito de modificar ou revogar essas condições
-            a seu critério, com aviso prévio aos inscritos.
+            Os primeiros inscritos na lista de novidades terão acesso prioritário
+            ao lançamento gradual (beta), quando aplicável. Condições específicas
+            (preço, acesso, benefícios) serão comunicadas antes do lançamento do
+            Pluto. A Olympkus reserva-se o direito de modificar ou revogar essas
+            condições a seu critério, com aviso prévio aos inscritos.
           </p>
         </section>
 
@@ -84,7 +84,7 @@ export function Termos() {
           <h2>6. Limitação de responsabilidade</h2>
           <p>
             A Olympkus AI é uma empresa em fase de pré-lançamento. Nenhum produto
-            está em produção. O site e a lista de espera são fornecidos "como estão",
+            está em produção. O site e a lista de novidades são fornecidos "como estão",
             sem garantia de disponibilidade contínua. A Olympkus não se responsabiliza
             por decisões financeiras ou pessoais tomadas com base em conteúdo do site
             antes do lançamento de qualquer produto.

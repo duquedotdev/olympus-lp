@@ -33,7 +33,7 @@ A Olympkus se diferencia pela arquitetura do Panteão: três agentes especializa
 
 ## Sobre a Olympkus AI
 
-A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida pessoal. A suíte Panteão reúne Pluto (finanças, previsto para janeiro de 2027), Aion (tempo, previsto para julho de 2027) e Zeus (orquestração, anunciado). A lista de espera para o Pluto está aberta.
+A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida pessoal. A suíte Panteão reúne Pluto (finanças, previsto para janeiro de 2027), Aion (tempo, previsto para julho de 2027) e Zeus (orquestração, anunciado). A lista de novidades para o Pluto está aberta.
 
 **Contato para imprensa:** imprensa@olympkus.ai
 

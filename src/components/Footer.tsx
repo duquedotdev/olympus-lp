@@ -21,8 +21,8 @@ export function Footer() {
         <nav className="site-footer__col" aria-label="Empresa">
           <p className="site-footer__h mono">OLYMPKUS</p>
           <a href="/about">Sobre</a>
-          <a href="/#manifesto">Manifesto</a>
-          <a href="/#method">Método</a>
+          <a href="/about">Manifesto</a>
+          <a href="/about">Método</a>
           <a href="/blog">Blog</a>
           <a href="/press">Imprensa</a>
         </nav>
@@ -31,7 +31,7 @@ export function Footer() {
           <p className="site-footer__h mono">COMUNIDADE</p>
           <a href="/help">Ajuda</a>
           <a href="/contact">Contato</a>
-          <a href="/#access">Acesso antecipado</a>
+          <a href="/">Lista de novidades</a>
           <a href="/privacy">Privacidade</a>
           <a href="/terms">Termos</a>
           <a href="/cookies">Cookies</a>

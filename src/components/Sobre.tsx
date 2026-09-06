@@ -93,9 +93,8 @@ export function Sobre() {
           <h2>Onde estamos</h2>
           <p>
             A Olympkus AI é uma empresa brasileira. O primeiro produto, Pluto, está
-            previsto para lançar em janeiro de 2027. A lista de espera está aberta —
-            os primeiros da fila entram como membros fundadores, com condições
-            especiais no lançamento.
+            previsto para lançar em janeiro de 2027. A lista de novidades está aberta —
+            receba as atualizações do Pluto e dos próximos produtos antes do lançamento.
           </p>
 
           <h2>Princípios</h2>

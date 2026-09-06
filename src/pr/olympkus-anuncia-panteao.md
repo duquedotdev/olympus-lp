@@ -3,7 +3,7 @@ title: Olympkus AI anuncia o Panteão: suíte de agentes de IA para a vida pesso
 slug: olympkus-anuncia-panteao
 date: 2026-08-11
 type: press-release
-excerpt: Startup brasileira apresenta arquitetura inédita no mercado: três agentes especializados — Pluto, Aion e Zeus — orquestrados por um comando único. Lista de espera aberta para o Pluto, previsto para janeiro de 2027.
+excerpt: Startup brasileira apresenta arquitetura inédita no mercado: três agentes especializados — Pluto, Aion e Zeus — orquestrados por um comando único. Lista de novidades aberta para o Pluto, previsto para janeiro de 2027.
 ---
 
 **São Paulo, 11 de agosto de 2026** — A Olympkus AI, startup brasileira de inteligência artificial, anuncia o Panteão: uma suíte de agentes de IA para a vida pessoal, composta por três agentes especializados — Pluto (finanças), Aion (tempo) e Zeus (orquestração) — orquestrados por um comando único.
@@ -22,9 +22,9 @@ A Olympkus propõe uma arquitetura inédita no mercado brasileiro: em vez de um 
 
 O modelo da Olympkus se diferencia pela abordagem de controle: "você aprova, o agente executa". Nenhum agente executa uma ação significativa sem a aprovação do usuário, que define os limites de autonomia para cada categoria.
 
-## Lista de espera
+## Lista de novidades
 
-A lista de espera para o Pluto está aberta. Os primeiros da fila entram como membros fundadores, com condições especiais no lançamento. O acesso é por convite — cada indicação sobe a posição do usuário na fila.
+A lista de novidades para o Pluto está aberta. Receba as atualizações do Pluto e dos próximos produtos da Olympkus AI antes do lançamento. O programa de indicação é opcional — cada indicação sobe a posição do usuário na lista.
 
 ## Sobre a Olympkus AI
 

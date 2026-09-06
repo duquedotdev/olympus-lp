@@ -38,8 +38,8 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a href="/#access" className="btn btn--ghost site-header__cta" onClick={close}>
-          Solicitar acesso
+        <a href="/" className="btn btn--ghost site-header__cta" onClick={close}>
+          Saiba mais
         </a>
         <button
           className="site-header__burger"

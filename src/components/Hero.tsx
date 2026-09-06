@@ -20,7 +20,7 @@ export function Hero() {
             tudo. Você aprova a intenção; eles cuidam da execução.
           </p>
           <div className="hero__actions">
-            <a href="#access" className="btn btn--solid">Entrar para a lista <span aria-hidden="true">↗</span></a>
+            <a href="/" className="btn btn--solid">Quero ser avisado <span aria-hidden="true">↗</span></a>
             <a href="#pantheon" className="hero__explore">Conhecer o panteão <span aria-hidden="true">↓</span></a>
           </div>
           <p className="hero__availability"><span /> Lista aberta · Pluto previsto para jan. 2027</p>

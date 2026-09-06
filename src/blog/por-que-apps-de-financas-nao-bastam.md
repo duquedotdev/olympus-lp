@@ -41,6 +41,6 @@ O que a Olympkus adiciona não é a categoria — é a arquitetura. Um agente de
 
 ## O que esperar
 
-O Pluto está previsto para janeiro de 2027. Enquanto isso, a lista de espera está aberta. Os primeiros da fila entram como membros fundadores, com condições especiais no lançamento.
+O Pluto está previsto para janeiro de 2027. Enquanto isso, a lista de novidades está aberta — receba as atualizações do Pluto e dos próximos produtos antes do lançamento.
 
 Se você está cansado de administrar apps em vez de viver, [garanta seu lugar no Panteão.](/)

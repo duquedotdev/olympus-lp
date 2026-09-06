@@ -21,7 +21,7 @@ export function Privacy() {
 
         <p className="legal__lead">
           Esta política explica como a Olympkus AI coleta, usa e protege os seus
-          dados pessoais quando você entra na lista de espera dos nossos produtos.
+          dados pessoais quando você entra na lista de novidades dos nossos produtos.
           Tratamos seus dados em conformidade com a Lei nº 13.709/2018 (LGPD).
         </p>
 
@@ -41,12 +41,12 @@ export function Privacy() {
           <ul>
             <li>
               <strong>E-mail:</strong> o endereço que você informa ao entrar na lista
-              de espera.
+              de novidades.
             </li>
             <li>
               <strong>Dados de indicação:</strong> um código de indicação gerado para
-              você e, quando você chega por um convite, a associação ao código de quem
-              indicou — para calcular a sua posição na fila.
+              você e, quando você chega por uma indicação, a associação ao código de quem
+              indicou — para calcular a sua posição na lista.
             </li>
             <li>
               <strong>Dados técnicos:</strong> informações que a nossa infraestrutura de
@@ -56,7 +56,7 @@ export function Privacy() {
           </ul>
           <p>
             Não coletamos dados financeiros, documentos ou informações sensíveis nesta
-            fase. A lista de espera não exige criação de conta.
+            fase. A lista de novidades não exige criação de conta.
           </p>
         </section>
 
@@ -69,7 +69,7 @@ export function Privacy() {
               no seu <strong>consentimento</strong>;
             </li>
             <li>
-              gerenciar a lista de espera e o programa de indicação (posição na fila),
+              gerenciar a lista de novidades e o programa de indicação (posição na lista),
               com base no <strong>legítimo interesse</strong> de operar a campanha;
             </li>
             <li>
@@ -85,7 +85,7 @@ export function Privacy() {
             Não usamos cookies de publicidade. Guardamos no seu navegador
             (<em>armazenamento local do navegador</em>) dois itens estritamente
             funcionais: o código de quem indicou você e o seu próprio código,
-            para exibir a sua posição na fila quando você retorna. Você pode
+            para exibir a sua posição na lista quando você retorna. Você pode
             limpá-los apagando os dados do site no navegador.
           </p>
           <p>
@@ -110,7 +110,7 @@ export function Privacy() {
         <section className="legal__section">
           <h2>6. Por quanto tempo guardamos</h2>
           <p>
-            Mantemos seus dados enquanto durar a lista de espera e a relação com você,
+            Mantemos seus dados enquanto durar a lista de novidades e a relação com você,
             ou até que você solicite a exclusão ou revogue o consentimento. Após isso,
             eliminamos ou anonimizamos os dados, salvo quando a lei exigir retenção.
           </p>
@@ -146,7 +146,7 @@ export function Privacy() {
         <section className="legal__section">
           <h2>9. Crianças e adolescentes</h2>
           <p>
-            A lista de espera é destinada a maiores de 18 anos. Não coletamos
+            A lista de novidades é destinada a maiores de 18 anos. Não coletamos
             intencionalmente dados de menores; se identificarmos, eliminaremos os dados.
           </p>
         </section>

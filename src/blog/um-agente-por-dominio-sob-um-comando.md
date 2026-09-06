@@ -47,4 +47,4 @@ A linguagem cautelosa não é só proteção legal. É vantagem competitiva. É 
 
 O Pluto abre o portão em janeiro de 2027. Aion vem depois. Zeus é o bet de P&D, alimentado pelos dados de uso de Pluto e Aion — não lançado às cegas.
 
-A lista de espera está aberta. [Garanta seu lugar no Panteão.](/)
+A lista de novidades está aberta. [Garanta seu lugar no Panteão.](/)

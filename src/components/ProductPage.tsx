@@ -261,7 +261,7 @@ export function ProductPage({ id }: { id: string }) {
           <p className="product-hero__tagline">{deity.tagline}</p>
           <p className="product-hero__desc">{details.hero}</p>
           <div className="product-hero__actions">
-            <a href="#access" className="btn btn--solid">{id === "pluto" ? "Entrar para a lista" : "Acompanhar o Panteão"} <span aria-hidden="true">↗</span></a>
+            <a href="/" className="btn btn--solid">Quero ser avisado <span aria-hidden="true">↗</span></a>
             <span className={`chip chip--${deity.status}`}>{deity.statusLabel} · {deity.eta}</span>
           </div>
           <p className="product-hero__platforms mono">{deity.platforms}</p>
@@ -306,8 +306,8 @@ export function ProductPage({ id }: { id: string }) {
                     <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
                   ))}
                 </ul>
-                <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
-                  Entrar para a lista
+                <a href="/" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+                  Quero ser avisado
                 </a>
               </div>
             ))}

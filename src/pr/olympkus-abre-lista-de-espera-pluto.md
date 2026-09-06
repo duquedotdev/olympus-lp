@@ -1,12 +1,12 @@
 ---
-title: Olympkus AI abre lista de espera para o Pluto, agente de finanças agênticas
+title: Olympkus AI abre lista de novidades para o Pluto, agente de finanças agênticas
 slug: olympkus-abre-lista-de-espera-pluto
 date: 2026-08-11
 type: press-release
-excerpt: Primeiro agente do Panteão tem lançamento previsto para janeiro de 2027. Lista de espera oferece condições de membro fundador para os primeiros inscritos.
+excerpt: Primeiro agente do Panteão tem lançamento previsto para janeiro de 2027. Lista de novidades aberta para receber atualizações antes do lançamento.
 ---
 
-**São Paulo, 11 de agosto de 2026** — A Olympkus AI abre hoje a lista de espera para o Pluto, seu agente de finanças pessoais baseado em IA agêntica. O lançamento está previsto para janeiro de 2027, e os primeiros da fila terão acesso como membros fundadores, com condições especiais.
+**São Paulo, 11 de agosto de 2026** — A Olympkus AI abre hoje a lista de novidades para o Pluto, seu agente de finanças pessoais baseado em IA agêntica. O lançamento está previsto para janeiro de 2027, e os inscritos receberão as atualizações antes do lançamento.
 
 O Pluto é o primeiro agente do Panteão, a suíte de agentes de IA da Olympkus. Diferente de apps de finanças tradicionais, que mostram onde o dinheiro foi, o Pluto prepara onde o dinheiro vai: lê contas, antecipa faturas e prepara pagamentos e transferências para a aprovação do usuário.
 
@@ -18,7 +18,7 @@ O modelo da Olympkus é "você aprova, o agente executa". O usuário define os l
 
 ## Programa de indicação
 
-O acesso ao Pluto é por convite. Cada indicação sobe a posição do usuário na fila. O programa de indicação foi desenhado para recompensar o crescimento orgânico — quanto mais cedo o usuário entra e mais pessoas indica, mais cedo terá acesso.
+O programa de indicação é opcional. Cada indicação sobe a posição do usuário na lista. O programa foi desenhado para recompensar o crescimento orgânico — quanto mais cedo o usuário entra e mais pessoas indica, mais cedo terá acesso.
 
 ## Sobre o Panteão
 
@@ -30,9 +30,9 @@ O Pluto é o primeiro dos três agentes do Panteão:
 
 Cada agente é especialista no seu domínio. Zeus orquestra todos sob um comando único — a arquitetura que diferencia a Olympkus de concorrentes como Aizen, Cleo, Motion e Poke, que atuam em apenas um eixo.
 
-## Lista de espera
+## Lista de novidades
 
-A lista de espera está disponível no site da Olympkus. Os interessados podem garantir sua posição na fila e participar do programa de indicação.
+A lista de novidades está disponível no site da Olympkus. Os interessados podem garantir sua posição na lista e participar do programa de indicação.
 
 **Contato para imprensa:** imprensa@olympkus.ai
 

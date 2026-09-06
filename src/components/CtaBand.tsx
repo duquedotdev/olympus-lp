@@ -70,7 +70,7 @@ export function CtaBand() {
               Posição <span className="access__pos">#{standing.position}</span>
             </h2>
             <p className="access__sub">
-              de {standing.total.toLocaleString("pt-BR")} na fila do Pluto.
+              de {standing.total.toLocaleString("pt-BR")} na lista.
               Cada amigo que entrar pelo seu link aproxima você do topo.
             </p>
 
@@ -92,14 +92,13 @@ export function CtaBand() {
             <p className="eyebrow">Seu lugar no Olimpo</p>
             <h2 className="access__title">Grandes jornadas começam<br />com <em>um primeiro passo.</em></h2>
             <p className="access__sub">
-              Os primeiros da lista entram como fundadores, com condições especiais
-              no lançamento do Pluto, previsto para janeiro de 2027. Sem spam —
-              apenas o convite.
+              Receba as novidades do Pluto e dos próximos produtos da Olympkus AI
+              antes de todo mundo. Sem spam — apenas atualizações que importam.
             </p>
 
             {total !== null && (
               <p className="access__counter mono">
-                {total.toLocaleString("pt-BR")} JÁ ESTÃO NA FILA
+                {total.toLocaleString("pt-BR")} JÁ ESTÃO NA LISTA
               </p>
             )}
 
@@ -124,7 +123,7 @@ export function CtaBand() {
                 disabled={busy}
               />
               <button type="submit" className="btn btn--solid" disabled={busy}>
-                {busy ? "Enviando…" : "Solicitar convite"}
+                {busy ? "Enviando…" : "Quero ser avisado"}
               </button>
             </form>
 

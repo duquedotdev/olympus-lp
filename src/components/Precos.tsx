@@ -116,8 +116,8 @@ export function Precos() {
                   <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
                 ))}
               </ul>
-              <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
-                Entrar para a lista
+              <a href="/" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+                Quero ser avisado
               </a>
             </div>
           ))}
