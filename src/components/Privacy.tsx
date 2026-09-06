@@ -32,7 +32,7 @@ export function Privacy() {
             social]</span>, inscrita no CNPJ sob o nº <span className="fill">[•]</span>,
             com sede em <span className="fill">[endereço]</span>). Para questões de
             privacidade, fale com o nosso Encarregado (DPO) pelo e-mail{" "}
-            <a href="mailto:privacidade@olympkus.ai">privacidade@olympkus.ai</a>.
+            <a href="mailto:privacy@olympkusai.com">privacy@olympkusai.com</a>.
           </p>
         </section>
 
@@ -129,7 +129,7 @@ export function Privacy() {
           </ul>
           <p>
             Para exercer qualquer direito, escreva para{" "}
-            <a href="mailto:privacidade@olympkus.ai">privacidade@olympkus.ai</a>. Todo
+            <a href="mailto:privacy@olympkusai.com">privacy@olympkusai.com</a>. Todo
             e-mail que enviamos também traz um link de cancelamento.
           </p>
         </section>

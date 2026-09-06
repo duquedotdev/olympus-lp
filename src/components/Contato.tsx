@@ -1,8 +1,7 @@
-import type { ComponentType } from "react";
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
 import { InteriorHero } from "./interior-hero.tsx";
-import { DiscordIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "./icons/SocialIcons.tsx";
+import { SocialLinks } from "./SocialLinks.tsx";
 
 type ContactCard = {
   label: string;
@@ -12,37 +11,30 @@ type ContactCard = {
 
 const contacts: ContactCard[] = [
   {
-    label: "Suporte",
-    email: "[A PREENCHER — email de suporte]",
+    label: "Support",
+    email: "support@olympkusai.com",
     description: "Dúvidas sobre o app, bugs, problemas técnicos.",
   },
   {
-    label: "Imprensa",
-    email: "imprensa@olympkus.ai",
+    label: "Press",
+    email: "press@olympkusai.com",
     description: "Jornalistas e criadores de conteúdo. Veja também nossa sala de imprensa em /press.",
   },
   {
-    label: "Privacidade/LGPD",
-    email: "privacidade@olympkus.ai",
+    label: "Privacy/LGPD",
+    email: "privacy@olympkusai.com",
     description: "Questões sobre seus dados, exercício de direitos LGPD.",
   },
   {
-    label: "Jurídico",
-    email: "legal@olympkus.ai",
+    label: "Legal",
+    email: "legal@olympkusai.com",
     description: "Assuntos legais e contratos.",
   },
   {
-    label: "Institucional",
-    email: "[A PREENCHER — email geral]",
+    label: "General",
+    email: "hello@olympkusai.com",
     description: "Parcerias, investidores e contato institucional.",
   },
-];
-
-const socials: { label: string; url: string; Icon: ComponentType<{ className?: string }> }[] = [
-  { label: "Discord", url: "https://discord.gg/Y5GxgEY8Zt", Icon: DiscordIcon },
-  { label: "LinkedIn", url: "https://linkedin.com/company/olympkusai", Icon: LinkedInIcon },
-  { label: "Instagram", url: "https://instagram.com/olympkus", Icon: InstagramIcon },
-  { label: "TikTok", url: "https://tiktok.com/@olympkus", Icon: TikTokIcon },
 ];
 
 export function Contato() {
@@ -80,20 +72,7 @@ export function Contato() {
 
       <section className="prose">
         <div className="prose__inner">
-          <h2>Redes sociais</h2>
-          <p>
-            Acompanhe a Olympkus e participe da comunidade:
-          </p>
-          <ul className="social-links">
-            {socials.map((s) => (
-              <li key={s.label}>
-                <a href={s.url} target="_blank" rel="noopener noreferrer" className="social-links__item">
-                  <s.Icon className="social-links__icon" />
-                  <span>{s.label}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <SocialLinks />
         </div>
       </section>
 

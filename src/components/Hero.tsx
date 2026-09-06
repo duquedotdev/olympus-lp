@@ -16,14 +16,14 @@ export function Hero() {
           </h1>
           <p className="hero__overture">Seu próprio panteão de IA.</p>
           <p className="hero__sub">
-            Pluto cuida do seu dinheiro. Aion do seu tempo. Zeus orquestra
-            tudo. Você aprova a intenção; eles cuidam da execução.
+            Pluto cuida do seu dinheiro. Aion do seu tempo. Zeus cuida do
+            seu corpo. Você aprova a intenção; eles cuidam da execução.
           </p>
           <div className="hero__actions">
             <a href="/" className="btn btn--solid">Quero ser avisado <span aria-hidden="true">↗</span></a>
             <a href="#pantheon" className="hero__explore">Conhecer o panteão <span aria-hidden="true">↓</span></a>
           </div>
-          <p className="hero__availability"><span /> Lista aberta · Pluto previsto para jan. 2027</p>
+          <p className="hero__availability"><span /> Pluto disponível · Aion previsto para jul. 2027</p>
         </div>
 
         <figure className="olympus-shrine">
@@ -49,7 +49,7 @@ export function Hero() {
           <span className="olympus-shrine__inscription" aria-hidden="true">ΖΕΥΣ</span>
           <figcaption className="olympus-shrine__caption">
             <span className="olympus-shrine__number">III</span>
-            <span>Zeus <small>O orquestrador do Panteão</small></span>
+            <span>Zeus <small>O agente do seu corpo</small></span>
           </figcaption>
         </figure>
       </div>

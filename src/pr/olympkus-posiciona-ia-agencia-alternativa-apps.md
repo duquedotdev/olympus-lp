@@ -29,13 +29,13 @@ A Olympkus adota o modelo "você aprova, o agente executa" como princípio de de
 
 A categoria de IA agêntica para finanças pessoais tem crescido no Brasil e no exterior. Aizen, no Brasil, opera via WhatsApp. Cleo, no Reino Unido, prepara o lançamento do Autopilot. Motion, nos EUA, foca em calendário para profissionais B2B. Poke, adquirida pela Cognition, opera como agente pessoal generalista.
 
-A Olympkus se diferencia pela arquitetura do Panteão: três agentes especializados orquestrados por um comando único, em vez de um assistente genérico ou um agente isolado num único domínio.
+A Olympkus se diferencia pela arquitetura do Panteão: três agentes especializados, cada um no seu domínio, em vez de um assistente genérico ou um agente isolado num único eixo.
 
 ## Sobre a Olympkus AI
 
-A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida pessoal. A suíte Panteão reúne Pluto (finanças, previsto para janeiro de 2027), Aion (tempo, previsto para julho de 2027) e Zeus (orquestração, anunciado). A lista de novidades para o Pluto está aberta.
+A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida pessoal. A suíte Panteão reúne Pluto (finanças, disponível desde agosto de 2026), Aion (tempo, previsto para julho de 2027) e Zeus (corpo, anunciado). A lista de novidades para os próximos produtos está aberta.
 
-**Contato para imprensa:** imprensa@olympkus.ai
+**Contato para imprensa:** press@olympkusai.com
 
 ---
 *Nota: todas as datas de lançamento são previstas. Os claims sobre funcionalidades estão sujeitos a revisão jurídica antes do lançamento.*

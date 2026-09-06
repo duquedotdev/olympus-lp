@@ -29,11 +29,11 @@ export const deities: Deity[] = [
     glyph: "I",
     tagline: "Finanças agênticas — com você no comando.",
     description:
-      "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações com categorização por IA, orçamentos, metas, dívidas, investimentos, importação de extratos e um assistente de IA que raciocina. Funciona sem internet, 5 idiomas, no celular e no desktop.",
-    platforms: "iOS · Android · macOS · Windows · Linux",
+      "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações com categorização por IA, orçamentos, metas, dívidas, investimentos, importação de extratos e um assistente de IA que raciocina. Funciona sem internet, 5 idiomas, no celular.",
+    platforms: "Android · iOS",
     status: "shipping",
-    statusLabel: "PREVISTO",
-    eta: "JAN 2027",
+    statusLabel: "DISPONÍVEL",
+    eta: "DESDE AGO 2026",
   },
   {
     id: "aion",
@@ -43,7 +43,7 @@ export const deities: Deity[] = [
     tagline: "Fale. O Aion faz.",
     description:
       "Aion é o agente de tempo da Olympkus. Tarefas, calendário, quadro, hábitos e notas num só app — com IA que age por padrão. Você fala o que precisa; o Aion organiza tudo em ciclos, não em listas intermináveis.",
-    platforms: "macOS · Windows · Linux · iOS · Android",
+    platforms: "Android · iOS",
     status: "arriving",
     statusLabel: "PREVISTO",
     eta: "JUL 2027",
@@ -51,12 +51,12 @@ export const deities: Deity[] = [
   {
     id: "zeus",
     name: "Zeus",
-    domain: "Vontade",
+    domain: "Corpo",
     glyph: "III",
-    tagline: "O orquestrador do Panteão.",
+    tagline: "Orquestra seus aspectos fisiológicos para você focar no que importa.",
     description:
-      "Zeus é a visão final do Panteão: um orquestrador que coordena todos os agentes sob um só comando. Um único pedido, executado através de tudo. Em concepção.",
-    platforms: "A definir",
+      "Zeus é o agente do seu corpo. Água, alimentação, sono, peso, humor, exercícios, ciclo menstrual, doenças — da ansiedade à diabetes. Ele te entende como organismo e te ajuda a chegar onde quer chegar, controlando a subida. Sem influência externa. É você, 1% melhor a cada dia. Em concepção.",
+    platforms: "Android · iOS",
     status: "announced",
     statusLabel: "EM CONCEPÇÃO",
     eta: "—",
@@ -89,27 +89,27 @@ export interface FaqItem {
 export const faqs: FaqItem[] = [
   {
     q: "O que é a Olympkus AI?",
-    a: "A Olympkus AI é uma empresa brasileira que constrói uma suíte de agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Aion (tempo e tarefas) e Zeus (orquestração). O diferencial é ter um agente por domínio, orquestrados por um comando único — em vez de um assistente genérico.",
+    a: "A Olympkus AI é uma empresa brasileira que constrói uma suíte de agentes de inteligência artificial para a vida pessoal. A suíte, chamada Panteão, reúne três agentes especializados: Pluto (finanças), Aion (tempo e tarefas) e Zeus (corpo e fisiologia). O diferencial é ter um agente por domínio — em vez de um assistente genérico.",
   },
   {
     q: "O que é IA agêntica?",
-    a: "IA agêntica é inteligência artificial que age por você, não apenas responde perguntas. Em vez de um chatbot que você precisa operar, um agente executa tarefas dentro de limites que você define: você aprova a intenção, o agente cuida da execução. A Olympkus aplica esse conceito a finanças pessoais, gestão de tempo e orquestração da vida pessoal.",
+    a: "IA agêntica é inteligência artificial que age por você, não apenas responde perguntas. Em vez de um chatbot que você precisa operar, um agente executa tarefas dentro de limites que você define: você aprova a intenção, o agente cuida da execução. A Olympkus aplica esse conceito a finanças pessoais, gestão de tempo e bem-estar fisiológico.",
   },
   {
     q: "O que é o Pluto da Olympkus?",
-    a: "Pluto é o agente de finanças pessoais da Olympkus AI. Ele lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação. Você define os limites e aprova cada intenção — não é piloto automático, é delegação com controle. Lançamento previsto para janeiro de 2027.",
+    a: "Pluto é o agente de finanças pessoais da Olympkus AI. Ele lê suas contas, antecipa faturas e prepara pagamentos e transferências para a sua aprovação. Você define os limites e aprova cada intenção — não é piloto automático, é delegação com controle. Disponível desde agosto de 2026.",
   },
   {
-    q: "Quando o Pluto vai lançar?",
-    a: "O lançamento do Pluto está previsto para janeiro de 2027. A lista de novidades está aberta — receba as atualizações do Pluto e dos próximos produtos antes do lançamento.",
+    q: "O Pluto já está disponível?",
+    a: "O Pluto está disponível desde agosto de 2026. A lista de novidades está aberta para os próximos produtos da Olympkus AI.",
   },
   {
     q: "Qual a diferença entre Olympkus e assistentes de IA como ChatGPT?",
-    a: "O ChatGPT e outros assistentes genéricos respondem perguntas sobre qualquer assunto, mas não conhecem profundamente suas contas, seu calendário ou suas prioridades — você precisa explicar tudo, toda vez. A Olympkus tem um agente especializado por domínio: Pluto conhece suas finanças em profundidade, Aion conhece seu tempo. Cada agente é excelente no que faz, e Zeus orquestra tudo sob um só comando.",
+    a: "O ChatGPT e outros assistentes genéricos respondem perguntas sobre qualquer assunto, mas não conhecem profundamente suas contas, seu calendário ou suas prioridades — você precisa explicar tudo, toda vez. A Olympkus tem um agente especializado por domínio: Pluto conhece suas finanças em profundidade, Aion conhece seu tempo, Zeus conhece seu corpo. Cada agente é excelente no que faz.",
   },
   {
     q: "Qual a diferença entre Olympkus e apps de finanças com IA?",
-    a: "Apps como Aizen e Cleo fazem autonomia em um único domínio (dinheiro). A Olympkus propõe autonomia coordenada em toda a vida pessoal — finanças, tempo e orquestração — com um agente especializado por domínio. Além disso, o modelo da Olympkus é 'você aprova, o agente executa': controle, não apenas automação cega. É o oposto explícito de produtos que executam sem sua permissão.",
+    a: "Apps como Aizen e Cleo fazem autonomia em um único domínio (dinheiro). A Olympkus propõe autonomia em toda a vida pessoal — finanças, tempo e corpo — com um agente especializado por domínio. Além disso, o modelo da Olympkus é 'você aprova, o agente executa': controle, não apenas automação cega. É o oposto explícito de produtos que executam sem sua permissão.",
   },
   {
     q: "O que significa 'você aprova, o agente executa'?",

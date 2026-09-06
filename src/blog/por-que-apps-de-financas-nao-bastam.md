@@ -37,10 +37,10 @@ Isso não é uma limitação técnica. É uma escolha de design. É a diferença
 
 Aizen, no Brasil, já valida a tese de finanças agênticas via WhatsApp. Cleo, global, valida a tese com a geração Z. O mercado está sendo educado: a ideia de que uma IA pode cuidar das suas finanças deixou de ser ficção.
 
-O que a Olympkus adiciona não é a categoria — é a arquitetura. Um agente de finanças que faz parte de um panteão, orquestrado por um comando único. Pluto cuida do dinheiro, Aion cuida do tempo, Zeus orquestra tudo. Nenhum concorrente tem os três.
+O que a Olympkus adiciona não é a categoria — é a arquitetura. Um agente de finanças que faz parte de um panteão. Pluto cuida do dinheiro, Aion cuida do tempo, Zeus cuida do corpo. Nenhum concorrente tem os três.
 
 ## O que esperar
 
-O Pluto está previsto para janeiro de 2027. Enquanto isso, a lista de novidades está aberta — receba as atualizações do Pluto e dos próximos produtos antes do lançamento.
+O Pluto está disponível desde agosto de 2026. A lista de novidades está aberta para os próximos produtos da Olympkus AI.
 
 Se você está cansado de administrar apps em vez de viver, [garanta seu lugar no Panteão.](/)

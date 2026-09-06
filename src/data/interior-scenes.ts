@@ -5,11 +5,11 @@ type InteriorScene = { chapter: string; inscription: string; caption: string; sy
 export const interiorScenes: Record<string, InteriorScene> = {
   pluto: { chapter: "I · O domínio da riqueza", inscription: "ΠΛΟΥΤΟΣ", caption: "Clareza para o que é seu", symbol: "pluto" },
   aion: { chapter: "II · O domínio do tempo", inscription: "ΑΙΩΝ", caption: "O tempo em seu próprio ritmo", symbol: "aion" },
-  zeus: { chapter: "III · O domínio da vontade", inscription: "ΖΕΥΣ", caption: "Todas as forças. Uma intenção.", symbol: "zeus" },
+  zeus: { chapter: "III · O domínio do corpo", inscription: "ΖΕΥΣ", caption: "1% melhor a cada dia", symbol: "zeus" },
   panteao: { chapter: "Olimpo · O Panteão", inscription: "ΟΛΥΜΠΟΣ", caption: "Um domínio para cada força", symbol: "temple" },
   sobre: { chapter: "Origem · Nosso manifesto", inscription: "ΑΡΧΗ", caption: "Toda jornada tem uma origem", symbol: "laurel" },
   funcionalidades: { chapter: "Pluto · Seus instrumentos", inscription: "ΤΕΧΝΗ", caption: "Inteligência a serviço da vida", symbol: "pluto" },
-  ia: { chapter: "Pluto · Inteligência", inscription: "ΜΗΤΙΣ", caption: "Métis · A arte de compreender", symbol: "compass" },
+  "finance-agent": { chapter: "Pluto · Agentes", inscription: "ΑΠΟΛΛΩΝ", caption: "Apolo · A luz que revela", symbol: "compass" },
   orcamentos: { chapter: "Pluto · Orçamentos", inscription: "ΜΕΤΡΟΝ", caption: "A medida do equilíbrio", symbol: "balance" },
   dividas: { chapter: "Pluto · Dívidas e parcelamentos", inscription: "ΛΥΣΙΣ", caption: "O caminho para recomeçar", symbol: "key" },
   metas: { chapter: "Pluto · Metas e desejos", inscription: "ΣΚΟΠΟΣ", caption: "Toda conquista começa com intenção", symbol: "target" },

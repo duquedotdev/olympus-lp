@@ -15,7 +15,7 @@ const FACTS: { label: string; value: string }[] = [
   { label: "Sede", value: "Brasil" },
   { label: "Time", value: "[A PREENCHER]" },
   { label: "Usuários no beta", value: "[A PREENCHER — se aplicável]" },
-  { label: "Produtos", value: "Pluto (jan/2027), Aion (jul/2027), Zeus (em concepção)" },
+  { label: "Produtos", value: "Pluto (ago/2026), Aion (jul/2027), Zeus (em concepção)" },
 ];
 
 export function PressList() {
@@ -46,8 +46,8 @@ export function PressList() {
           <p style={boilerStyle}>
             A Olympkus AI é uma empresa brasileira que desenvolve agentes de IA para a vida
             pessoal. A suíte Panteão reúne três agentes especializados — Pluto (finanças),
-            Aion (tempo) e Zeus (orquestração) — sob um único comando. O primeiro produto,
-            Pluto, está previsto para janeiro de 2027.
+            Aion (tempo) e Zeus (corpo) — cada um no seu domínio. O primeiro produto,
+            Pluto, está disponível desde agosto de 2026.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export function PressList() {
       {/* ---------- Contato para imprensa ---------- */}
       <div className="press-contact">
         <p className="mono">CONTATO PARA IMPRENSA</p>
-        <a href="mailto:imprensa@olympkus.ai">imprensa@olympkus.ai</a>
+        <a href="mailto:press@olympkusai.com">press@olympkusai.com</a>
       </div>
 
       {/* ---------- Releases ---------- */}

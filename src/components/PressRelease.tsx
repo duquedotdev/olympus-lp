@@ -29,7 +29,7 @@ export function PressRelease({ slug }: { slug: string }) {
 
       <footer className="blog-post__footer">
         <p className="mono" style={{ color: "var(--stone-dim)", fontSize: "0.78rem" }}>CONTATO PARA IMPRENSA</p>
-        <a href="mailto:imprensa@olympkus.ai" style={{ color: "var(--bronze-soft)" }}>imprensa@olympkus.ai</a>
+        <a href="mailto:press@olympkusai.com" style={{ color: "var(--bronze-soft)" }}>press@olympkusai.com</a>
         <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
       </footer>
     </article>

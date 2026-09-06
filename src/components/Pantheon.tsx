@@ -7,11 +7,11 @@ export function Pantheon() {
       <div className="section-head">
         <p className="eyebrow" data-reveal>II · O Panteão</p>
         <h2 className="section-title" data-reveal>
-          Forças distintas.<br /><em>Uma só vontade. A sua.</em>
+          Forças distintas.<br /><em>Um só corpo. Um só comando. O seu.</em>
         </h2>
         <p className="section-lede" data-reveal>
           Na mitologia, cada divindade tem seu domínio. Aqui, cada agente tem
-          sua especialidade. Dinheiro, tempo e intenção — em sintonia.
+          sua especialidade. Dinheiro, tempo e corpo — em sintonia.
         </p>
       </div>
 

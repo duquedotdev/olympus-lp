@@ -32,17 +32,16 @@ export function WhyPantheon() {
           <p className="why__label mono">PANTEÃO OLYMPKUS</p>
           <p className="why__body">
             Um agente especializado por domínio — Pluto conhece suas finanças
-            em profundidade, Aion conhece seu tempo — e um orquestrador, Zeus,
-            que coordena tudo sob um só comando. Cada agente é excelente no
-            que faz. Você delega, não integra.
+            em profundidade, Aion conhece seu tempo, Zeus conhece seu corpo.
+            Cada agente é excelente no que faz. Você delega, não integra.
           </p>
         </article>
       </div>
 
       <p className="why__foot" data-reveal>
         A autonomia isolada está sendo comoditizada. O que nenhum concorrente
-        oferece é <em>autonomia coordenada</em> — agentes especializados que
-        trabalham juntos, sob o seu comando.
+        oferece é <em>autonomia por domínio</em> — agentes especializados que
+        conhecem sua vida em profundidade, cada um no seu eixo.
       </p>
     </section>
   );

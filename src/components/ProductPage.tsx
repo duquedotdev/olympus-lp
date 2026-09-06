@@ -14,7 +14,7 @@ const productDetails: Record<string, {
   faq: { q: string; a: string }[];
 }> = {
   pluto: {
-    hero: "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações inteligentes com categorização por IA, orçamentos, metas, dívidas, investimentos e um assistente de IA que raciocina — tudo num só app, no celular e no desktop.",
+    hero: "Pluto é o agente de finanças pessoais da Olympkus. Dashboard completa, transações inteligentes com categorização por IA, orçamentos, metas, dívidas, investimentos e um assistente de IA que raciocina — tudo num só app, no celular.",
     featureGroups: [
       {
         label: "Visão geral",
@@ -51,7 +51,7 @@ const productDetails: Record<string, {
           { icon: "⬆", title: "Importação de extratos", body: "Importe extratos bancários em CSV ou OFX. Pluto lê o arquivo, categoriza as transações e importa tudo — sem digitar linha por linha." },
           { icon: "⬇", title: "Funciona sem internet", body: "Funciona sem internet. Suas ações vão para uma fila e sincronizam automaticamente quando a conexão volta. Banner de status sempre visível." },
           { icon: "⬌", title: "5 idiomas", body: "Português, inglês, espanhol, francês e chinês. O app inteiro traduzido — não só o menu, todas as telas." },
-          { icon: "◐", title: "Notificações push", body: "Lembretes de recorrência e vencimento de parcelas. Notificações no celular e no desktop." },
+          { icon: "◐", title: "Notificações push", body: "Lembretes de recorrência e vencimento de parcelas. Notificações no celular." },
           { icon: "◑", title: "Temas e acessibilidade", body: "Modo claro e escuro, cor de destaque personalizável e configurações de acessibilidade. O app se adapta a você." },
           { icon: "⚿", title: "Segurança e auditoria", body: "Login com Google, dados sensíveis protegidos com criptografia e tela de auditoria que registra cada ação tomada no app. Você vê o histórico de tudo." },
         ],
@@ -114,7 +114,6 @@ const productDetails: Record<string, {
       { q: "O assistente de IA realmente raciocina?", a: "Sim. O chat mostra o raciocínio passo a passo antes de responder — cada etapa do chain of thought é exibida com o ícone do nó que a gerou. Você vê como o Pluto chegou à conclusão, não só a resposta." },
       { q: "Pluto funciona offline?", a: "Sim. O app funciona sem internet: suas ações vão para uma fila e sincronizam automaticamente quando a conexão volta. Um banner de status mostra se você está online ou offline." },
       { q: "Quais idiomas o Pluto suporta?", a: "Português (BR), inglês, espanhol, francês e chinês. O app inteiro é traduzido — todas as telas, não só o menu." },
-      { q: "Pluto tem versão desktop?", a: "Sim. Pluto roda no iOS, Android, macOS, Windows e Linux. O desktop tem a mesma base de recursos do mobile, mais analytics avançados (cenários de dívida, projeção de metas, quick wins)." },
       { q: "Qual a diferença entre Pro e Max?", a: "Pro (R$ 9,90/mês) remove anúncios, libera IA ilimitada, orçamentos e metas ilimitados, relatórios mensais e exportação em CSV. Max (R$ 19,90/mês) inclui tudo isso mais IA com modelo prioritário, exportação em PDF/Excel, relatórios completos, Live Activities, categorias ilimitadas e backup automático na nuvem." },
     ],
   },
@@ -167,7 +166,7 @@ const productDetails: Record<string, {
       {
         label: "Disponibilidade",
         features: [
-          { icon: "⬌", title: "Onde funciona", body: "macOS, Windows e Linux no computador. iOS e Android no celular. Conta única, dados sincronizados entre todos os dispositivos." },
+          { icon: "⬌", title: "Onde funciona", body: "Android e iOS no celular. Conta única, dados sincronizados entre todos os dispositivos." },
           { icon: "⬇", title: "Funciona sem internet", body: "Captura, criação e edição funcionam sem conexão. Sincroniza automaticamente quando a conexão volta. Nada se perde — a versão anterior fica preservada no histórico por 30 dias." },
           { icon: "◐", title: "Sistema de cores", body: "Cada área, projeto, tag, calendário e hábito tem cor própria — identificável à distância. Sempre com um segundo sinal (ícone ou forma) para acessibilidade. Paleta com contraste e daltonismo." },
           { icon: "⚿", title: "Autonomia com limites", body: "A IA age por padrão. Só para em três casos: exclusão permanente, comunicação externa, ação financeira. Modo Manual disponível para quem quer controle total. Tudo auditável e desfazível." },
@@ -223,7 +222,7 @@ const productDetails: Record<string, {
       { q: "O que é o Método Aion?", a: "É a forma como o Aion organiza sua vida. Tudo entra por um único ponto (Captura), move-se entre estados visuais (Fluxo), é organizado em ciclos semanais com intenção e revisão automática (Ciclo), e ganha blocos de tempo no calendário alocados pela IA (Bloco). Não é uma pilha de metodologias separadas — é um fluxo só, com a IA conduzindo entre as estações." },
       { q: "A IA age sozinha?", a: "Sim — por padrão. A IA cria, edita, prioriza, agenda e organiza sem esperar aprovação prévia. O que você vê é o resultado e a explicação, com opção de desfazer. Só três categorias sempre pedem confirmação: exclusão permanente, comunicação externa (enviar e-mail, convite, mensagem) e ação financeira. Quem quer controle total pode ativar o Modo Manual." },
       { q: "Quando o Aion vai lançar?", a: "O lançamento do Aion está previsto para julho de 2027. O desenvolvimento começa depois que o Pluto estiver no ar, com dados reais de uso informando o design. O Aion nasce global, em inglês desde o dia 1." },
-      { q: "Onde o Aion funciona?", a: "No computador (macOS, Windows e Linux) e no celular (iOS e Android). Conta única com sincronização entre todos os dispositivos. Funciona sem internet — sincroniza automaticamente quando a conexão volta." },
+      { q: "Onde o Aion funciona?", a: "No celular (Android e iOS). Conta única com sincronização entre todos os dispositivos. Funciona sem internet — sincroniza automaticamente quando a conexão volta." },
       { q: "Como o Aion se compara ao Motion, Notion ou Things 3?", a: "Nenhum concorrente combina tudo ao mesmo tempo: quadro de tarefas, calendário com linguagem natural, método rigoroso com revisão e perspectivas, e notas que se auto-organizam e viram memória pessoal. O Motion se aproxima em ambição, mas foca em times e negócios — não no usuário individual. O Aion nasce desse cruzamento que ninguém cobre." },
       { q: "O Aion vai ter versão gratuita?", a: "Sim. O plano Free tem tarefas, calendário, notas e hábitos sem limite de itens — o limite é no número de ações de IA por mês. O Pro (R$ 200/mês) remove o limite de IA, libera memória pessoal completa e sincronização entre todos os dispositivos. O Max (R$ 1.000/mês) adiciona integrações com Google, Microsoft e Apple, sinalização sensorial estendida e suporte direto com o fundador." },
       { q: "A IA pode alterar minhas notas?", a: "Não. A IA pode sugerir e aplicar tags e ligações entre notas automaticamente, mas nunca reescreve o texto original do que você escreveu. Seu conteúdo é seu. Reescrever só acontece quando você pede a edição diretamente." },
@@ -231,12 +230,12 @@ const productDetails: Record<string, {
     ],
   },
   zeus: {
-    hero: "Zeus é a visão final do Panteão: um orquestrador que coordena todos os agentes sob um só comando. Um único pedido, executado através de tudo — finanças, tempo e o que vier depois. Em concepção.",
+    hero: "Zeus é o agente do seu corpo. Água, alimentação, sono, peso, humor, exercícios, ciclo menstrual, doenças — da ansiedade à diabetes. Ele te entende como organismo e te ajuda a chegar onde quer chegar, controlando a subida. Sem influência externa. É você, 1% melhor a cada dia. Em concepção.",
     featureGroups: [],
     plans: [],
     faq: [
-      { q: "O que o Zeus vai fazer?", a: "A visão é um orquestrador: você dá um comando e Zeus coordena os agentes especializados — Pluto, Aion e o que vier depois — para executar tudo em sequência. Um pedido, múltiplos domínios, um só resultado. O escopo exato será definido com dados reais de uso dos outros agentes." },
-      { q: "Quando o Zeus vai lançar?", a: "Ainda em concepção. Zeus só faz sentido quando há agentes reais para orquestrar e dados reais para aprender com eles. Vai nascer do que o Pluto e o Aion ensinarem — não de um PowerPoint." },
+      { q: "O que o Zeus vai fazer?", a: "Zeus orquestra seus aspectos fisiológicos para você focar no que importa. Ele acompanha água, alimentação, sono, peso, humor, exercícios, ciclo menstrual e condições de saúde — da ansiedade à diabetes. Te entende como corpo, te ajuda a chegar onde quer chegar e a controlar a subida. Sem influência externa." },
+      { q: "Quando o Zeus vai lançar?", a: "Ainda em concepção. Zeus nasce do que aprendermos sobre o usuário como organismo — não de um PowerPoint. O escopo exato será definido com dados reais." },
     ],
   },
 };
@@ -254,15 +253,34 @@ export function ProductPage({ id }: { id: string }) {
         <div className="product-hero__inner">
           <a href="/pantheon" className="blog-back">← Panteão</a>
           <div className="product-hero__identity">
-            {id === "aion" && <img src="/aion_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />}
-            {id === "pluto" && <img src="/pluto_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />}
             <h1 className="product-hero__title">{deity.name}</h1>
           </div>
           <p className="product-hero__tagline">{deity.tagline}</p>
           <p className="product-hero__desc">{details.hero}</p>
           <div className="product-hero__actions">
-            <a href="/" className="btn btn--solid">Quero ser avisado <span aria-hidden="true">↗</span></a>
-            <span className={`chip chip--${deity.status}`}>{deity.statusLabel} · {deity.eta}</span>
+            {id === "pluto" ? (
+              <>
+                <a href="https://play.google.com/store/apps/details?id=com.olympkusai.pluto" target="_blank" rel="noopener noreferrer" className="store-badge" aria-label="Disponível no Google Play">
+                  <img src="/google-play-icon.png" alt="" className="store-badge__icon" />
+                  <span className="store-badge__text">
+                    <span className="store-badge__small">DISPONÍVEL NO</span>
+                    <span className="store-badge__big">Google Play</span>
+                  </span>
+                </a>
+                <span className="store-badge store-badge--soon" aria-label="Disponível em breve na Apple Store">
+                  <img src="/apple-icon.svg" alt="" className="store-badge__icon" />
+                  <span className="store-badge__text">
+                    <span className="store-badge__small">DISPONÍVEL EM BREVE</span>
+                    <span className="store-badge__big">Apple Store</span>
+                  </span>
+                </span>
+              </>
+            ) : (
+              <>
+                <a href="/" className="btn btn--solid">Quero ser avisado <span aria-hidden="true">↗</span></a>
+                <span className={`chip chip--${deity.status}`}>{deity.statusLabel} · {deity.eta}</span>
+              </>
+            )}
           </div>
           <p className="product-hero__platforms mono">{deity.platforms}</p>
         </div>

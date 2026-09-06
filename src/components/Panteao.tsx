@@ -15,8 +15,8 @@ export function Panteao() {
           <h1 className="page-hero__title">Três domínios. Três agentes. Um só comando.</h1>
           <p className="page-hero__lede">
             A Olympkus constrói um agente especializado para cada domínio da vida
-            pessoal — dinheiro, tempo e vontade — e um orquestrador que os coordena.
-            Autonomia isolada virou commodity. A diferença é ter agentes que trabalham juntos.
+            pessoal — dinheiro, tempo e corpo. Cada um é excelente no que faz.
+            Você delega, não integra.
           </p>
         </div>
       </InteriorHero>

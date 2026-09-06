@@ -23,7 +23,7 @@ const features: Feature[] = [
   {
     icon: "◑",
     title: "Lembretes de vencimento",
-    body: "Notificação antes de cada cobrança recorrente — no celular e no desktop. Você sabe o que vai cair na conta antes que caia, sem surpresa no fim do mês.",
+    body: "Notificação antes de cada cobrança recorrente — no celular. Você sabe o que vai cair na conta antes que caia, sem surpresa no fim do mês.",
   },
 ];
 

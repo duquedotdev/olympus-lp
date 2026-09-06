@@ -11,10 +11,10 @@ type FeatureCard = {
 
 const cards: FeatureCard[] = [
   {
-    icon: "✦",
-    title: "Assistente de IA",
-    desc: "Chat com raciocínio visível, categorização com 96% de confiança, insights e quick wins gerados a partir dos seus dados.",
-    href: "/features/ai-metis",
+    icon: "◈",
+    title: "Suíte agêntica",
+    desc: "Uma suíte que lê seus documentos, raciocina sobre seus dados, categoriza transações com alta confiança, antecipa problemas e prepara ações para você aprovar.",
+    href: "/features/finance-agent",
   },
   {
     icon: "▣",

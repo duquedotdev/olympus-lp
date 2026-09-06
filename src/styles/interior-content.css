@@ -65,6 +65,9 @@
 .comparison-table tbody tr:hover { background: rgba(var(--realm), 0.04); }
 .comparison-table th:nth-child(2), .comparison-table td:nth-child(2) { background: rgba(var(--realm), 0.045); }
 .comparison-hint { font: 0.65rem/1.8 var(--mono); color: var(--stone); margin-bottom: 16px; }
+.olympus-page .comparison-before { color: var(--stone-dim); font-style: italic; }
+.olympus-page .comparison-after { color: var(--bronze-soft); }
+.olympus-page .product-feature .product-feature__body + .product-feature__body { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(var(--realm), 0.13); }
 @media (max-width: 1000px) {
   .olympus-page .product-features, .olympus-page .product-faq { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .olympus-page .product-features > .section-head { position: static; }

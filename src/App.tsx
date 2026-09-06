@@ -22,7 +22,7 @@ import { useReveal } from "./hooks/useReveal.ts";
 import { usePathRoute } from "./hooks/usePathRoute.ts";
 import { NotFound } from "./components/NotFound.tsx";
 import { Funcionalidades } from "./components/Funcionalidades.tsx";
-import { FuncionalidadeIA } from "./components/FuncionalidadeIA.tsx";
+import { FuncionalidadeFinanceAgent } from "./components/FuncionalidadeFinanceAgent.tsx";
 import { FuncionalidadeOrcamentos } from "./components/FuncionalidadeOrcamentos.tsx";
 import { FuncionalidadeDividas } from "./components/FuncionalidadeDividas.tsx";
 import { FuncionalidadeMetas } from "./components/FuncionalidadeMetas.tsx";
@@ -62,7 +62,7 @@ export default function App() {
   if (route === "pantheon") return <Shell route={route}><Panteao /></Shell>;
   if (route === "about") return <Shell route={route}><Sobre /></Shell>;
   if (route === "features") return <Shell route={route}><Funcionalidades /></Shell>;
-  if (route === "features/ai-metis") return <Shell route={route}><FuncionalidadeIA /></Shell>;
+  if (route === "features/finance-agent") return <Shell route={route}><FuncionalidadeFinanceAgent /></Shell>;
   if (route === "features/budgets") return <Shell route={route}><FuncionalidadeOrcamentos /></Shell>;
   if (route === "features/debts-installments") return <Shell route={route}><FuncionalidadeDividas /></Shell>;
   if (route === "features/goals") return <Shell route={route}><FuncionalidadeMetas /></Shell>;
@@ -99,7 +99,7 @@ export default function App() {
         <nav className="domain-index" aria-label="Os três domínios do Panteão">
           <a href="#pluto"><span className="domain-index__number">I</span><span>Pluto<small>Riqueza</small></span><span aria-hidden="true">↗</span></a>
           <a href="#aion"><span className="domain-index__number">II</span><span>Aion<small>Tempo</small></span><span aria-hidden="true">↗</span></a>
-          <a href="#zeus"><span className="domain-index__number">III</span><span>Zeus<small>Vontade</small></span><span aria-hidden="true">↗</span></a>
+          <a href="#zeus"><span className="domain-index__number">III</span><span>Zeus<small>Corpo</small></span><span aria-hidden="true">↗</span></a>
         </nav>
         <Manifesto />
         <WhyPantheon />

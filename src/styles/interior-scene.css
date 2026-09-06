@@ -76,6 +76,14 @@
 .interior-hero .product-hero__desc { font-size: 0.98rem; line-height: 1.85; color: var(--stone); margin-top: 25px; }
 .product-hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 28px; }
 .product-hero__actions .chip { font-size: 0.55rem; }
+.store-badge { display: inline-flex; align-items: center; gap: 12px; padding: 10px 22px 10px 12px; background: #000; border: 1px solid transparent; border-radius: 10px; transition: border-color 0.2s, opacity 0.2s; opacity: 0.92; }
+.store-badge:hover { border-color: var(--bronze); opacity: 1; }
+.store-badge__icon { height: 26px; width: 26px; display: block; }
+.store-badge__text { display: flex; flex-direction: column; line-height: 1.1; }
+.store-badge__small { font: 500 0.6rem "Roboto", sans-serif; letter-spacing: 0.05em; color: #fff; opacity: 0.85; }
+.store-badge__big { font: 700 1.2rem "Roboto", sans-serif; color: #fff; }
+.store-badge--soon { opacity: 0.5; cursor: default; }
+.store-badge--soon:hover { border-color: transparent; opacity: 0.5; }
 .interior-hero .product-hero__platforms { font-size: 0.58rem; line-height: 1.8; margin-top: 24px; }
 @keyframes interior-arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @media (max-width: 900px) {

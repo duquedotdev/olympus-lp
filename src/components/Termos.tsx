@@ -103,7 +103,7 @@ export function Termos() {
           <h2>8. Contato</h2>
           <p>
             Para questões sobre estes termos, escreva para{" "}
-            <a href="mailto:legal@olympkus.ai">legal@olympkus.ai</a>.
+            <a href="mailto:legal@olympkusai.com">legal@olympkusai.com</a>.
           </p>
         </section>
 

@@ -72,7 +72,6 @@ const rows: { feature: string; pluto: string; organizze: string; mobills: string
   { feature: "Dívidas com simulação de cenários", pluto: "Sim", organizze: "Básico", mobills: "Básico", monarch: "Não" },
   { feature: "Funciona sem internet", pluto: "Sim", organizze: "Não", mobills: "Não", monarch: "Não" },
   { feature: "Multi-idioma", pluto: "5 idiomas", organizze: "Português", mobills: "Português", monarch: "Inglês" },
-  { feature: "Desktop nativo", pluto: "Sim (macOS/Win/Linux)", organizze: "Não", mobills: "Não", monarch: "Sim (web)" },
   { feature: "2FA obrigatório", pluto: "Sim", organizze: "Não", mobills: "Não", monarch: "Sim" },
   { feature: "Tela de auditoria", pluto: "Sim", organizze: "Não", mobills: "Não", monarch: "Não" },
   { feature: "Open source", pluto: "Não", organizze: "Não", mobills: "Não", monarch: "Não" },

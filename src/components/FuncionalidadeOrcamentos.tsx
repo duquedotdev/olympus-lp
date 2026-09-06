@@ -13,7 +13,7 @@ const features: Feature[] = [
   {
     icon: "◐",
     title: "Alertas de limite",
-    body: "Receba alertas ao se aproximar do limite. Não é no dia que estoura — é antes, quando ainda dá tempo de ajustar. Notificações no celular e no desktop.",
+    body: "Receba alertas ao se aproximar do limite. Não é no dia que estoura — é antes, quando ainda dá tempo de ajustar. Notificações no celular.",
   },
   {
     icon: "◇",
