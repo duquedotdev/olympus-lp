@@ -4,7 +4,7 @@ export function Method() {
   return (
     <section className="method" id="method">
       <div className="section-head">
-        <p className="eyebrow" data-reveal>Método</p>
+        <p className="eyebrow" data-reveal>III · O poder de delegar</p>
         <h2 className="section-title" data-reveal>
           Agêntico significa que ele age. Sob as suas regras.
         </h2>

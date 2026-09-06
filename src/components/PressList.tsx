@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { getAllReleases } from "../lib/pr.ts";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 const DOWNLOADS = [
   { label: "Logo (SVG)", desc: "Escalável para qualquer tamanho sem perder qualidade.", href: "/logo.svg" },
@@ -23,15 +24,18 @@ export function PressList() {
   const releases = getAllReleases();
 
   return (
-    <div className="blog-list">
-      <header className="blog-header">
-        <a href="/" className="blog-back">← Voltar</a>
-        <h1 className="blog-title">Sala de Imprensa</h1>
-        <p className="blog-lede">Comunicados, posicionamento e materiais para jornalistas e criadores de conteúdo.</p>
-      </header>
+    <>
+      <InteriorHero id="press">
+        <header className="blog-header">
+          <a href="/" className="blog-back">← Voltar</a>
+          <h1 className="blog-title">Sala de Imprensa</h1>
+          <p className="blog-lede">Comunicados, posicionamento e materiais para jornalistas e criadores de conteúdo.</p>
+        </header>
+      </InteriorHero>
+      <div className="blog-list">
 
       {/* ---------- Kit de Mídia ---------- */}
-      <section style={kitStyle}>
+      <section className="press-kit" style={kitStyle}>
         <div style={{ marginBottom: "2.4rem" }}>
           <h2 style={kitTitleStyle}>Tudo que você precisa para falar da Olympkus.</h2>
         </div>
@@ -71,7 +75,7 @@ export function PressList() {
           <p className="mono" style={labelStyle}>DADOS FACTUAIS</p>
           <dl style={{ margin: 0 }}>
             {FACTS.map((f) => (
-              <div key={f.label} style={factRowStyle}>
+              <div key={f.label} className="press-fact-row" style={factRowStyle}>
                 <dt className="mono" style={factLabelStyle}>{f.label}</dt>
                 <dd style={factValueStyle}>{f.value}</dd>
               </div>
@@ -99,8 +103,9 @@ export function PressList() {
         ))}
       </div>
 
+      </div>
       <CtaBand />
-    </div>
+    </>
   );
 }
 
@@ -149,7 +154,7 @@ const boilerStyle: React.CSSProperties = {
 
 const gridStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+  gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 220px), 1fr))",
   gap: "clamp(16px, 2vw, 24px)",
 };
 
@@ -181,7 +186,6 @@ const cardDescStyle: React.CSSProperties = {
 
 const factRowStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "180px 1fr",
   gap: "1rem",
   padding: "0.7rem 0",
   borderBottom: "1px solid var(--line)",

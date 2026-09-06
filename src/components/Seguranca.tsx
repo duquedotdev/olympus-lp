@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 export function Seguranca() {
   useEffect(() => {
@@ -8,7 +9,7 @@ export function Seguranca() {
 
   return (
     <>
-      <section className="page-hero" id="seguranca">
+      <InteriorHero id="seguranca">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Seus dados financeiros, protegidos por padrão.</h1>
@@ -18,7 +19,7 @@ export function Seguranca() {
             Sem marketing, sem promessa vazia — só o que realmente fazemos.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="prose">
         <div className="prose__inner">

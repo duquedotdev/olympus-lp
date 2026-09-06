@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 import { DiscordIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "./icons/SocialIcons.tsx";
 
 type ContactCard = {
@@ -49,7 +50,7 @@ export function Contato() {
 
   return (
     <>
-      <section className="page-hero" id="contato">
+      <InteriorHero id="contato">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Fale com a gente — pelo canal certo.</h1>
@@ -58,7 +59,7 @@ export function Contato() {
             necessidade e escreva direto — sem formulário intermediário.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="product-pricing">
         <div className="panteao-grid contact-grid">

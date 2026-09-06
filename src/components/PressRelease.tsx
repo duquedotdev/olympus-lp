@@ -1,4 +1,5 @@
 import { getRelease } from "../lib/pr.ts";
+import { ReadingMark } from "./reading-mark.tsx";
 
 export function PressRelease({ slug }: { slug: string }) {
   const release = getRelease(slug);
@@ -7,6 +8,7 @@ export function PressRelease({ slug }: { slug: string }) {
     return (
       <div className="blog-post">
         <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
+        <ReadingMark label="Imprensa · Fora dos registros" />
         <h1 className="blog-title">Comunicado não encontrado</h1>
       </div>
     );
@@ -17,6 +19,7 @@ export function PressRelease({ slug }: { slug: string }) {
       <a href="/press" className="blog-back">← Voltar à sala de imprensa</a>
 
       <header className="blog-post__header">
+        <ReadingMark label="Registros do Panteão" />
         <span className="chip chip--shipping">COMUNICADO</span>
         <h1 className="blog-post__title">{release.title}</h1>
         <p className="blog-post__excerpt">{release.excerpt}</p>

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 const TEAM_CARDS = [
   "[A PREENCHER — foto e bio do fundador]",
@@ -27,7 +28,7 @@ export function Sobre() {
 
   return (
     <>
-      <section className="page-hero" id="sobre">
+      <InteriorHero id="sobre">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Construímos o oposto do que a tecnologia prometeu.</h1>
@@ -37,7 +38,7 @@ export function Sobre() {
             responsáveis e sob o seu comando.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="prose">
         <div className="prose__inner">
@@ -107,7 +108,7 @@ export function Sobre() {
           <h2>Contato</h2>
           <ul style={contactListStyle}>
             {CONTACT_EMAILS.map((c) => (
-              <li key={c.label} style={contactRowStyle}>
+              <li key={c.label} className="about-contact-row" style={contactRowStyle}>
                 <span className="mono" style={contactLabelStyle}>{c.label}</span>
                 {c.address.includes("@") ? (
                   <a href={`mailto:${c.address}`} style={contactLinkStyle}>{c.address}</a>
@@ -179,7 +180,6 @@ const contactListStyle: React.CSSProperties = {
 
 const contactRowStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "120px 1fr",
   gap: "1rem",
   padding: "0.6rem 0",
   borderBottom: "1px solid var(--line)",

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { deities } from "../data/content.ts";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type Feature = { title: string; body: string; icon: string };
 type FeatureGroup = { label: string; features: Feature[] };
@@ -249,26 +250,28 @@ export function ProductPage({ id }: { id: string }) {
 
   return (
     <>
-      <section className="product-hero" id={id}>
+      <InteriorHero id={id} product>
         <div className="product-hero__inner">
           <a href="/pantheon" className="blog-back">← Panteão</a>
-          {id === "aion" && (
-            <img src="/aion_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />
-          )}
-          {id === "pluto" && (
-            <img src="/pluto_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />
-          )}
-          <h1 className="product-hero__title">{deity.name}</h1>
+          <div className="product-hero__identity">
+            {id === "aion" && <img src="/aion_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />}
+            {id === "pluto" && <img src="/pluto_logo.svg" alt="" className="product-hero__logo" aria-hidden="true" />}
+            <h1 className="product-hero__title">{deity.name}</h1>
+          </div>
           <p className="product-hero__tagline">{deity.tagline}</p>
           <p className="product-hero__desc">{details.hero}</p>
+          <div className="product-hero__actions">
+            <a href="#access" className="btn btn--solid">{id === "pluto" ? "Entrar para a lista" : "Acompanhar o Panteão"} <span aria-hidden="true">↗</span></a>
+            <span className={`chip chip--${deity.status}`}>{deity.statusLabel} · {deity.eta}</span>
+          </div>
           <p className="product-hero__platforms mono">{deity.platforms}</p>
         </div>
-      </section>
+      </InteriorHero>
 
       {details.featureGroups.length > 0 && details.featureGroups.map((group, gi) => (
         <section className="product-features" key={gi}>
           <div className="section-head">
-            <p className="eyebrow" data-reveal>{group.label}</p>
+            <p className="eyebrow" data-reveal>{String(gi + 1).padStart(2, "0")} · {deity.name}</p>
             <h2 className="section-title" data-reveal>{group.label}</h2>
           </div>
           <div className="product-features__grid">
@@ -303,7 +306,7 @@ export function ProductPage({ id }: { id: string }) {
                     <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
                   ))}
                 </ul>
-                <a href="/" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+                <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
                   Entrar para a lista
                 </a>
               </div>

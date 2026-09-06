@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type FeatureCard = {
   icon: string;
@@ -52,7 +53,7 @@ export function Funcionalidades() {
 
   return (
     <>
-      <section className="page-hero" id="funcionalidades">
+      <InteriorHero id="funcionalidades">
         <div className="page-hero__inner">
           <a href="/pluto" className="blog-back">← Pluto</a>
           <h1 className="page-hero__title">Tudo o que o Pluto faz — e por que importa.</h1>
@@ -62,7 +63,7 @@ export function Funcionalidades() {
             quando você para de planilhar e começa a delegar.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="panteao-grid">
         {cards.map((c) => (

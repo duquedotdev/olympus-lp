@@ -1,0 +1,106 @@
+.olympus-page {
+  --realm: 198, 161, 91;
+  --realm-light: #e1c894;
+  --onyx: #0b1117;
+  --onyx-2: #0e161d;
+  --raised: #131e25;
+  --raised-2: #1b282f;
+  --stone: #aab0b1;
+  --stone-dim: #949c9e;
+  --bronze: rgb(var(--realm));
+  --bronze-soft: var(--realm-light);
+  --bronze-line: rgba(var(--realm), 0.38);
+  --radius: 4px;
+  --page-inset: max(var(--gutter), calc((100% - 1112px) / 2));
+  isolation: isolate;
+  background: var(--onyx);
+  min-height: 70svh;
+}
+.olympus-page[data-realm="aion"] { --realm: 136, 189, 174; --realm-light: #c0ddd0; --onyx: #0a1517; --onyx-2: #0e1b1d; --raised: #142327; --raised-2: #1e3236; }
+.olympus-page[data-realm="zeus"] { --realm: 167, 175, 215; --realm-light: #d2d6f0; --onyx: #0d111e; --onyx-2: #121828; --raised: #182033; --raised-2: #222d45; }
+.olympus-page[data-realm="sanctuary"] { --realm: 155, 183, 178; --realm-light: #cbdbd3; }
+.olympus-page[data-realm="archive"] { --realm: 186, 163, 123; --realm-light: #dfcba9; }
+.olympus-page::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, transparent calc(50% - 600px), rgba(var(--realm), 0.04) calc(50% - 599px), transparent calc(50% - 598px), transparent calc(50% + 598px), rgba(var(--realm), 0.04) calc(50% + 599px), transparent calc(50% + 600px)); }
+.interior-hero {
+  --scene-shift: 0px;
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  max-width: none;
+  margin: 0;
+  padding: clamp(136px, 15vw, 172px) var(--page-inset) 0;
+  border-bottom: 1px solid rgba(var(--realm), 0.16);
+}
+.interior-hero__grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: clamp(36px, 6vw, 88px); align-items: center; min-height: 440px; padding-bottom: 70px; }
+.interior-hero__copy { min-width: 0; animation: interior-arrive 0.9s var(--ease) both; }
+.interior-hero__chapter { display: flex; font-size: 0.59rem; letter-spacing: 0.2em; line-height: 1.7; margin-bottom: 25px; }
+.interior-hero__chapter::before { content: ""; width: 26px; height: 1px; background: var(--bronze); flex-shrink: 0; }
+.interior-hero .blog-back { font-size: 0.64rem; margin-bottom: 18px; padding-block: 10px; width: fit-content; min-height: 36px; }
+.interior-hero h1 { font-size: clamp(2.8rem, 5.1vw, 4.8rem); line-height: 1.02; font-weight: 300; letter-spacing: -0.025em; text-wrap: balance; margin-top: 0; }
+.interior-hero .page-hero__lede, .interior-hero .blog-lede, .interior-hero .notfound__lede { font-size: 1rem; line-height: 1.85; max-width: 48ch; margin: 25px 0 0; }
+.interior-hero .page-hero__logo { width: 52px; margin-bottom: 20px; }
+.interior-hero .blog-header { text-align: left; margin-bottom: 0; }
+.interior-hero__frieze { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(var(--realm), 0.2); color: var(--stone-dim); font: 0.53rem var(--mono); letter-spacing: 0.18em; }
+.interior-hero .olympus-landscape__sky { background: radial-gradient(ellipse at 80% 32%, rgba(var(--realm), 0.13), transparent 60%), linear-gradient(145deg, var(--raised), var(--onyx) 75%); }
+.interior-hero .olympus-landscape__ridge--far { opacity: 0.14; height: 70%; }
+.interior-hero .olympus-landscape__ridge--near { opacity: 0.2; height: 45%; }
+.interior-hero .olympus-landscape__mist { animation: none; opacity: 0.35; }
+.interior-hero .olympus-landscape__stars { opacity: 0.25; }
+.mythic-art { position: relative; width: 100%; max-width: 410px; justify-self: center; padding: 20px 24px 0; color: var(--bronze-soft); animation: interior-arrive 1.2s var(--ease) both; }
+.mythic-art__orbit { position: absolute; inset: -12px -12px 36px; border: 1px solid rgba(var(--realm), 0.2); border-radius: 50%; transform: rotate(-22deg); }
+.mythic-art__orbit::before, .mythic-art__orbit::after { content: ""; position: absolute; inset: 13px; border: 1px dashed rgba(var(--realm), 0.22); border-radius: inherit; }
+.mythic-art__orbit::after { inset: 38px -18px; border-style: solid; transform: rotate(45deg); }
+.mythic-art__niche { position: relative; isolation: isolate; display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; aspect-ratio: 0.92; border: 1px solid rgba(var(--realm), 0.38); border-radius: 48% 48% 0 0; background: radial-gradient(ellipse at 50% 35%, rgba(var(--realm), 0.12), transparent 66%), linear-gradient(125deg, rgba(var(--realm), 0.05), var(--onyx)); box-shadow: 0 0 0 8px rgba(var(--realm), 0.035), 0 0 0 9px rgba(var(--realm), 0.16), inset 0 0 60px rgba(var(--realm), 0.04); }
+.mythic-art__niche > svg { width: 88%; height: auto; color: var(--bronze-soft); filter: drop-shadow(0 0 18px rgba(var(--realm), 0.18)); }
+.mythic-seal { width: 100%; stroke: currentColor; stroke-width: 1.15; stroke-linecap: round; stroke-linejoin: round; }
+.mythic-seal__orbit { opacity: 0.32; stroke-width: 0.65; }
+.mythic-art__inscription { display: block; max-width: 100%; padding-left: 0.22em; font: 300 clamp(1.2rem, 2.5vw, 2rem) var(--serif); letter-spacing: 0.22em; color: rgba(var(--realm), 0.55); text-align: center; }
+.mythic-art__pedestal { position: relative; height: 25px; margin: 0 -18px; border-block: 5px double rgba(var(--realm), 0.28); background: linear-gradient(90deg, var(--onyx), var(--raised-2), var(--onyx)); box-shadow: 0 18px 28px #0005; }
+.mythic-art figcaption { position: relative; margin: 24px -16px 0; text-align: center; font: italic 1.1rem var(--serif); color: var(--marble-dim); }
+.mythic-art--aion .mythic-art__niche { border-radius: 50%; aspect-ratio: 1; }
+.mythic-art--aion .mythic-art__pedestal { width: 60%; margin-inline: auto; margin-top: 20px; }
+.mythic-art--aion .mythic-art__orbit { transform: rotate(-42deg); inset: -3% -8% 18%; }
+.mythic-art--aion .mythic-art__inscription { font-size: 1.4rem; margin-top: -18px; }
+.mythic-art--temple::before, .mythic-art--temple::after { content: ""; position: absolute; top: 36%; bottom: 52px; width: 23px; background: repeating-linear-gradient(90deg, rgba(var(--realm), 0.18) 0 2px, var(--onyx) 3px 6px); border-block: 6px double var(--bronze-line); z-index: 2; }
+.mythic-art--temple::before { left: -6px; }
+.mythic-art--temple::after { right: -6px; }
+.product-hero .mythic-art { max-width: 440px; }
+.product-hero .mythic-art--zeus .mythic-art__niche { aspect-ratio: 0.75; overflow: hidden; background: #c6cad5; justify-content: flex-end; }
+.mythic-art__marble { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; filter: grayscale(1); z-index: -1; }
+.product-hero .mythic-art--zeus .mythic-art__niche::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 45%, var(--onyx)); z-index: -1; }
+.product-hero .mythic-art--zeus .mythic-art__inscription { font-size: 3rem; padding-bottom: 26px; color: var(--bronze-soft); }
+.product-hero__identity { display: flex; align-items: center; gap: 24px; }
+.interior-hero .product-hero__logo { width: clamp(48px, 6vw, 74px); margin: 0; }
+.interior-hero .product-hero__title { font-size: clamp(4.5rem, 9vw, 8rem); }
+.interior-hero .product-hero__tagline { font-size: clamp(1.4rem, 2.4vw, 1.9rem); line-height: 1.25; margin-top: 20px; }
+.interior-hero .product-hero__desc { font-size: 0.98rem; line-height: 1.85; color: var(--stone); margin-top: 25px; }
+.product-hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 28px; }
+.product-hero__actions .chip { font-size: 0.55rem; }
+.interior-hero .product-hero__platforms { font-size: 0.58rem; line-height: 1.8; margin-top: 24px; }
+@keyframes interior-arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@media (max-width: 900px) {
+  .interior-hero__grid { grid-template-columns: minmax(0, 1fr); gap: 48px; padding-bottom: 55px; }
+  .interior-hero__copy { max-width: 680px; }
+  .interior-hero h1 { font-size: clamp(2.9rem, 7.5vw, 4.6rem); }
+  .mythic-art { max-width: 300px; }
+  .product-hero .mythic-art { max-width: 340px; }
+  .interior-hero .olympus-landscape__ridge--far { height: 45%; }
+  .interior-hero__frieze { font-size: 0.47rem; letter-spacing: 0.1em; }
+}
+@media (max-width: 480px) {
+  .interior-hero { padding-top: 112px; }
+  .interior-hero__chapter { font-size: 0.52rem; letter-spacing: 0.13em; margin-bottom: 12px; }
+  .interior-hero h1 { font-size: clamp(2.4rem, 10vw, 3.3rem); }
+  .interior-hero .page-hero__lede, .interior-hero .blog-lede, .interior-hero .notfound__lede { font-size: 0.95rem; margin-top: 22px; }
+  .interior-hero__frieze > span:last-child { max-width: 22ch; text-align: right; line-height: 1.7; }
+  .mythic-art { max-width: 260px; }
+  .product-hero .mythic-art { max-width: 290px; }
+  .mythic-art figcaption { font-size: 1rem; }
+  .product-hero__identity { gap: 18px; }
+  .interior-hero .product-hero__title { font-size: 4.6rem; }
+  .interior-hero .product-hero__desc { font-size: 0.93rem; }
+  .product-hero__actions { gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .interior-hero__copy, .mythic-art { animation: none; }
+}

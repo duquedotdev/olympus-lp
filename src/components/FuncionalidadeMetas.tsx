@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type Feature = { icon: string; title: string; body: string };
 
@@ -31,7 +32,7 @@ export function FuncionalidadeMetas() {
 
   return (
     <>
-      <section className="page-hero" id="metas">
+      <InteriorHero id="metas">
         <div className="page-hero__inner">
           <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Metas e lista de desejos.</h1>
@@ -42,7 +43,7 @@ export function FuncionalidadeMetas() {
             você pode comprar sem comprometer o orçamento.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="feature-detail__why">
         <div className="section-head">

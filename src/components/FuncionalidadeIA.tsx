@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type Feature = { icon: string; title: string; body: string };
 
@@ -36,7 +37,7 @@ export function FuncionalidadeIA() {
 
   return (
     <>
-      <section className="page-hero" id="ia">
+      <InteriorHero id="ia">
         <div className="page-hero__inner">
           <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <img src="/ia_logo.svg" alt="" className="page-hero__logo" aria-hidden="true" />
@@ -48,7 +49,7 @@ export function FuncionalidadeIA() {
             surgem dos seus dados sem você precisar perguntar.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="feature-detail__why">
         <div className="section-head">

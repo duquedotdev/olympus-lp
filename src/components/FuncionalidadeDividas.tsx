@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type Feature = { icon: string; title: string; body: string };
 
@@ -31,7 +32,7 @@ export function FuncionalidadeDividas() {
 
   return (
     <>
-      <section className="page-hero" id="dividas">
+      <InteriorHero id="dividas">
         <div className="page-hero__inner">
           <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Dívidas e parcelamentos como módulo dedicado.</h1>
@@ -42,7 +43,7 @@ export function FuncionalidadeDividas() {
             que existe de verdade, não como um subproduto de transações.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="feature-highlight">
         <div className="feature-highlight__box" data-reveal>

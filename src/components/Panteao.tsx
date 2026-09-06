@@ -1,13 +1,15 @@
 import { useEffect } from "react";
 import { deities } from "../data/content.ts";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
+import { DivineEmblem } from "./divine-emblem.tsx";
 
 export function Panteao() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <>
-      <section className="page-hero" id="panteao">
+      <InteriorHero id="panteao">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Três domínios. Três agentes. Um só comando.</h1>
@@ -17,11 +19,12 @@ export function Panteao() {
             Autonomia isolada virou commodity. A diferença é ter agentes que trabalham juntos.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="panteao-grid">
         {deities.map((d) => (
-          <a key={d.id} href={`/${d.id}`} className="panteao-card">
+          <a key={d.id} href={`/${d.id}`} className="panteao-card panteao-card--deity" data-deity={d.id} data-reveal>
+            <div className="panteao-card__art"><DivineEmblem domain={d.id} /></div>
             <div className="panteao-card__head">
               <span className="panteao-card__glyph">{d.glyph}</span>
               <span className={`chip chip--${d.status}`}>{d.statusLabel} {d.eta}</span>

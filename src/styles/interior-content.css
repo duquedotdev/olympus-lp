@@ -1,0 +1,87 @@
+.olympus-page .btn--solid { background: var(--realm-light); border-color: var(--bronze); }
+.olympus-page .btn--solid:hover { background: var(--marble); }
+.olympus-page .section-head { max-width: 760px; }
+.olympus-page .section-title { font-size: clamp(2rem, 3.8vw, 3.15rem); font-weight: 300; text-wrap: balance; }
+.olympus-page .eyebrow { font-size: 0.6rem; line-height: 1.7; }
+.olympus-page .product-features { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.6fr); gap: clamp(28px, 5vw, 70px); padding-block: clamp(64px, 8vw, 100px); border-bottom: 1px solid rgba(var(--realm), 0.13); }
+.olympus-page .product-features > .section-head { margin: 0; position: sticky; top: 120px; align-self: start; }
+.olympus-page .product-features__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.olympus-page .product-feature { background: linear-gradient(140deg, rgba(var(--realm), 0.055), transparent 70%); padding: clamp(22px, 2.7vw, 34px); border-top-color: var(--bronze-line); }
+.olympus-page .product-feature__icon { font-size: 1.2rem; min-width: 34px; min-height: 34px; border: 1px solid var(--bronze-line); display: inline-grid; place-items: center; border-radius: 50%; }
+.olympus-page .product-feature__title { font-size: 1.5rem; line-height: 1.15; }
+.olympus-page .product-feature__body { font-size: 0.9rem; line-height: 1.8; }
+.olympus-page .panteao-grid { padding-top: clamp(56px, 7vw, 96px); grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.olympus-page .panteao-card { min-width: 0; border-color: rgba(var(--realm), 0.23); background: linear-gradient(135deg, rgba(var(--realm), 0.075), transparent 70%); }
+.olympus-page .panteao-card:hover { border-color: var(--bronze); background-color: var(--raised); }
+.olympus-page .panteao-card__head { gap: 10px; flex-wrap: wrap; }
+.olympus-page .panteao-card__name { font-size: clamp(1.8rem, 2.7vw, 2.5rem); }
+.olympus-page .panteao-card--deity { border-radius: 170px 170px 4px 4px; padding: 28px; }
+.panteao-card__art { width: 100%; max-width: 250px; margin: 0 auto 25px; aspect-ratio: 1.1; }
+.olympus-page .panteao-card--deity .panteao-card__head { margin-bottom: 25px; padding-block: 16px; border-block: 1px solid var(--line); }
+.olympus-page .panteao-card--deity .panteao-card__glyph { border: none; width: auto; height: auto; font-size: 0.9rem; }
+.olympus-page .panteao-card--deity .chip { border: 0; padding: 0; font-size: 0.55rem; letter-spacing: 0.08em; }
+.olympus-page .panteao-card--deity .panteao-card__name { font-size: 3.3rem; }
+.olympus-page .panteao-card--deity .panteao-card__tagline { font: 1.3rem/1.35 var(--serif); min-height: 2.7em; }
+.olympus-page .panteao-card--deity .panteao-card__desc { font-size: 0.89rem; line-height: 1.8; }
+.olympus-page .panteao-card--deity[data-deity="aion"] { --realm: 136, 189, 174; --realm-light: #c0ddd0; }
+.olympus-page .panteao-card--deity[data-deity="zeus"] { --realm: 167, 175, 215; --realm-light: #d2d6f0; }
+.olympus-page .panteao-card__more { display: flex; align-items: center; min-height: 44px; font-size: 0.62rem; padding-top: 16px; border-top: 1px solid var(--line); }
+.olympus-page .product-pricing { padding-block: clamp(64px, 8vw, 110px); }
+.olympus-page .product-pricing > .section-head { margin-inline: auto; }
+.olympus-page .pricing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.olympus-page .pricing-card { min-width: 0; background: linear-gradient(180deg, rgba(var(--realm), 0.04), transparent 70%); border-top: 2px solid var(--bronze-line); padding: clamp(24px, 3vw, 38px); }
+.olympus-page .pricing-card--highlight { background: linear-gradient(180deg, rgba(var(--realm), 0.12), rgba(var(--realm), 0.025)); border-color: rgba(var(--realm), 0.5); box-shadow: 0 20px 70px rgba(var(--realm), 0.06); }
+.olympus-page .pricing-card__badge { border-radius: 2px; font-size: 0.57rem; }
+.olympus-page .pricing-card__name { font-size: 1.8rem; }
+.olympus-page .pricing-card__price { font-size: clamp(2.2rem, 3.3vw, 3.2rem); margin-top: 20px; }
+.olympus-page .pricing-card__period { font-size: 0.65rem; }
+.olympus-page .pricing-card__features { border-top: 1px solid var(--line); padding-top: 24px; gap: 12px; }
+.olympus-page .product-faq { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.6fr); gap: clamp(30px, 5vw, 70px); padding-block: clamp(64px, 8vw, 100px); border-top: 1px solid rgba(var(--realm), 0.15); }
+.olympus-page .product-faq .section-head { margin: 0; }
+.olympus-page .product-faq .faq__list { width: 100%; min-width: 0; }
+.olympus-page .faq__q { font-size: 1.28rem; padding-block: 24px; }
+.olympus-page .faq__a { font-size: 0.94rem; line-height: 1.8; }
+.olympus-page .prose, .olympus-page .feature-detail__why { max-width: 880px; padding-top: clamp(48px, 6vw, 80px); }
+.olympus-page .prose h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 400; border-top: 1px solid rgba(var(--realm), 0.2); padding-top: 28px; margin-top: 45px; }
+.olympus-page .prose h2:first-child { margin-top: 0; }
+.olympus-page .prose p { font-size: 1rem; line-height: 1.9; color: #bdc3c3; overflow-wrap: anywhere; }
+.olympus-page .prose li { line-height: 1.8; }
+.olympus-page .feature-detail__why-box { padding-left: 24px; }
+.olympus-page .feature-detail__why-box p { font-size: 1.05rem; line-height: 1.85; }
+.olympus-page .feature-highlight { padding-block: clamp(48px, 6vw, 80px); }
+.olympus-page .feature-highlight__box { background: radial-gradient(ellipse at 0 0, rgba(var(--realm), 0.09), transparent 80%); }
+.olympus-page .screenshot-placeholder { background: linear-gradient(135deg, rgba(var(--realm), 0.04), transparent); border-color: var(--bronze-line); font-size: 0.67rem; line-height: 1.8; }
+.olympus-page .contact-grid { padding: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.olympus-page .contact-card__email { font: 500 clamp(1rem, 2vw, 1.2rem)/1.5 var(--sans); }
+.olympus-page .social-links__item { border-radius: 3px; min-height: 44px; }
+.olympus-page .access { background: radial-gradient(ellipse at 50% 90%, rgba(var(--realm), 0.12), transparent 65%); }
+.olympus-page .access::before { border-color: var(--bronze-line); }
+.olympus-page .access__input { background: var(--onyx); }
+.olympus-page .access__form { max-width: 540px; }
+.comparison-table { overflow-x: auto; border: 1px solid var(--bronze-line); border-radius: 4px; background: linear-gradient(135deg, rgba(var(--realm), 0.04), transparent); }
+.comparison-table:focus-visible { outline-offset: -3px; }
+.comparison-table table { min-width: 760px; }
+.comparison-table th { background: rgba(var(--realm), 0.08); }
+.comparison-table tbody tr:hover { background: rgba(var(--realm), 0.04); }
+.comparison-table th:nth-child(2), .comparison-table td:nth-child(2) { background: rgba(var(--realm), 0.045); }
+.comparison-hint { font: 0.65rem/1.8 var(--mono); color: var(--stone); margin-bottom: 16px; }
+@media (max-width: 1000px) {
+  .olympus-page .product-features, .olympus-page .product-faq { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .olympus-page .product-features > .section-head { position: static; }
+}
+@media (max-width: 860px) {
+  .olympus-page .panteao-grid { grid-template-columns: minmax(0, 1fr); }
+  .olympus-page .panteao-card--deity { width: 100%; max-width: 520px; justify-self: center; }
+  .olympus-page .pricing-grid { grid-template-columns: minmax(0, 1fr); }
+  .olympus-page .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .olympus-page .product-features__grid, .olympus-page .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .olympus-page .panteao-card--deity .panteao-card__tagline { min-height: 0; }
+  .olympus-page .section-title { font-size: 2.2rem; }
+  .olympus-page .faq__q { font-size: 1.16rem; }
+  .olympus-page .prose p { font-size: 0.96rem; }
+  .olympus-page .feature-detail__why-box { padding-left: 18px; }
+  .olympus-page .feature-detail__why-box p { font-size: 0.97rem; }
+  .olympus-page .pricing-card__price { font-size: 3rem; }
+}

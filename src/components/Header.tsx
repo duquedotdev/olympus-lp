@@ -13,13 +13,25 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        document.querySelector<HTMLButtonElement>(".site-header__burger")?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
+
   const close = () => setMenuOpen(false);
 
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""} ${menuOpen ? "is-open" : ""}`}>
       <div className="site-header__inner">
-        <Logo />
-        <nav className="site-nav" aria-label="Navegação principal" aria-hidden={!menuOpen}>
+        <div className="site-header__brand"><Logo /><span aria-hidden="true">OLYMPKUS <small>AI</small></span></div>
+        <nav className="site-nav" id="site-navigation" aria-label="Navegação principal">
           {nav.map((n) => (
             <a key={n.href} href={n.href} className="site-nav__link" onClick={close}>
               {n.label}
@@ -33,6 +45,7 @@ export function Header() {
           className="site-header__burger"
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
+          aria-controls="site-navigation"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span /><span /><span />

@@ -1,0 +1,64 @@
+.olympus-page[data-realm="archive"]::before, .olympus-page--legal::before { background: radial-gradient(ellipse 800px 700px at 50% 0, rgba(var(--realm), 0.07), transparent), linear-gradient(90deg, transparent calc(50% - 490px), rgba(var(--realm), 0.08) calc(50% - 489px), transparent calc(50% - 488px), transparent calc(50% + 488px), rgba(var(--realm), 0.08) calc(50% + 489px), transparent calc(50% + 490px)); }
+.olympus-page .blog-list { padding-top: clamp(48px, 6vw, 80px); }
+.olympus-page .blog-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 24px; }
+.olympus-page .blog-card { border-radius: 3px; background: linear-gradient(150deg, rgba(var(--realm), 0.075), transparent); border-top: 2px solid var(--bronze-line); padding: 30px; min-width: 0; }
+.olympus-page .blog-card:hover { background-color: var(--raised); }
+.olympus-page .blog-card__title { font-size: 1.8rem; line-height: 1.15; }
+.olympus-page .blog-card__excerpt { line-height: 1.8; font-size: 0.92rem; }
+.olympus-page .blog-card__more { display: flex; align-items: center; min-height: 44px; border-top: 1px solid var(--line); margin-top: 20px; padding-top: 16px; }
+.olympus-page .blog-card .chip { border-radius: 2px; font-size: 0.59rem; }
+.olympus-page .blog-controls { padding-bottom: 32px; border-bottom: 1px solid var(--bronze-line); }
+.olympus-page .blog-search { border-radius: 3px; min-height: 50px; background: var(--onyx-2); }
+.olympus-page .blog-filter { min-height: 44px; border-radius: 3px; font-size: 0.6rem; padding: 8px 16px; }
+.olympus-page .blog-filter--active { border-color: var(--bronze); color: var(--bronze-soft); background: rgba(var(--realm), 0.09); }
+.olympus-page .blog-empty { grid-column: 1 / -1; }
+.olympus-page .blog-post { max-width: 890px; padding-top: 132px; }
+.olympus-page .blog-post > .blog-back { font-size: 0.68rem; }
+.olympus-page .blog-post__header { border-bottom: 1px solid var(--bronze-line); padding-bottom: 38px; }
+.olympus-page .blog-post__title { font-size: clamp(2.5rem, 5.3vw, 4rem); line-height: 1.08; font-weight: 300; text-wrap: balance; }
+.olympus-page .blog-post__excerpt { font-size: 1.1rem; line-height: 1.75; }
+.olympus-page .blog-post__author { font-size: 0.62rem; }
+.olympus-page .blog-post__body { max-width: 68ch; margin-inline: auto; font-size: 1.04rem; line-height: 1.9; overflow-wrap: anywhere; }
+.olympus-page .blog-post__body h2 { font-size: 2rem; margin-top: 3rem; }
+.olympus-page .blog-post__body h3 { font-size: 1.55rem; }
+.olympus-page .blog-post__body blockquote { margin-block: 32px; padding: 20px 24px; background: rgba(var(--realm), 0.035); font: italic 1.5rem/1.5 var(--serif); color: var(--bronze-soft); }
+.olympus-page .blog-post__body blockquote p:last-child { margin-bottom: 0; }
+.olympus-page .blog-post__footer { border-color: var(--bronze-line); }
+.reading-mark { display: flex; align-items: center; gap: 16px; color: var(--bronze-soft); margin-bottom: 32px; }
+.reading-mark .mythic-seal { width: 66px; height: 55px; flex: 0 0 auto; }
+.reading-mark::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--bronze-line), transparent); }
+.reading-mark .eyebrow { letter-spacing: 0.15em; }
+.olympus-page--legal { padding-bottom: 80px; }
+.olympus-page .legal { max-width: 920px; }
+.olympus-page .legal__bar { padding-block: 26px; margin-bottom: 60px; border-bottom-color: var(--bronze-line); }
+.olympus-page .legal__bar .logo__mark { width: 44px; }
+.olympus-page .legal__back { font-size: 0.65rem; min-height: 44px; display: flex; align-items: center; }
+.olympus-page .legal__doc { max-width: 720px; margin-inline: auto; }
+.olympus-page .legal__title { font-size: clamp(2.5rem, 5.8vw, 4.4rem); font-weight: 300; text-wrap: balance; }
+.olympus-page .legal__meta { font-size: 0.61rem; line-height: 1.8; }
+.olympus-page .legal__lead { font-size: 1.07rem; line-height: 1.85; padding-bottom: 35px; border-bottom: 1px solid var(--bronze-line); }
+.olympus-page .legal__section { margin-top: 40px; }
+.olympus-page .legal__section h2 { font-size: 1.7rem; font-weight: 400; }
+.olympus-page .legal__section p, .olympus-page .legal__section li { color: #b4bdbc; line-height: 1.85; overflow-wrap: anywhere; }
+.olympus-page .legal__foot { color: var(--stone-dim); padding-bottom: 20px; }
+.olympus-page .press-contact { border-color: var(--bronze-line); padding-block: 32px; background: rgba(var(--realm), 0.04); }
+.about-contact-row { grid-template-columns: 120px minmax(0, 1fr); }
+.press-fact-row { grid-template-columns: 180px minmax(0, 1fr); }
+.about-contact-row > *, .press-fact-row > * { min-width: 0; overflow-wrap: anywhere; }
+.press-kit { position: relative; box-shadow: 0 0 0 8px rgba(var(--realm), 0.02), 0 0 0 9px rgba(var(--realm), 0.08); }
+@media (max-width: 600px) {
+  .olympus-page .blog-post { padding-top: 110px; }
+  .olympus-page .blog-post__body { font-size: 0.98rem; }
+  .olympus-page .blog-post__excerpt { font-size: 1rem; }
+  .olympus-page .blog-post__body h2 { font-size: 1.75rem; }
+  .olympus-page .blog-card { padding: 24px; }
+  .olympus-page .blog-card__title { font-size: 1.65rem; }
+  .olympus-page .blog-search { font-size: 16px; }
+  .reading-mark { gap: 10px; margin-bottom: 24px; }
+  .reading-mark .mythic-seal { width: 48px; height: 40px; }
+  .reading-mark .eyebrow { font-size: 0.51rem; letter-spacing: 0.1em; }
+  .olympus-page .legal__bar { margin-bottom: 38px; }
+  .olympus-page .legal__section h2 { font-size: 1.5rem; }
+  .olympus-page .legal__lead { font-size: 1rem; }
+  .about-contact-row, .press-fact-row { grid-template-columns: minmax(0, 1fr); }
+}

@@ -6,6 +6,11 @@ import "./styles/sections.css";
 import "./styles/legal.css";
 import "./styles/blog.css";
 import "./styles/pages.css";
+import "./styles/olympus.css";
+import "./styles/olympus-scene.css";
+import "./styles/interior-scene.css";
+import "./styles/interior-content.css";
+import "./styles/interior-reading.css";
 import App from "./App.tsx";
 import { setupLinkInterceptor } from "./lib/router.ts";
 

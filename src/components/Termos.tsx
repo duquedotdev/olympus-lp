@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Logo } from "./Logo.tsx";
+import { ReadingMark } from "./reading-mark.tsx";
 
 export function Termos() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -12,6 +13,7 @@ export function Termos() {
       </header>
 
       <article className="legal__doc">
+        <ReadingMark label="Confiança · Termos de uso" legal />
         <h1 className="legal__title">Termos de Uso</h1>
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 const tableStyle: React.CSSProperties = {
   width: "100%",
@@ -48,7 +49,6 @@ const wrapperStyle: React.CSSProperties = {
   maxWidth: "var(--shell)",
   margin: "0 auto",
   padding: "0 var(--gutter) var(--section-y)",
-  overflowX: "auto",
 };
 
 const noteStyle: React.CSSProperties = {
@@ -85,7 +85,7 @@ export function Comparativo() {
 
   return (
     <>
-      <section className="page-hero" id="comparativo">
+      <InteriorHero id="comparativo">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Pluto vs. os outros — sem esconder onde perdemos.</h1>
@@ -95,9 +95,11 @@ export function Comparativo() {
             estão à frente. Se a gente ganha em tudo, desconfie.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <div style={wrapperStyle}>
+        <p className="comparison-hint">Compare os recursos. Em telas menores, deslize a tabela para os lados.</p>
+        <div className="comparison-table" role="region" aria-label="Comparação de recursos dos aplicativos" tabIndex={0}>
         <table style={tableStyle}>
           <thead>
             <tr>
@@ -120,6 +122,7 @@ export function Comparativo() {
             ))}
           </tbody>
         </table>
+        </div>
 
         <div style={noteStyle}>
           <p style={{ margin: 0 }}>

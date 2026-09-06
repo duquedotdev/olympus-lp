@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type Plan = {
   name: string;
@@ -89,7 +90,7 @@ export function Precos() {
 
   return (
     <>
-      <section className="page-hero" id="precos">
+      <InteriorHero id="precos">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Escolha o seu plano.</h1>
@@ -98,7 +99,7 @@ export function Precos() {
             Sem fidelidade, sem surpresas — você cancela quando quiser.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="product-pricing">
         <div className="pricing-grid">
@@ -115,7 +116,7 @@ export function Precos() {
                   <li key={j} className={f.endsWith(":") ? "pricing-card__sep" : ""}>{f}</li>
                 ))}
               </ul>
-              <a href="/" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
+              <a href="#access" className={`btn ${plan.highlight ? "btn--solid" : "btn--ghost"} pricing-card__cta`}>
                 Entrar para a lista
               </a>
             </div>

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Logo } from "./Logo.tsx";
+import { ReadingMark } from "./reading-mark.tsx";
 
 export function Cookies() {
   useEffect(() => {
@@ -14,6 +15,7 @@ export function Cookies() {
       </header>
 
       <article className="legal__doc">
+        <ReadingMark label="Confiança · Cookies" legal />
         <h1 className="legal__title">Política de Cookies</h1>
         <p className="legal__meta mono">ÚLTIMA ATUALIZAÇÃO · 9 DE AGOSTO DE 2026</p>
 

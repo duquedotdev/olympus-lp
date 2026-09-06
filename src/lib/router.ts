@@ -2,11 +2,15 @@
 // Intercepts clicks on internal <a href="/..."> links so navigation happens
 // via the History API instead of a full page reload.
 
+function scrollBehavior(): ScrollBehavior {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+}
+
 export function navigate(path: string): void {
   const next = path || "/";
   const cur = window.location.pathname + window.location.search + window.location.hash;
   if (next === cur) {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
     return;
   }
   window.history.pushState({}, "", next);
@@ -16,7 +20,7 @@ export function navigate(path: string): void {
 function scrollToHash(hash: string): void {
   if (!hash) return;
   const id = hash.slice(1);
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById(id)?.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
 }
 
 export function setupLinkInterceptor(): void {
@@ -26,7 +30,7 @@ export function setupLinkInterceptor(): void {
 
     const anchor = (e.target as HTMLElement | null)?.closest("a");
     if (!anchor) return;
-    if (anchor.target === "_blank") return;
+    if (anchor.target === "_blank" || anchor.hasAttribute("download")) return;
 
     const href = anchor.getAttribute("href");
     if (!href) return;

@@ -1,55 +1,66 @@
+import { OlympusLandscape } from "./olympus-landscape.tsx";
+import { useCinematicScene } from "../hooks/use-cinematic-scene.ts";
+
 export function Hero() {
+  const { sceneRef, videoRef, playing, reducedMotion, toggleMotion } = useCinematicScene();
+
   return (
-    <section className="hero" id="top">
+    <section className="hero" id="top" ref={sceneRef} data-motion={playing ? "running" : "paused"} aria-labelledby="hero-title">
+      <OlympusLandscape />
       <div className="hero__grid">
         <div className="hero__lede">
-          <h1 className="hero__title">
-            <span className="reveal-line"><span>Um panteão de agentes</span></span>
-            <span className="reveal-line"><span>de IA — um por domínio,</span></span>
-            <span className="reveal-line"><em>sob um só comando.</em></span>
+          <p className="eyebrow hero__eyebrow"><span /> O futuro tem raízes eternas</p>
+          <h1 className="hero__title" id="hero-title">
+            <span className="reveal-line"><span>Seu tempo</span></span>
+            <span className="reveal-line"><span>é <em>sagrado.</em></span></span>
           </h1>
-
+          <p className="hero__overture">Seu próprio panteão de IA.</p>
           <p className="hero__sub">
             Pluto cuida do seu dinheiro. Aion do seu tempo. Zeus orquestra
-            tudo. Você aprova a intenção; eles cuidam da execução. Devolvemos
-            o seu recurso mais escasso — atenção.
+            tudo. Você aprova a intenção; eles cuidam da execução.
           </p>
-
           <div className="hero__actions">
-            <a href="/" className="btn btn--solid">Entrar para a lista</a>
-            <a href="/pantheon" className="btn btn--ghost">Conhecer o panteão</a>
+            <a href="#access" className="btn btn--solid">Entrar para a lista <span aria-hidden="true">↗</span></a>
+            <a href="#pantheon" className="hero__explore">Conhecer o panteão <span aria-hidden="true">↓</span></a>
           </div>
-
-          <dl className="hero__stats">
-            <div><dt>03</dt><dd>agentes</dd></div>
-            <div><dt>05</dt><dd>plataformas</dd></div>
-            <div><dt>85</dt><dd>países</dd></div>
-            <div><dt>05</dt><dd>idiomas</dd></div>
-          </dl>
+          <p className="hero__availability"><span /> Lista aberta · Pluto previsto para jan. 2027</p>
         </div>
 
-        <figure className="exhibit-hero" data-reveal>
-          <div className="exhibit-hero__spot" aria-hidden="true" />
-          <div className="exhibit-hero__frame">
+        <figure className="olympus-shrine">
+          <div className="olympus-shrine__halo" aria-hidden="true"><span /><span /></div>
+          <div className="olympus-shrine__column olympus-shrine__column--left" aria-hidden="true" />
+          <div className="olympus-shrine__column olympus-shrine__column--right" aria-hidden="true" />
+          <div className="olympus-shrine__arch">
             <video
-              className="exhibit-hero__media"
-              src="/zeus.mp4"
+              ref={videoRef}
+              className="olympus-shrine__statue"
               poster="/zeus.png"
-              autoPlay
               muted
               loop
               playsInline
-              preload="metadata"
-            />
-            <span className="exhibit-hero__meridian" aria-hidden="true" />
-            <span className="exhibit-hero__tag exhibit-hero__tag--tl">EXHIBIT · ZEUS</span>
-            <span className="exhibit-hero__tag exhibit-hero__tag--br">MÁRMORE · Ø ORÁCULO</span>
+              preload="none"
+              aria-hidden="true"
+              tabIndex={-1}
+            >
+              {!reducedMotion && <source src="/zeus.mp4" type="video/mp4" />}
+            </video>
+            <div className="olympus-shrine__veil" aria-hidden="true" />
           </div>
-          <figcaption className="exhibit-hero__cap">
-            <span>Busto de Zeus</span>
-            <span className="mono">40°N 22°E — MONTE OLIMPO</span>
+          <span className="olympus-shrine__inscription" aria-hidden="true">ΖΕΥΣ</span>
+          <figcaption className="olympus-shrine__caption">
+            <span className="olympus-shrine__number">III</span>
+            <span>Zeus <small>O orquestrador do Panteão</small></span>
           </figcaption>
         </figure>
+      </div>
+      <div className="hero__horizon">
+        <a href="#manifesto" className="hero__scroll"><span aria-hidden="true">↓</span> A jornada começa aqui</a>
+        <span className="hero__coordinates">MONTE OLIMPO · 40°N 22°E</span>
+        {!reducedMotion && (
+          <button className="hero__motion" type="button" onClick={toggleMotion} aria-pressed={!playing}>
+            {playing ? "Pausar movimento" : "Retomar movimento"}
+          </button>
+        )}
       </div>
     </section>
   );

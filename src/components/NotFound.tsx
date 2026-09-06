@@ -1,11 +1,12 @@
 import { useEffect } from "react";
+import { InteriorHero } from "./interior-hero.tsx";
 
 export function NotFound() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <>
-      <section className="notfound" id="notfound">
+      <InteriorHero id="notfound">
         <div className="notfound__inner">
           <a href="/" className="blog-back">← Voltar ao início</a>
           <h1 className="notfound__title">Este caminho não leva a lugar nenhum.</h1>
@@ -18,7 +19,7 @@ export function NotFound() {
             <a href="/pantheon" className="btn btn--ghost">Conhecer o panteão</a>
           </div>
         </div>
-      </section>
+      </InteriorHero>
     </>
   );
 }

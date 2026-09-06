@@ -1,4 +1,5 @@
 import type { Deity } from "../data/content.ts";
+import { DivineEmblem } from "./divine-emblem.tsx";
 
 export function Exhibit({ deity, index }: { deity: Deity; index: number }) {
   return (
@@ -16,6 +17,7 @@ export function Exhibit({ deity, index }: { deity: Deity; index: number }) {
         </span>
       </header>
 
+      <div className="exhibit__relic"><DivineEmblem domain={deity.id} /></div>
       <p className="exhibit__domain mono">{deity.domain.toUpperCase()}</p>
       <h3 className="exhibit__name">{deity.name}</h3>
       <p className="exhibit__tagline">{deity.tagline}</p>

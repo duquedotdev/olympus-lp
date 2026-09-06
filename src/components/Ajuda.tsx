@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type FaqCategory = {
   label: string;
@@ -89,7 +90,7 @@ export function Ajuda() {
 
   return (
     <>
-      <section className="page-hero" id="ajuda">
+      <InteriorHero id="ajuda">
         <div className="page-hero__inner">
           <a href="/" className="blog-back">← Voltar</a>
           <h1 className="page-hero__title">Perguntas frequentes e suporte.</h1>
@@ -98,7 +99,7 @@ export function Ajuda() {
             extratos à privacidade dos seus dados.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       {categories.map((cat, ci) => (
         <section className="product-faq" key={ci}>

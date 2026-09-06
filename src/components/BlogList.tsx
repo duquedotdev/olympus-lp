@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { getAllCategories, getAllPosts } from "../lib/blog.ts";
+import { InteriorHero } from "./interior-hero.tsx";
 
 export function BlogList() {
   const allPosts = getAllPosts();
@@ -24,12 +25,15 @@ export function BlogList() {
   const chips = ["Todos", ...categories];
 
   return (
-    <div className="blog-list">
-      <header className="blog-header">
-        <a href="/" className="blog-back">← Voltar</a>
-        <h1 className="blog-title">Bastidores do Panteão</h1>
-        <p className="blog-lede">Reflexões sobre IA agêntica, finanças pessoais e o futuro da delegação.</p>
-      </header>
+    <>
+      <InteriorHero id="blog">
+        <header className="blog-header">
+          <a href="/" className="blog-back">← Voltar</a>
+          <h1 className="blog-title">Bastidores do Panteão</h1>
+          <p className="blog-lede">Reflexões sobre IA agêntica, finanças pessoais e o futuro da delegação.</p>
+        </header>
+      </InteriorHero>
+      <div className="blog-list">
 
       <div className="blog-controls">
         <input
@@ -46,6 +50,7 @@ export function BlogList() {
               key={chip}
               type="button"
               className={`chip blog-filter${activeCategory === chip ? " blog-filter--active" : ""}`}
+              aria-pressed={activeCategory === chip}
               onClick={() => setActiveCategory(chip)}
             >
               {chip.toUpperCase()}
@@ -70,7 +75,8 @@ export function BlogList() {
           <p className="blog-empty mono">Nenhum artigo encontrado.</p>
         )}
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

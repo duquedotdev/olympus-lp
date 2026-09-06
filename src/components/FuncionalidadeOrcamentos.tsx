@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { CtaBand } from "./CtaBand.tsx";
+import { InteriorHero } from "./interior-hero.tsx";
 
 type Feature = { icon: string; title: string; body: string };
 
@@ -31,7 +32,7 @@ export function FuncionalidadeOrcamentos() {
 
   return (
     <>
-      <section className="page-hero" id="orcamentos">
+      <InteriorHero id="orcamentos">
         <div className="page-hero__inner">
           <a href="/features" className="blog-back">← Voltar para funcionalidades</a>
           <h1 className="page-hero__title">Orçamentos que se montam sozinhos.</h1>
@@ -41,7 +42,7 @@ export function FuncionalidadeOrcamentos() {
             cada categoria e te avisa antes do limite — não depois.
           </p>
         </div>
-      </section>
+      </InteriorHero>
 
       <section className="feature-detail__why">
         <div className="section-head">
